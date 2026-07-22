@@ -6,46 +6,85 @@
 }
 
 body{
-    background:#f8faf8;
-    color:#222;
+    background:#fdfcf7; /* Fondo blanco marfil muy suave de la maqueta */
+    color:#2c3e35;
 }
 
 header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 8%;
+    padding:20px 5%;
     background:white;
     position:sticky;
     top:0;
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    box-shadow:0 2px 10px rgba(0,0,0,.05);
     z-index: 1000;
 }
 
+/* Hacemos que la barra ocupe el ancho y distribuya los elementos exactamente igual */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    flex: 1;
+}
+
 .logo-img {
-    height: 50px; /* Tamaño ideal para que se vea claro y elegante sin desentonar */
+    height: 55px;
     width: auto;
     display: block;
 }
 
-nav a{
-    text-decoration:none;
-    color:#333;
-    margin-left:30px;
-    font-weight:500;
-    transition:.3s;
+nav {
+    display: flex;
+    gap: 25px;
+    flex: 2;
+    justify-content: center;
 }
 
-nav a:hover{
-    color:#1f6b45;
+nav a {
+    text-decoration: none;
+    color: #4a5568;
+    font-weight: 500;
+    font-size: 15px;
+    transition: .3s;
+}
+
+nav a:hover, nav a.active {
+    color: #1f3b32;
+    font-weight: 600;
+}
+
+/* Estilo para el botón de la derecha de la cabecera ("Reservar cita") */
+.btn-reservar {
+    background-color: #d1b17e; /* Tono arena/dorado de la maqueta */
+    color: white;
+    padding: 10px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: .3s;
+    box-shadow: 0 2px 8px rgba(209, 177, 126, 0.3);
+}
+
+.btn-reservar:hover {
+    background-color: #b89765;
 }
 
 .hero{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    padding:80px 8%;
-    min-height:85vh;
+    padding:60px 8%;
+    min-height:80vh;
 }
 
 .texto{
@@ -53,32 +92,33 @@ nav a:hover{
 }
 
 .texto h1{
-    font-size:52px;
-    color:#1f6b45;
+    font-size:48px;
+    color:#1b3b32; /* Verde oscuro elegante de los textos */
     margin-bottom:20px;
+    line-height: 1.2;
 }
 
 .texto p{
     font-size:18px;
-    line-height:1.8;
-    margin-bottom:35px;
-    color:#555;
+    line-height:1.6;
+    margin-bottom:30px;
+    color:#4a5568;
 }
 
 .boton{
     display:inline-block;
-    background:#1f6b45;
+    background:#d1b17e; /* Botón principal color arena/dorado */
     color:white;
-    padding:16px 32px;
-    border-radius:12px;
+    padding:15px 32px;
+    border-radius:30px;
     text-decoration:none;
     font-weight:600;
     transition:.3s;
 }
 
 .boton:hover{
-    transform:translateY(-3px);
-    background:#145134;
+    background:#b89765;
+    transform:translateY(-2px);
 }
 
 .imagen{
@@ -88,41 +128,28 @@ nav a:hover{
 
 .imagen img{
     width:100%;
-    max-width: 450px;
-    border-radius:25px;
-    box-shadow:0 15px 40px rgba(0,0,0,.15);
+    max-width: 480px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.1);
 }
 
 @media(max-width:900px){
-    header{
-        flex-direction:column;
-        padding: 15px 20px;
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
     }
-
-    nav{
-        margin-top:15px;
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
     }
-
-    nav a{
-        margin: 0 10px;
-        font-size: 14px;
-    }
-
     .hero{
         flex-direction:column;
         text-align:center;
-        padding: 40px 5%;
     }
-
-    .texto,
-    .imagen{
+    .texto, .imagen{
         width:100%;
     }
-
-    .texto h1{
-        font-size:36px;
-    }
-
     .imagen{
         margin-top:40px;
     }
