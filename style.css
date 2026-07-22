@@ -77,35 +77,30 @@ nav a:hover, nav a.active {
     background-color: #2c5942;
 }
 
-/* SECCIÓN HERO CON LA IMAGEN DE FONDO A TODO EL ANCHO */
+/* SECCIÓN HERO AJUSTADA */
 .hero{
     position: relative;
     width: 100%;
-    min-height: 85vh;
-    background-image: url('images/inicio.png'); /* Carga tu imagen como fondo */
-    background-size: cover;
-    background-position: center;
+    min-height: 70vh; /* Reducimos la altura para que no sea tan grande */
+    background-image: url('images/inicio.png');
+    background-size: contain; /* Cambiamos a 'contain' o 'auto' para que la imagen se vea completa y en su tamaño real */
+    background-repeat: no-repeat;
+    background-position: right center; /* Coloca la imagen hacia la derecha de forma equilibrada */
+    background-color: #faf9f6; /* Fondo de apoyo por si la imagen no cubre todo el ancho */
     display: flex;
     align-items: center;
-    padding: 0 8%;
+    padding: 40px 8%;
 }
 
-/* Capa semitransparente suave sobre la imagen para que el texto resalte y se lea bien */
+/* Capa semitransparente más suave ya que la imagen tiene su propio espacio */
 .hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.75); 
-    z-index: 1;
+    display: none; /* Quitamos el filtro opaco para que los colores de tu imagen se vean nítidos */
 }
 
 .texto{
     position: relative;
-    z-index: 2; /* Coloca las letras por encima de la imagen de fondo */
-    max-width: 600px;
+    z-index: 2;
+    max-width: 550px;
 }
 
 .texto h1{
