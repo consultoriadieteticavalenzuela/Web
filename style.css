@@ -6,7 +6,7 @@
 }
 
 body{
-    background:#fdfcf7; /* Fondo blanco marfil muy suave de la maqueta */
+    background:#fdfcf7;
     color:#2c3e35;
 }
 
@@ -14,7 +14,7 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 5%;
+    padding:15px 5%;
     background:white;
     position:sticky;
     top:0;
@@ -22,22 +22,16 @@ header{
     z-index: 1000;
 }
 
-/* Hacemos que la barra ocupe el ancho y distribuya los elementos exactamente igual */
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
+/* Forzamos estricta distribución: Izquierda (Logo), Centro (Nav), Derecha (Botón) */
 .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     flex: 1;
 }
 
 .logo-img {
-    height: 55px;
+    height: 50px;
     width: auto;
     display: block;
 }
@@ -45,8 +39,8 @@ header{
 nav {
     display: flex;
     gap: 25px;
-    flex: 2;
     justify-content: center;
+    flex: 2;
 }
 
 nav a {
@@ -62,92 +56,90 @@ nav a:hover, nav a.active {
     font-weight: 600;
 }
 
-/* Estilo para el botón de la derecha de la cabecera ("Reservar cita") */
+.cta-container {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
 .btn-reservar {
-    background-color: #d1b17e; /* Tono arena/dorado de la maqueta */
+    background-color: #d1b17e;
     color: white;
-    padding: 10px 22px;
+    padding: 10px 20px;
     border-radius: 20px;
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     transition: .3s;
-    box-shadow: 0 2px 8px rgba(209, 177, 126, 0.3);
 }
 
 .btn-reservar:hover {
     background-color: #b89765;
 }
 
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 60px 8%;
-    min-height: 80vh;
-    background: #fdfcf7;
-    position: relative;
-    overflow: hidden;
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:60px 8%;
+    min-height:80vh;
 }
 
-/* Efecto superpuesto o contenedor más integrado */
-.texto {
-    width: 48%;
-    z-index: 2;
+.texto{
+    width:48%;
 }
 
-.texto h1 {
-    font-size: 46px;
-    color: #1b3b32;
-    margin-bottom: 20px;
+.texto h1{
+    font-size:46px;
+    color:#1b3b32;
+    margin-bottom:20px;
     line-height: 1.2;
 }
 
-.texto p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    color: #4a5568;
+.texto p{
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:30px;
+    color:#4a5568;
 }
 
-.boton {
-    display: inline-block;
-    background: #d1b17e;
-    color: white;
-    padding: 15px 32px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: .3s;
+.boton{
+    display:inline-block;
+    background:#d1b17e;
+    color:white;
+    padding:15px 32px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
 }
 
-.boton:hover {
-    background: #b89765;
-    transform: translateY(-2px);
+.boton:hover{
+    background:#b89765;
+    transform:translateY(-2px);
 }
 
-.imagen {
-    width: 48%;
-    position: relative;
-    z-index: 1;
+.imagen{
+    width:48%;
+    text-align:right;
 }
 
-.imagen img {
-    width: 100%;
-    max-width: 520px;
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+.imagen img{
+    width:100%;
+    max-width: 500px;
+    border-radius:20px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.08);
 }
 
 @media(max-width:900px){
-    .header-container {
+    header{
         flex-direction: column;
         gap: 15px;
+        padding: 15px;
     }
-    nav {
-        flex-wrap: wrap;
+    .logo-container, nav, .cta-container {
+        width: 100%;
         justify-content: center;
-        gap: 15px;
     }
     .hero{
         flex-direction:column;
