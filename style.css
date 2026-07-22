@@ -10,6 +10,20 @@ body{
     color:#222;
 }
 
+ .header-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 130px;
+    background-color: #ffffff; /* O el color de fondo que prefieras */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo-img {
+    height: 20px; /* Puedes ajustar este número si lo quieres más grande o más pequeño */
+    width: auto;
+}
+
 header{
     display:flex;
     justify-content:space-between;
@@ -116,19 +130,5 @@ nav{
 
 .imagen{
     margin-top:40px;
-}
-
-    .header-principal {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10px;
-    background-color: #ffffff; /* O el color de fondo que prefieras */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-.logo-img {
-    height: 20px; /* Puedes ajustar este número si lo quieres más grande o más pequeño */
-    width: auto;
 }
 }
