@@ -79,58 +79,64 @@ nav a:hover, nav a.active {
     background-color: #b89765;
 }
 
-.hero{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:60px 8%;
-    min-height:80vh;
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 8%;
+    min-height: 80vh;
+    background: #fdfcf7;
+    position: relative;
+    overflow: hidden;
 }
 
-.texto{
-    width:50%;
+/* Efecto superpuesto o contenedor más integrado */
+.texto {
+    width: 48%;
+    z-index: 2;
 }
 
-.texto h1{
-    font-size:48px;
-    color:#1b3b32; /* Verde oscuro elegante de los textos */
-    margin-bottom:20px;
+.texto h1 {
+    font-size: 46px;
+    color: #1b3b32;
+    margin-bottom: 20px;
     line-height: 1.2;
 }
 
-.texto p{
-    font-size:18px;
-    line-height:1.6;
-    margin-bottom:30px;
-    color:#4a5568;
+.texto p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #4a5568;
 }
 
-.boton{
-    display:inline-block;
-    background:#d1b17e; /* Botón principal color arena/dorado */
-    color:white;
-    padding:15px 32px;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:600;
-    transition:.3s;
+.boton {
+    display: inline-block;
+    background: #d1b17e;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
 }
 
-.boton:hover{
-    background:#b89765;
-    transform:translateY(-2px);
+.boton:hover {
+    background: #b89765;
+    transform: translateY(-2px);
 }
 
-.imagen{
-    width:45%;
-    text-align:right;
+.imagen {
+    width: 48%;
+    position: relative;
+    z-index: 1;
 }
 
-.imagen img{
-    width:100%;
-    max-width: 480px;
-    border-radius:20px;
-    box-shadow:0 15px 35px rgba(0,0,0,0.1);
+.imagen img {
+    width: 100%;
+    max-width: 520px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
 }
 
 @media(max-width:900px){
