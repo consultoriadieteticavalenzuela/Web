@@ -117,4 +117,18 @@ nav{
 .imagen{
     margin-top:40px;
 }
+
+    .header-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #ffffff; /* O el color de fondo que prefieras */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo-img {
+    height: 60px; /* Puedes ajustar este número si lo quieres más grande o más pequeño */
+    width: auto;
+}
 }
