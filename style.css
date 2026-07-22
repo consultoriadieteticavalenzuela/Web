@@ -31,7 +31,7 @@ header{
 }
 
 .logo-img {
-    height: 60px; /* Aumentamos el tamaño del logo para que destaque más */
+    height: 75px; /* Aumentamos el tamaño del logo para que destaque más */
     width: auto;
     display: block;
 }
