@@ -281,6 +281,180 @@ nav a:hover, nav a.active {
     .separador-verde-contenido p {
         font-size: 15px;
     }
+
+    /* SECCIÓN EL MÉTODO */
+.seccion-metodo {
+    padding: 90px 8%;
+    background-color: #faf9f6;
+}
+
+.metodo-contenedor {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.metodo-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.metodo-header h2 {
+    font-size: 38px;
+    color: #1b3b2b;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.subtitulo-metodo {
+    font-size: 18px;
+    color: #4a5568;
+}
+
+/* TARJETA ÚNICA DEL PLAN */
+.tarjeta-plan {
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(27, 59, 43, 0.06);
+    border: 1px solid rgba(209, 177, 126, 0.3); /* Detalle dorado elegante */
+    display: flex;
+    overflow: hidden;
+}
+
+.plan-info {
+    flex: 1.4;
+    padding: 50px;
+}
+
+.plan-info h3 {
+    font-size: 26px;
+    color: #1b3b2b;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.plan-descripcion {
+    font-size: 16px;
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.plan-lista {
+    list-style: none;
+}
+
+.plan-lista li {
+    font-size: 15px;
+    color: #2b2b2b;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.plan-lista span {
+    color: #1b3b2b;
+    font-weight: bold;
+}
+
+/* CAJA DE PRECIO */
+.plan-precio-caja {
+    flex: 1;
+    background: linear-gradient(135deg, #1b3b2b, #2c5942);
+    color: white;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.precio-etiqueta {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #d1b17e; /* Dorado corporativo */
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.precio-numero {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #ffffff;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 5px;
+}
+
+.precio-numero span {
+    font-size: 20px; /* Tamaño más pequeño y elegante para la parte de "/mes" */
+    font-weight: 400;
+    color: #d1b17e; /* Tono dorado para que combine */
+}
+
+.precio-detalle {
+    font-size: 13px;
+    color: #fdfcf7;
+    opacity: 0.8;
+    margin-bottom: 35px;
+}
+
+.btn-plan {
+    display: inline-block;
+    background-color: #d1b17e; /* Botón destacado en dorado */
+    color: #1b3b2b;
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    transition: .3s;
+    width: 100%;
+    max-width: 200px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn-plan:hover {
+    background-color: #e2c493;
+    transform: translateY(-2px);
+}
+
+/* RESPONSIVE PARA EL MÉTODO */
+@media(max-width: 900px) {
+    .tarjeta-plan {
+        flex-direction: column;
+    }
+    .plan-info {
+        padding: 30px 20px;
+    }
+    .plan-precio-caja {
+        padding: 40px 20px;
+    }
+    .seccion-metodo {
+        padding: 50px 4%;
+    }
+
+    .precio-iva {
+    font-size: 12px;
+    color: #d1b17e; /* Tono dorado suave para que combine perfectamente */
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+    .precio-descuento-aviso {
+    background-color: rgba(255, 255, 255, 0.15); /* Fondo semitransparente elegante */
+    color: #ffffff;
+    font-size: 13px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px dashed rgba(209, 177, 126, 0.6); /* Borde punteado dorado sutil */
+    text-align: center;
+    width: 100%;
+}
 }
 
 /* ==========================================================
