@@ -169,9 +169,9 @@ nav a:hover, nav a.active {
 
 .sobre-mi-contenedor {
     display: flex;
-    align-items: center;
+    align-items: center; /* Esto centra la foto a la altura de la mitad del texto */
     justify-content: space-between;
-    gap: 60px;
+    gap: 50px;
     max-width: 1100px;
     margin: 0 auto;
     background-color: #ffffff;
@@ -188,8 +188,8 @@ nav a:hover, nav a.active {
 
 .sobre-mi-imagen img {
     width: 100%;
-    max-width: 240px;
-    height: 240px;
+    max-width: 330px; /* Antes estaba en 240px */
+    height: 330px; /* Debe medir lo mismo que el ancho para que siga siendo redonda */
     object-fit: cover;
     object-position: top center;
     border-radius: 50%;
