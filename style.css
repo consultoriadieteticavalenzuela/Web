@@ -160,41 +160,50 @@ nav a:hover, nav a.active {
     text-decoration: underline;
 }
 
-/* RESPONSIVE PARA MÓVILES Y TABLETS PEQUEÑAS */
-@media(max-width:900px){
+/* RESPONSIVE PARA MÓVILES Y PANTALLAS ESTRECHAS */
+@media(max-width: 1024px){
     header{
         flex-direction: column;
         gap: 15px;
         padding: 15px;
     }
+    
     .logo-container, nav, .cta-container {
         width: 100%;
         justify-content: center;
+        text-align: center;
     }
+
     nav {
-        gap: 15px;
+        gap: 20px;
         flex-wrap: wrap;
     }
+
     nav a {
-        font-size: 14px;
+        font-size: 15px;
     }
+
     .hero {
         padding: 40px 5%;
-        text-align: center;
-        justify-content: center;
+        text-align: left;
         background-position: center;
     }
+
     .texto {
         max-width: 100%;
     }
+
     .botones-hero {
-        justify-content: center;
-        flex-direction: column;
+        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
+
     .texto h1{
         font-size: 38px;
     }
+
     .texto p{
-        font-size: 16px;
+        font-size: 17px;
     }
 }
