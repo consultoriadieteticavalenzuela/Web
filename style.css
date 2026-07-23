@@ -191,7 +191,7 @@ nav a:hover, nav a.active {
     max-width: 240px;
     height: 240px;
     object-fit: cover;
-    object-position: top center; /* Esto le dice al navegador que priorice mostrar la parte de arriba (la cara/cabeza) */
+    object-position: top center;
     border-radius: 50%;
     box-shadow: 0 15px 30px rgba(27, 59, 43, 0.1);
     border: 4px solid #fdfcf7;
@@ -249,16 +249,16 @@ nav a:hover, nav a.active {
 
 /* SEGUNDO SEPARADOR - VERDE CORPORATIVO */
 .separador-verde {
-    background-color: #1b3b2b; /* Tu verde oscuro corporativo */
+    background-color: #1b3b2b;
     padding: 50px 5%;
     text-align: center;
     color: #ffffff;
-    border-top: 4px solid #d1b17e; /* Detalle elegante dorado */
+    border-top: 4px solid #d1b17e;
     border-bottom: 4px solid #d1b17e;
 }
 
 .separador-verde-contenido h3 {
-    font-size: 28px; /* Un tamaño ideal para que la frase destaque sin desbordarse */
+    font-size: 28px;
     font-weight: 700;
     margin-bottom: 10px;
     line-height: 1.3;
@@ -270,19 +270,7 @@ nav a:hover, nav a.active {
     opacity: 0.9;
 }
 
-/* RESPONSIVE PARA EL SEPARADOR VERDE */
-@media(max-width: 768px) {
-    .separador-verde {
-        padding: 35px 5%;
-    }
-    .separador-verde-contenido h3 {
-        font-size: 22px;
-    }
-    .separador-verde-contenido p {
-        font-size: 15px;
-    }
-
-    /* SECCIÓN EL MÉTODO */
+/* SECCIÓN EL MÉTODO */
 .seccion-metodo {
     padding: 90px 8%;
     background-color: #faf9f6;
@@ -310,12 +298,12 @@ nav a:hover, nav a.active {
     color: #4a5568;
 }
 
-/* TARJETA ÚNICA DEL PLAN */
+/* TARJETA ÚNICA DEL PLAN (ESTRUCTURA DE DOS COLUMNAS) */
 .tarjeta-plan {
     background-color: #ffffff;
     border-radius: 25px;
     box-shadow: 0 15px 35px rgba(27, 59, 43, 0.06);
-    border: 1px solid rgba(209, 177, 126, 0.3); /* Detalle dorado elegante */
+    border: 1px solid rgba(209, 177, 126, 0.3);
     display: flex;
     overflow: hidden;
 }
@@ -357,7 +345,7 @@ nav a:hover, nav a.active {
     font-weight: bold;
 }
 
-/* CAJA DE PRECIO */
+/* CAJA DE PRECIO LATERAL */
 .plan-precio-caja {
     flex: 1;
     background: linear-gradient(135deg, #1b3b2b, #2c5942);
@@ -374,7 +362,7 @@ nav a:hover, nav a.active {
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    color: #d1b17e; /* Dorado corporativo */
+    color: #d1b17e;
     font-weight: 600;
     margin-bottom: 15px;
 }
@@ -391,21 +379,40 @@ nav a:hover, nav a.active {
 }
 
 .precio-numero span {
-    font-size: 20px; /* Tamaño más pequeño y elegante para la parte de "/mes" */
+    font-size: 20px;
     font-weight: 400;
-    color: #d1b17e; /* Tono dorado para que combine */
+    color: #d1b17e;
+}
+
+.precio-iva {
+    font-size: 12px;
+    color: #d1b17e;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.precio-descuento-aviso {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    font-size: 13px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px dashed rgba(209, 177, 126, 0.6);
+    text-align: center;
+    width: 100%;
 }
 
 .precio-detalle {
     font-size: 13px;
     color: #fdfcf7;
     opacity: 0.8;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 .btn-plan {
     display: inline-block;
-    background-color: #d1b17e; /* Botón destacado en dorado */
+    background-color: #d1b17e;
     color: #1b3b2b;
     padding: 14px 30px;
     border-radius: 30px;
@@ -421,40 +428,6 @@ nav a:hover, nav a.active {
 .btn-plan:hover {
     background-color: #e2c493;
     transform: translateY(-2px);
-}
-
-/* RESPONSIVE PARA EL MÉTODO */
-@media(max-width: 900px) {
-    .tarjeta-plan {
-        flex-direction: column;
-    }
-    .plan-info {
-        padding: 30px 20px;
-    }
-    .plan-precio-caja {
-        padding: 40px 20px;
-    }
-    .seccion-metodo {
-        padding: 50px 4%;
-    }
-
-    .precio-iva {
-    font-size: 12px;
-    color: #d1b17e; /* Tono dorado suave para que combine perfectamente */
-    margin-bottom: 15px;
-    font-weight: 500;
-}
-    .precio-descuento-aviso {
-    background-color: rgba(255, 255, 255, 0.15); /* Fondo semitransparente elegante */
-    color: #ffffff;
-    font-size: 13px;
-    padding: 8px 12px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    border: 1px dashed rgba(209, 177, 126, 0.6); /* Borde punteado dorado sutil */
-    text-align: center;
-    width: 100%;
-}
 }
 
 /* ==========================================================
@@ -540,6 +513,20 @@ nav a:hover, nav a.active {
         font-size: 15px;
         text-align: left;
     }
+
+    /* Adaptación de la tarjeta del método en móviles */
+    .tarjeta-plan {
+        flex-direction: column;
+    }
+    .plan-info {
+        padding: 30px 20px;
+    }
+    .plan-precio-caja {
+        padding: 40px 20px;
+    }
+    .seccion-metodo {
+        padding: 50px 4%;
+    }
 }
 
 @media(max-width: 768px) {
@@ -552,4 +539,14 @@ nav a:hover, nav a.active {
     .separador-contenido p {
         font-size: 16px;
     }
+    .separador-verde {
+        padding: 35px 5%;
+    }
+    .separador-verde-contenido h3 {
+        font-size: 22px;
+    }
+    .separador-verde-contenido p {
+        font-size: 15px;
+    }
 }
+
