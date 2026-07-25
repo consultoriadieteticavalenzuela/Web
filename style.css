@@ -622,71 +622,36 @@ nav a:hover, nav a.active {
 }
 
 /* Caja principal de contacto y botones de correo/instagram */
-.contacto-caja-principal {
-    background: #ffffff;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 50px;
-    border-radius: 25px;
-    box-shadow: 0 15px 35px rgba(27, 59, 43, 0.05);
-    border: 1px solid rgba(209, 177, 126, 0.3);
-    text-align: center;
+/* ==========================================================
+   CORRECCIÓN RESPONSIVE PARA EL CONTACTO
+   ========================================================== */
+@media (max-width: 768px) {
+    .contacto-caja-principal {
+        padding: 30px 20px;
+    }
+
+    .contacto-caja-principal h2 {
+        font-size: 28px;
+    }
+
+    .contacto-caja-principal p {
+        font-size: 15px;
+    }
+
+    .contacto-enlace-oficial {
+        font-size: 14px;
+        padding: 12px 20px;
+        width: 100%;
+        max-width: 100%;
+        word-break: break-word; /* Evita que los correos largos o enlaces rompan el diseño */
+    }
+
+    .contacto-enlace-oficial i {
+        font-size: 18px;
+        flex-shrink: 0;
+    }
 }
 
-.contacto-caja-principal h2 {
-    font-size: 38px;
-    color: #1b3b2b;
-    margin-bottom: 15px;
-    font-weight: 700;
-}
-
-.contacto-caja-principal p {
-    font-size: 16px;
-    color: #4a5568;
-    margin-bottom: 30px;
-}
-
-.contacto-info-contenedor {
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
-
-.contacto-enlace-oficial {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    background-color: #faf9f6;
-    color: #1b3b2b;
-    padding: 14px 30px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
-    border: 1px solid rgba(209, 177, 126, 0.4);
-    transition: all 0.3s ease;
-    width: 100%;
-    max-width: 480px;
-    justify-content: center;
-    box-shadow: 0 5px 15px rgba(27, 59, 43, 0.03);
-}
-
-.contacto-enlace-oficial i {
-    font-size: 20px;
-    color: #1b3b2b;
-}
-
-.contacto-enlace-oficial:hover {
-    background-color: #1b3b2b;
-    color: #ffffff;
-    transform: translateY(-2px);
-}
-
-.contacto-enlace-oficial:hover i {
-    color: #ffffff;
-}
 
 /* Responsivo para móviles */
 @media(max-width: 768px) {
