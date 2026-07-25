@@ -622,7 +622,7 @@ nav a:hover, nav a.active {
         font-size: 15px;
     }
 
-    /* ESTILOS PARA LOS TRES PLANES DE TARIFAS */
+   /* ESTILOS CORREGIDOS PARA LOS TRES PLANES DE TARIFAS */
 .tarifa-seccion-tres {
     max-width: 1100px;
     margin: 0 auto;
@@ -638,7 +638,8 @@ nav a:hover, nav a.active {
 
 .planes-grid-tres {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Forzamos exactamente 3 columnas iguales en pantallas grandes para que no se estiren de más */
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     align-items: stretch;
     margin-bottom: 30px;
@@ -647,7 +648,7 @@ nav a:hover, nav a.active {
 .tarjeta-plan-opcion {
     background: #ffffff;
     border-radius: 25px;
-    padding: 40px 30px;
+    padding: 40px 25px;
     box-shadow: 0 10px 30px rgba(27, 59, 43, 0.05);
     border: 1px solid rgba(209, 177, 126, 0.3);
     display: flex;
@@ -655,6 +656,8 @@ nav a:hover, nav a.active {
     align-items: center;
     position: relative;
     transition: transform 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .tarjeta-plan-opcion:hover {
@@ -665,6 +668,8 @@ nav a:hover, nav a.active {
 .plan-destacado {
     border: 2px solid #d1b17e;
     box-shadow: 0 15px 40px rgba(27, 59, 43, 0.1);
+    /* Hacemos que sobresalga ligeramente o destaque de forma limpia en escritorio */
+    z-index: 2;
 }
 
 .etiqueta-mas-elegido {
@@ -691,7 +696,7 @@ nav a:hover, nav a.active {
 }
 
 .tarjeta-plan-opcion .precio-numero {
-    font-size: 42px;
+    font-size: 40px;
     font-weight: 700;
     color: #1b3b2b;
     margin-bottom: 5px;
@@ -702,13 +707,13 @@ nav a:hover, nav a.active {
 }
 
 .tarjeta-plan-opcion .precio-numero span {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     color: #4a5568;
 }
 
 .precio-ahorro {
-    font-size: 14px;
+    font-size: 13px;
     color: #1b3b2b;
     font-weight: 600;
     margin-bottom: 10px;
@@ -729,7 +734,7 @@ nav a:hover, nav a.active {
     background-color: #ffffff;
     color: #1b3b2b;
     border: 2px solid #1b3b2b;
-    padding: 12px 30px;
+    padding: 12px 25px;
     border-radius: 30px;
     text-decoration: none;
     font-weight: 700;
@@ -744,7 +749,6 @@ nav a:hover, nav a.active {
     color: #ffffff;
 }
 
-/* Botón especial para el plan destacado */
 .btn-plan-destacado-btn {
     background-color: #1b3b2b;
     color: #ffffff;
@@ -752,6 +756,16 @@ nav a:hover, nav a.active {
 
 .btn-plan-destacado-btn:hover {
     background-color: #2c5942;
+}
+
+/* Adaptación responsive para pantallas medianas y móviles */
+@media(max-width: 950px) {
+    .planes-grid-tres {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /* AVISO INFERIOR */
