@@ -271,48 +271,53 @@ nav a:hover, nav a.active {
 /* SEPARADORES */
 .separador-estetico {
     background: linear-gradient(to right, #1b3b2b, #fdfcf7); 
-    padding: 60px 5%;
-    text-align: center;
-    color: #ffffff;
-    border-top: 5px solid #d1b17e;
-    border-bottom: 5px solid #d1b17e;
-    margin: 0;
-}
-
-.separador-contenido h3 {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 15px;
-    line-height: 1.2;
-}
-
-.separador-contenido p {
-    font-size: 18px;
-    font-weight: 400;
-    color: #fdfcf7;
-    opacity: 0.9;
-}
-
-.separador-verde {
-    background-color: #1b3b2b;
-    padding: 50px 5%;
+    padding: 30px 5%; /* Reducido para que ocupe menos */
     text-align: center;
     color: #ffffff;
     border-top: 4px solid #d1b17e;
     border-bottom: 4px solid #d1b17e;
+    margin: 0;
+}
+
+.separador-contenido h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.separador-contenido p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fdfcf7;
+    opacity: 0.9;
+    margin: 0;
+}
+
+/* ==========================================================
+   SEPARADORES VERDES MÁS ESTRECHOS Y COMPACTOS
+   ========================================================== */
+.separador-verde {
+    background-color: #1b3b2b;
+    padding: 25px 5%; /* Reducido de 50px a 25px arriba y abajo */
+    text-align: center;
+    color: #ffffff;
+    border-top: 3px solid #d1b17e;
+    border-bottom: 3px solid #d1b17e;
 }
 
 .separador-verde-contenido h3 {
-    font-size: 28px;
+    font-size: 22px; /* Letra un poco más pequeña y estrecha */
     font-weight: 700;
-    margin-bottom: 10px;
-    line-height: 1.3;
+    margin-bottom: 6px;
+    line-height: 1.2;
 }
 
 .separador-verde-contenido p {
-    font-size: 17px;
+    font-size: 15px; /* Texto secundario más compacto */
     color: #fdfcf7;
     opacity: 0.9;
+    margin: 0;
 }
 
 /* SECCIÓN CÓMO TRABAJO */
