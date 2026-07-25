@@ -1,26 +1,26 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
-    background:#faf9f6;
-    color:#2b2b2b;
+body {
+    background: #faf9f6;
+    color: #2b2b2b;
     overflow-x: hidden;
 }
 
 /* HEADER / CABECERA */
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 5%;
-    background:white;
-    position:sticky;
-    top:0;
-    box-shadow:0 2px 10px rgba(0,0,0,.05);
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: white;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,.05);
     z-index: 1000;
 }
 
@@ -124,7 +124,7 @@ nav a:hover, nav a.active {
 }
 
 /* SECCIÓN HERO */
-.hero{
+.hero {
     position: relative;
     width: 100%;
     min-height: 85vh;
@@ -147,13 +147,13 @@ nav a:hover, nav a.active {
     z-index: 1;
 }
 
-.texto{
+.texto {
     position: relative;
     z-index: 2;
     max-width: 650px;
 }
 
-.texto h1{
+.texto h1 {
     font-size: 54px;
     color: #1b3b2b;
     margin-bottom: 20px;
@@ -161,7 +161,7 @@ nav a:hover, nav a.active {
     font-weight: 700;
 }
 
-.texto p{
+.texto p {
     font-size: 20px;
     line-height: 1.6;
     margin-bottom: 35px;
@@ -175,7 +175,7 @@ nav a:hover, nav a.active {
     align-items: center;
 }
 
-.boton{
+.boton {
     display: inline-block;
     background: #1b3b2b;
     color: white;
@@ -188,7 +188,7 @@ nav a:hover, nav a.active {
     box-shadow: 0 4px 15px rgba(27, 59, 43, 0.2);
 }
 
-.boton:hover{
+.boton:hover {
     background: #2c5942;
     transform: translateY(-2px);
 }
@@ -271,7 +271,7 @@ nav a:hover, nav a.active {
 /* SEPARADORES */
 .separador-estetico {
     background: linear-gradient(to right, #1b3b2b, #fdfcf7); 
-    padding: 30px 5%; /* Reducido para que ocupe menos */
+    padding: 30px 5%;
     text-align: center;
     color: #ffffff;
     border-top: 4px solid #d1b17e;
@@ -294,12 +294,9 @@ nav a:hover, nav a.active {
     margin: 0;
 }
 
-/* ==========================================================
-   SEPARADORES VERDES MÁS ESTRECHOS Y COMPACTOS
-   ========================================================== */
 .separador-verde {
     background-color: #1b3b2b;
-    padding: 25px 5%; /* Reducido de 50px a 25px arriba y abajo */
+    padding: 25px 5%;
     text-align: center;
     color: #ffffff;
     border-top: 3px solid #d1b17e;
@@ -307,14 +304,14 @@ nav a:hover, nav a.active {
 }
 
 .separador-verde-contenido h3 {
-    font-size: 22px; /* Letra un poco más pequeña y estrecha */
+    font-size: 22px;
     font-weight: 700;
     margin-bottom: 6px;
     line-height: 1.2;
 }
 
 .separador-verde-contenido p {
-    font-size: 15px; /* Texto secundario más compacto */
+    font-size: 15px;
     color: #fdfcf7;
     opacity: 0.9;
     margin: 0;
@@ -336,14 +333,13 @@ nav a:hover, nav a.active {
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #d1b17e; /* Color dorado a juego con la línea */
+    color: #d1b17e;
     font-weight: 700;
     display: inline-block;
     margin-bottom: 8px;
     position: relative;
 }
 
-/* La línea fina debajo del texto */
 .subtitulo-pequeno::after {
     content: '';
     display: block;
@@ -367,10 +363,7 @@ nav a:hover, nav a.active {
     line-height: 1.6;
 }
 
-/* PASOS PASO A PASO */
-/* ==========================================================
-   DISEÑO PASO A PASO HORIZONTAL ELEGANTE (CON LÍNEAS)
-   ========================================================== */
+/* PASO A PASO HORIZONTAL (Círculos aumentados a 85px como se indicó) */
 .pasos-contenedor-horizontal {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -383,11 +376,10 @@ nav a:hover, nav a.active {
     margin-right: auto;
 }
 
-/* Línea punteada de fondo que conecta los círculos */
 .pasos-contenedor-horizontal::before {
     content: '';
     position: absolute;
-    top: 35px; /* Altura centrada con el círculo grande */
+    top: 42px; /* Ajustado al nuevo tamaño de 85px */
     left: 8%;
     right: 8%;
     height: 2px;
@@ -402,13 +394,13 @@ nav a:hover, nav a.active {
     flex-direction: column;
     align-items: center;
     position: relative;
-    z-index: 2; /* Para que quede por encima de la línea punteada */
+    z-index: 2;
 }
 
 .paso-icono-circulo {
-    width: 70px;
-    height: 70px;
-    background-color: #ffffff; /* Blanco para destacar sobre la línea */
+    width: 85px;
+    height: 85px;
+    background-color: #ffffff;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -419,7 +411,7 @@ nav a:hover, nav a.active {
 }
 
 .paso-icono-circulo i {
-    font-size: 22px;
+    font-size: 28px;
     color: #1b3b2b;
 }
 
@@ -448,39 +440,6 @@ nav a:hover, nav a.active {
     font-size: 13px;
     color: #4a5568;
     line-height: 1.4;
-}
-
-/* Solo pasa a vertical en móviles muy pequeños (menores de 768px) para que no se apelotone */
-@media(max-width: 768px) {
-    .pasos-contenedor-horizontal {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-    .pasos-contenedor-horizontal::before {
-        display: none; /* Ocultamos la línea punteada en móvil vertical */
-    }
-}
-
-
-/* Responsivo para móviles (pasa a columna vertical para que no se amontone) */
-@media(max-width: 950px) {
-    .pasos-contenedor-horizontal {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-}
-
-/* CORRECCIÓN PARA TABLETS Y MÓVILES (Evita que se solapen) */
-@media(max-width: 1200px) {
-    .pasos-contenedor {
-        grid-template-columns: repeat(3, 1fr); /* 3 arriba y 2 abajo en pantallas medianas */
-    }
-}
-
-@media(max-width: 768px) {
-    .pasos-contenedor {
-        grid-template-columns: 1fr; /* Una columna vertical limpia en móviles */
-    }
 }
 
 /* ¿QUÉ INCLUYE? */
@@ -530,7 +489,7 @@ nav a:hover, nav a.active {
     line-height: 1.5;
 }
 
-/* SECCIÓN TRES PLANES DE TARIFAS */
+/* TARIFA (3 PLANES) */
 .tarifa-seccion-tres {
     max-width: 1100px;
     margin: 0 auto;
@@ -664,10 +623,7 @@ nav a:hover, nav a.active {
     background-color: #2c5942;
 }
 
-/* ==========================================================
-   CORRECCIÓN: DISEÑO DE DESCUENTOS Y CONTACTO
-   ========================================================== */
-
+/* DESCUENTOS Y COMPROMISO SOCIAL */
 .seccion-descuentos-solidarios {
     margin-top: 50px;
     background-color: #ffffff;
@@ -706,51 +662,73 @@ nav a:hover, nav a.active {
     line-height: 1.5;
 }
 
-@media(max-width: 768px) {
-    .descuentos-grid-cuatro {
-        grid-template-columns: 1fr;
-    }
+/* SECCIÓN CONTACTO */
+.seccion-contacto {
+    padding: 90px 8%;
+    background-color: #f7f4ee;
+    text-align: center;
 }
 
-/* Caja principal de contacto y botones de correo/instagram */
-/* ==========================================================
-   CORRECCIÓN RESPONSIVE PARA EL CONTACTO
-   ========================================================== */
-@media (max-width: 768px) {
-    .contacto-caja-principal {
-        padding: 30px 20px;
-    }
-
-    .contacto-caja-principal h2 {
-        font-size: 28px;
-    }
-
-    .contacto-caja-principal p {
-        font-size: 15px;
-    }
-
-    .contacto-enlace-oficial {
-        font-size: 14px;
-        padding: 12px 20px;
-        width: 100%;
-        max-width: 100%;
-        word-break: break-word; /* Evita que los correos largos o enlaces rompan el diseño */
-    }
-
-    .contacto-enlace-oficial i {
-        font-size: 18px;
-        flex-shrink: 0;
-    }
+.contacto-caja-principal {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(27, 59, 43, 0.06);
+    border: 1px solid rgba(209, 177, 126, 0.3);
 }
 
-
-/* Responsivo para móviles */
-@media(max-width: 768px) {
-    .descuentos-grid-cuatro {
-        grid-template-columns: 1fr;
-    }
+.contacto-caja-principal h2 {
+    font-size: 36px;
+    color: #1b3b2b;
+    margin-bottom: 15px;
+    font-weight: 700;
 }
 
+.contacto-caja-principal p {
+    font-size: 17px;
+    color: #4a5568;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+.contacto-info-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contacto-enlace-oficial {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #faf9f6;
+    color: #1b3b2b;
+    padding: 14px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    border: 1px solid rgba(209, 177, 126, 0.5);
+    transition: all 0.3s ease;
+}
+
+.contacto-enlace-oficial:hover {
+    background-color: #1b3b2b;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.contacto-enlace-oficial i {
+    font-size: 20px;
+    color: #d1b17e;
+}
+
+.contacto-enlace-oficial:hover i {
+    color: #d1b17e;
+}
 
 /* PIE DE PÁGINA (FOOTER) */
 footer {
@@ -800,11 +778,9 @@ footer {
     color: #ffffff;
 }
 
-/* ==========================================================
-   RESPONSIVE (TABLETS Y MÓVILES)
-   ========================================================== */
-@media(max-width: 1024px){
-    header{
+/* RESPONSIVE (TABLETS Y MÓVILES) */
+@media(max-width: 1024px) {
+    header {
         flex-direction: column;
         gap: 15px;
         padding: 15px;
@@ -840,25 +816,22 @@ footer {
         flex-wrap: wrap;
     }
 
-    .texto h1{
+    .texto h1 {
         font-size: 38px;
     }
 
-    .texto p{
+    .texto p {
         font-size: 17px;
     }
 }
 
 @media(max-width: 950px) {
-    .pasos-contenedor {
-        grid-template-columns: repeat(2, 1fr);
+    .pasos-contenedor-horizontal {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
-    .paso-item:nth-child(4) {
-        grid-column: auto;
-        margin-left: 0;
-    }
-    .paso-item:nth-child(5) {
-        grid-column: auto;
+    .pasos-contenedor-horizontal::before {
+        display: none;
     }
 
     .planes-grid-tres {
@@ -916,34 +889,33 @@ footer {
     }
 }
 
-@media(max-width: 600px) {
-    .pasos-contenedor {
+@media(max-width: 768px) {
+    .descuentos-grid-cuatro {
         grid-template-columns: 1fr;
     }
-    .contacto-contenedor {
+
+    .contacto-caja-principal {
         padding: 30px 20px;
     }
 
-    /* CORRECCIÓN PARA CENTRAR LOS PASOS 4 Y 5 PERFECTAMENTE ABAJO */
-@media(min-width: 951px) {
-    .pasos-contenedor {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        gap: 30px;
+    .contacto-caja-principal h2 {
+        font-size: 28px;
     }
-    
-    .paso-item:nth-child(1) { grid-column: 1 / 3; }
-    .paso-item:nth-child(2) { grid-column: 3 / 5; }
-    .paso-item:nth-child(3) { grid-column: 5 / 7; }
-    
-    /* El 4 y el 5 ocupan dos huecos cada uno y se colocan centrados en la segunda fila */
-    .paso-item:nth-child(4) { 
-        grid-column: 2 / 4; 
-        margin-left: 0;
+
+    .contacto-caja-principal p {
+        font-size: 15px;
     }
-    .paso-item:nth-child(5) { 
-        grid-column: 4 / 6; 
-        margin-left: 0;
+
+    .contacto-enlace-oficial {
+        font-size: 14px;
+        padding: 12px 20px;
+        width: 100%;
+        max-width: 100%;
+        word-break: break-word;
+    }
+
+    .contacto-enlace-oficial i {
+        font-size: 18px;
+        flex-shrink: 0;
     }
 }
-
