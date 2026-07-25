@@ -8,6 +8,7 @@
 body{
     background:#faf9f6;
     color:#2b2b2b;
+    overflow-x: hidden;
 }
 
 /* HEADER / CABECERA */
@@ -75,6 +76,51 @@ nav a:hover, nav a.active {
 
 .btn-reservar:hover {
     background-color: #2c5942;
+}
+
+/* BARRA DE AVISO EN MOVIMIENTO (MARQUESINA) */
+.barra-aviso-movimiento {
+    background-color: #1b3b2b;
+    color: #ffffff;
+    padding: 12px 0;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    border-bottom: 2px solid #d1b17e;
+    z-index: 999;
+}
+
+.marquesina-contenido {
+    display: inline-block;
+    white-space: nowrap;
+    animation: moverDerecha 25s linear infinite;
+    padding-left: 100%; 
+}
+
+.marquesina-contenido span {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+}
+
+.marquesina-contenido strong {
+    color: #d1b17e;
+    font-weight: 700;
+}
+
+@keyframes moverDerecha {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.barra-aviso-movimiento:hover .marquesina-contenido {
+    animation-play-state: paused;
 }
 
 /* SECCIÓN HERO */
@@ -222,7 +268,7 @@ nav a:hover, nav a.active {
     margin-bottom: 20px;
 }
 
-/* SEPARADOR ESTÉTICO */
+/* SEPARADORES */
 .separador-estetico {
     background: linear-gradient(to right, #1b3b2b, #fdfcf7); 
     padding: 60px 5%;
@@ -247,7 +293,6 @@ nav a:hover, nav a.active {
     opacity: 0.9;
 }
 
-/* SEGUNDO SEPARADOR - VERDE CORPORATIVO */
 .separador-verde {
     background-color: #1b3b2b;
     padding: 50px 5%;
@@ -270,13 +315,12 @@ nav a:hover, nav a.active {
     opacity: 0.9;
 }
 
-/* ESTILOS SECCIÓN CÓMO TRABAJO */
+/* SECCIÓN CÓMO TRABAJO */
 .seccion-como-trabajo {
     padding: 90px 8%;
     background-color: #faf9f6;
 }
 
-/* ESTILOS CORREGIDOS PARA LA CABECERA DE CÓMO TRABAJO */
 .trabajo-header {
     text-align: center;
     max-width: 750px;
@@ -287,7 +331,7 @@ nav a:hover, nav a.active {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
-    color: #d1b17e; /* Cambiado a tono dorado elegante para que destaque con finura */
+    color: #d1b17e;
     font-weight: 700;
     display: block;
     margin-bottom: 12px;
@@ -307,22 +351,19 @@ nav a:hover, nav a.active {
     line-height: 1.6;
 }
 
-/* ESTILOS CORREGIDOS PARA LOS 5 PASOS (3 ARRIBA, 2 ABAJO CENTRADOS) */
+/* LOS 5 PASOS (3 ARRIBA, 2 ABAJO CENTRADOS) */
 .pasos-contenedor {
     display: grid;
-    /* Creamos una cuadrícula de 3 columnas en pantallas grandes */
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-bottom: 70px;
-    max-width: 1050px;
+    max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Hacemos que los elementos 4 y 5 se coloquen centrados en la segunda fila */
 .paso-item:nth-child(4) {
     grid-column: 1 / 2;
-    /* Esto desplaza ligeramente el cuarto elemento para que junto al quinto queden centrados */
     margin-left: 50%; 
 }
 
@@ -340,27 +381,8 @@ nav a:hover, nav a.active {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-/* Adaptación responsive para pantallas medianas y móviles */
-@media(max-width: 900px) {
-    .pasos-contenedor {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    /* Quitamos el desplazamiento especial en tablets y móviles para que fluyan normal */
-    .paso-item:nth-child(4) {
-        grid-column: auto;
-        margin-left: 0;
-    }
-    .paso-item:nth-child(5) {
-        grid-column: auto;
-    }
-}
-
-@media(max-width: 600px) {
-    .pasos-contenedor {
-        grid-template-columns: 1fr;
-    }
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* ¿QUÉ INCLUYE? */
@@ -371,6 +393,9 @@ nav a:hover, nav a.active {
     box-shadow: 0 15px 35px rgba(27, 59, 43, 0.05);
     border: 1px solid rgba(209, 177, 126, 0.3);
     margin-bottom: 70px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .incluye-caja-grande > h3 {
@@ -407,222 +432,7 @@ nav a:hover, nav a.active {
     line-height: 1.5;
 }
 
-/* TARIFA SECCIÓN */
-.tarifa-seccion {
-    max-width: 450px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.tarifa-seccion > h3 {
-    font-size: 24px;
-    color: #1b3b2b;
-    margin-bottom: 25px;
-    font-weight: 700;
-}
-
-.tarjeta-plan-individual {
-    background: linear-gradient(135deg, #1b3b2b, #2c5942);
-    color: white;
-    padding: 40px;
-    border-radius: 25px;
-    box-shadow: 0 15px 35px rgba(27, 59, 43, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.precio-etiqueta {
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: #d1b17e;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-.precio-numero {
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 5px;
-    color: #ffffff;
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    gap: 5px;
-}
-
-.precio-numero span {
-    font-size: 20px;
-    font-weight: 400;
-    color: #d1b17e;
-}
-
-.precio-iva {
-    font-size: 12px;
-    color: #d1b17e;
-    margin-bottom: 15px;
-    font-weight: 500;
-}
-
-.precio-descuento-aviso {
-    background-color: rgba(255, 255, 255, 0.15);
-    color: #ffffff;
-    font-size: 13px;
-    padding: 8px 12px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    border: 1px dashed rgba(209, 177, 126, 0.6);
-    text-align: center;
-    width: 100%;
-}
-
-.precio-detalle {
-    font-size: 13px;
-    color: #fdfcf7;
-    opacity: 0.8;
-    margin-bottom: 25px;
-}
-
-.btn-plan {
-    display: inline-block;
-    background-color: #d1b17e;
-    color: #1b3b2b;
-    padding: 14px 30px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 15px;
-    transition: .3s;
-    width: 100%;
-    max-width: 200px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.btn-plan:hover {
-    background-color: #e2c493;
-    transform: translateY(-2px);
-}
-
-/* ==========================================================
-   RESPONSIVE PARA MÓVILES Y PANTALLAS ESTRECHAS
-   ========================================================== */
-@media(max-width: 1024px){
-    header{
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px;
-    }
-    
-    .logo-container, nav, .cta-container {
-        width: 100%;
-        justify-content: center;
-        text-align: center;
-    }
-
-    nav {
-        gap: 20px;
-        flex-wrap: wrap;
-    }
-
-    nav a {
-        font-size: 15px;
-    }
-
-    .hero {
-        padding: 40px 5%;
-        text-align: left;
-        background-position: center;
-    }
-
-    .texto {
-        max-width: 100%;
-    }
-
-    .botones-hero {
-        justify-content: flex-start;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .texto h1{
-        font-size: 38px;
-    }
-
-    .texto p{
-        font-size: 17px;
-    }
-}
-
-@media(max-width: 900px) {
-    .sobre-mi {
-        padding: 40px 4%;
-    }
-    
-    .sobre-mi-contenedor {
-        flex-direction: column;
-        text-align: left;
-        padding: 25px 20px;
-        gap: 30px;
-        border-radius: 15px;
-    }
-
-    .sobre-mi-imagen img {
-        max-width: 260px;
-        margin: 0 auto;
-        display: block;
-    }
-
-    .sobre-mi-texto h2 {
-        font-size: 28px;
-        text-align: center;
-    }
-
-    .subtitulo-sobremi {
-        font-size: 16px;
-        text-align: center;
-    }
-
-    .sobre-mi-texto p {
-        font-size: 15px;
-        text-align: left;
-    }
-
-    .seccion-como-trabajo {
-        padding: 50px 4%;
-    }
-    
-    .trabajo-header h2 {
-        font-size: 32px;
-    }
-    
-    .incluye-caja-grande {
-        padding: 30px 20px;
-    }
-}
-
-@media(max-width: 768px) {
-    .separador-estetico {
-        padding: 40px 5%;
-    }
-    .separador-contenido h3 {
-        font-size: 26px;
-    }
-    .separador-contenido p {
-        font-size: 16px;
-    }
-    .separador-verde {
-        padding: 35px 5%;
-    }
-    .separador-verde-contenido h3 {
-        font-size: 22px;
-    }
-    .separador-verde-contenido p {
-        font-size: 15px;
-    }
-
-   /* ESTILOS CORREGIDOS PARA LOS TRES PLANES DE TARIFAS */
+/* SECCIÓN TRES PLANES DE TARIFAS */
 .tarifa-seccion-tres {
     max-width: 1100px;
     margin: 0 auto;
@@ -638,7 +448,6 @@ nav a:hover, nav a.active {
 
 .planes-grid-tres {
     display: grid;
-    /* Forzamos exactamente 3 columnas iguales en pantallas grandes para que no se estiren de más */
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     align-items: stretch;
@@ -664,11 +473,9 @@ nav a:hover, nav a.active {
     transform: translateY(-5px);
 }
 
-/* PLAN DESTACADO (TRIMESTRAL) */
 .plan-destacado {
     border: 2px solid #d1b17e;
     box-shadow: 0 15px 40px rgba(27, 59, 43, 0.1);
-    /* Hacemos que sobresalga ligeramente o destaque de forma limpia en escritorio */
     z-index: 2;
 }
 
@@ -742,6 +549,7 @@ nav a:hover, nav a.active {
     transition: .3s;
     width: 100%;
     margin-top: auto;
+    box-sizing: border-box;
 }
 
 .btn-plan-opcion:hover {
@@ -758,35 +566,7 @@ nav a:hover, nav a.active {
     background-color: #2c5942;
 }
 
-/* Adaptación responsive para pantallas medianas y móviles */
-@media(max-width: 950px) {
-    .planes-grid-tres {
-        grid-template-columns: 1fr;
-        max-width: 450px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-/* AVISO INFERIOR */
-.aviso-familias-numerosas {
-    margin-top: 40px;
-    background-color: #ffffff;
-    padding: 20px 25px;
-    border-radius: 15px;
-    font-size: 14px;
-    color: #4a5568;
-    border: 1px solid rgba(209, 177, 126, 0.3);
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 5px 15px rgba(27, 59, 43, 0.03);
-}
-
-.aviso-familias-numerosas strong {
-    color: #1b3b2b;
-}
-    /* ESTILOS PARA EL APARTADO EMOTIVO DE DESCUENTOS */
+/* DESCUENTOS SOLIDARIOS */
 .seccion-descuentos-solidarios {
     margin-top: 50px;
     background-color: #ffffff;
@@ -841,53 +621,8 @@ nav a:hover, nav a.active {
     color: #4a5568;
     line-height: 1.5;
 }
-/* ESTILOS CORREGIDOS PARA LA BARRA EN MOVIMIENTO */
-.barra-aviso-movimiento {
-    background-color: #1b3b2b;
-    color: #ffffff;
-    padding: 12px 0;
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    border-bottom: 2px solid #d1b17e;
-    z-index: 999;
-}
 
-.marquesina-contenido {
-    display: inline-block;
-    white-space: nowrap;
-    animation: moverDerecha 25s linear infinite;
-    /* Forzamos que ocupe espacio para que la animación no se atasque */
-    padding-left: 100%; 
-}
-
-.marquesina-contenido span {
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    color: #ffffff;
-}
-
-.marquesina-contenido strong {
-    color: #d1b17e;
-    font-weight: 700;
-}
-
-/* Animación fluida de izquierda a derecha */
-@keyframes moverDerecha {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-.barra-aviso-movimiento:hover .marquesina-contenido {
-    animation-play-state: paused;
-}
-    /* ESTILOS SECCIÓN CONTACTO */
+/* SECCIÓN CONTACTO */
 .seccion-contacto {
     padding: 90px 8%;
     background-color: #faf9f6;
@@ -902,6 +637,7 @@ nav a:hover, nav a.active {
     border-radius: 25px;
     box-shadow: 0 15px 35px rgba(27, 59, 43, 0.05);
     border: 1px solid rgba(209, 177, 126, 0.3);
+    box-sizing: border-box;
 }
 
 .seccion-contacto h2 {
@@ -941,6 +677,8 @@ nav a:hover, nav a.active {
     width: 100%;
     max-width: 450px;
     justify-content: center;
+    box-sizing: border-box;
+    word-break: break-word;
 }
 
 .contacto-item:hover {
@@ -1000,4 +738,129 @@ footer {
     text-decoration: underline;
     color: #ffffff;
 }
+
+/* ==========================================================
+   RESPONSIVE (TABLETS Y MÓVILES)
+   ========================================================== */
+@media(max-width: 1024px){
+    header{
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .logo-container, nav, .cta-container {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    .hero {
+        padding: 40px 5%;
+        text-align: left;
+    }
+
+    .texto {
+        max-width: 100%;
+    }
+
+    .botones-hero {
+        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .texto h1{
+        font-size: 38px;
+    }
+
+    .texto p{
+        font-size: 17px;
+    }
 }
+
+@media(max-width: 950px) {
+    .pasos-contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .paso-item:nth-child(4) {
+        grid-column: auto;
+        margin-left: 0;
+    }
+    .paso-item:nth-child(5) {
+        grid-column: auto;
+    }
+
+    .planes-grid-tres {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(max-width: 900px) {
+    .sobre-mi {
+        padding: 40px 4%;
+    }
+    
+    .sobre-mi-contenedor {
+        flex-direction: column;
+        text-align: left;
+        padding: 25px 20px;
+        gap: 30px;
+        border-radius: 15px;
+    }
+
+    .sobre-mi-imagen img {
+        max-width: 260px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .sobre-mi-texto h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .subtitulo-sobremi {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .sobre-mi-texto p {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .seccion-como-trabajo {
+        padding: 50px 4%;
+    }
+    
+    .trabajo-header h2 {
+        font-size: 32px;
+    }
+    
+    .incluye-caja-grande {
+        padding: 30px 20px;
+    }
+}
+
+@media(max-width: 600px) {
+    .pasos-contenedor {
+        grid-template-columns: 1fr;
+    }
+    .contacto-contenedor {
+        padding: 30px 20px;
+    }
+}
+
