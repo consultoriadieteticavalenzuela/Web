@@ -758,4 +758,59 @@ nav a:hover, nav a.active {
 .aviso-familias-numerosas strong {
     color: #1b3b2b;
 }
+    /* ESTILOS PARA EL APARTADO EMOTIVO DE DESCUENTOS */
+.seccion-descuentos-solidarios {
+    margin-top: 50px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 25px;
+    border: 1px solid rgba(209, 177, 126, 0.4);
+    box-shadow: 0 10px 30px rgba(27, 59, 43, 0.04);
+    text-align: left;
+}
+
+.descuentos-header-emotivo {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+.descuentos-header-emotivo h4 {
+    font-size: 22px;
+    color: #1b3b2b;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.descuentos-header-emotivo p {
+    font-size: 15px;
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.grid-descuentos-solidarios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.item-descuento {
+    background: #faf9f6;
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 4px solid #d1b17e;
+}
+
+.item-descuento strong {
+    font-size: 15px;
+    color: #1b3b2b;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.item-descuento p {
+    font-size: 13px;
+    color: #4a5568;
+    line-height: 1.5;
+}
 }
