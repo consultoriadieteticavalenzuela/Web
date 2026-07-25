@@ -276,27 +276,29 @@ nav a:hover, nav a.active {
     background-color: #faf9f6;
 }
 
+/* ESTILOS CORREGIDOS PARA LA CABECERA DE CÓMO TRABAJO */
 .trabajo-header {
     text-align: center;
-    max-width: 700px;
+    max-width: 750px;
     margin: 0 auto 60px auto;
 }
 
 .subtitulo-pequeno {
-    font-size: 13px;
+    font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #1b3b2b;
+    letter-spacing: 2.5px;
+    color: #d1b17e; /* Cambiado a tono dorado elegante para que destaque con finura */
     font-weight: 700;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .trabajo-header h2 {
-    font-size: 42px;
+    font-size: 40px;
     color: #1b3b2b;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     font-weight: 700;
+    line-height: 1.2;
 }
 
 .trabajo-header p {
@@ -305,12 +307,27 @@ nav a:hover, nav a.active {
     line-height: 1.6;
 }
 
-/* PASOS PASO A PASO */
+/* ESTILOS CORREGIDOS PARA LOS 5 PASOS (3 ARRIBA, 2 ABAJO CENTRADOS) */
 .pasos-contenedor {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Creamos una cuadrícula de 3 columnas en pantallas grandes */
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-bottom: 70px;
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hacemos que los elementos 4 y 5 se coloquen centrados en la segunda fila */
+.paso-item:nth-child(4) {
+    grid-column: 1 / 2;
+    /* Esto desplaza ligeramente el cuarto elemento para que junto al quinto queden centrados */
+    margin-left: 50%; 
+}
+
+.paso-item:nth-child(5) {
+    grid-column: 2 / 3;
 }
 
 .paso-item {
@@ -320,33 +337,30 @@ nav a:hover, nav a.active {
     text-align: center;
     box-shadow: 0 10px 25px rgba(27, 59, 43, 0.04);
     border: 1px solid rgba(209, 177, 126, 0.2);
-}
-
-.paso-circulo {
-    width: 45px;
-    height: 45px;
-    background-color: #1b3b2b;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 700;
-    border-radius: 50%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: 0 auto 20px auto;
 }
 
-.paso-item h3 {
-    font-size: 18px;
-    color: #1b3b2b;
-    margin-bottom: 10px;
-    font-weight: 700;
+/* Adaptación responsive para pantallas medianas y móviles */
+@media(max-width: 900px) {
+    .pasos-contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* Quitamos el desplazamiento especial en tablets y móviles para que fluyan normal */
+    .paso-item:nth-child(4) {
+        grid-column: auto;
+        margin-left: 0;
+    }
+    .paso-item:nth-child(5) {
+        grid-column: auto;
+    }
 }
 
-.paso-item p {
-    font-size: 14px;
-    color: #4a5568;
-    line-height: 1.5;
+@media(max-width: 600px) {
+    .pasos-contenedor {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ¿QUÉ INCLUYE? */
