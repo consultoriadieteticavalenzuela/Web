@@ -368,68 +368,99 @@ nav a:hover, nav a.active {
 }
 
 /* PASOS PASO A PASO */
+/* ==========================================================
+   DISEÑO PASO A PASO HORIZONTAL ELEGANTE (CON LÍNEAS)
+   ========================================================== */
 .pasos-contenedor-horizontal {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
+    gap: 15px;
     margin-bottom: 70px;
     position: relative;
     text-align: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Línea punteada de fondo que conecta los círculos */
+.pasos-contenedor-horizontal::before {
+    content: '';
+    position: absolute;
+    top: 35px; /* Altura centrada con el círculo grande */
+    left: 8%;
+    right: 8%;
+    height: 2px;
+    border-top: 2px dashed rgba(209, 177, 126, 0.6);
+    z-index: 1;
 }
 
 .paso-item-h {
     background: transparent;
-    padding: 0 10px;
+    padding: 0 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    z-index: 2;
+    z-index: 2; /* Para que quede por encima de la línea punteada */
 }
 
 .paso-icono-circulo {
     width: 70px;
     height: 70px;
-    background-color: #f2eee3;
+    background-color: #ffffff; /* Blanco para destacar sobre la línea */
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 15px;
-    border: 1px solid rgba(209, 177, 126, 0.3);
+    margin-bottom: 12px;
+    border: 1px solid rgba(209, 177, 126, 0.4);
+    box-shadow: 0 4px 10px rgba(27, 59, 43, 0.04);
 }
 
 .paso-icono-circulo i {
-    font-size: 24px;
+    font-size: 22px;
     color: #1b3b2b;
 }
 
 .paso-numero-badge {
-    width: 26px;
-    height: 26px;
+    width: 24px;
+    height: 24px;
     background-color: #1b3b2b;
     color: #ffffff;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .paso-item-h h3 {
-    font-size: 17px;
+    font-size: 16px;
     color: #1b3b2b;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-weight: 700;
 }
 
 .paso-item-h p {
-    font-size: 14px;
+    font-size: 13px;
     color: #4a5568;
-    line-height: 1.5;
+    line-height: 1.4;
 }
+
+/* Solo pasa a vertical en móviles muy pequeños (menores de 768px) para que no se apelotone */
+@media(max-width: 768px) {
+    .pasos-contenedor-horizontal {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .pasos-contenedor-horizontal::before {
+        display: none; /* Ocultamos la línea punteada en móvil vertical */
+    }
+}
+
 
 /* Responsivo para móviles (pasa a columna vertical para que no se amontone) */
 @media(max-width: 950px) {
