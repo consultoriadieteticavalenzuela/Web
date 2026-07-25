@@ -162,50 +162,30 @@ nav a:hover, nav a.active {
     font-weight: 700;
 }
 
-/* Subtítulo "Consultoría Dietética Valenzuela" con presencia potente pero elegante */
-.subtitulo-hero-destacado {
+/* Subtítulo "Consultoría Dietética Valenzuela" en dorado y negrita */
+.subtitulo-hero-dorado {
     font-size: 22px;
     font-weight: 700;
-    color: #1b3b2b;
-    margin-bottom: 18px;
+    color: #d1b17e;
+    margin-bottom: 12px;
     letter-spacing: 0.5px;
-    border-left: 4px solid #d1b17e;
-    padding-left: 12px;
 }
 
-.descripcion-hero {
-    font-size: 18px;
-    line-height: 1.6;
+/* Descripción más pequeña y en cursiva */
+.descripcion-hero-cursiva {
+    font-size: 15px;
+    line-height: 1.5;
     margin-bottom: 30px;
     color: #4a5568;
+    font-style: italic;
     font-weight: 400;
 }
 
-/* Botones principales restaurados */
+/* Contenedor del enlace secundario limpio */
 .botones-hero {
     display: flex;
-    gap: 20px;
     align-items: center;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
-}
-
-.boton {
-    display: inline-block;
-    background: #1b3b2b;
-    color: white;
-    padding: 16px 34px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
-    transition: .3s;
-    box-shadow: 0 4px 15px rgba(27, 59, 43, 0.2);
-}
-
-.boton:hover {
-    background: #2c5942;
-    transform: translateY(-2px);
+    margin-bottom: 10px;
 }
 
 .enlace-secundario {
@@ -219,29 +199,6 @@ nav a:hover, nav a.active {
 .enlace-secundario:hover {
     text-decoration: underline;
 }
-
-/* Características con símbolos dorados recuperados */
-.caracteristicas-iconos {
-    display: flex;
-    gap: 25px;
-    flex-wrap: wrap;
-}
-
-.caracteristicas-iconos span {
-    font-size: 14px;
-    color: #4a5568;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.caracteristicas-iconos i {
-    color: #d1b17e;
-    font-size: 16px;
-}
-
-
 
 /* SECCIÓN SOBRE MÍ */
 .sobre-mi {
