@@ -813,4 +813,46 @@ nav a:hover, nav a.active {
     color: #4a5568;
     line-height: 1.5;
 }
+    /* ESTILOS PARA LA BARRA EN MOVIMIENTO */
+.barra-aviso-movimiento {
+    background-color: #1b3b2b;
+    color: #ffffff;
+    padding: 12px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    border-bottom: 2px solid #d1b17e;
+    z-index: 999;
+}
+
+.marquesina-contenido {
+    display: inline-block;
+    animation: moverDerecha 25s linear infinite;
+}
+
+.marquesina-contenido span {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.marquesina-contenido strong {
+    color: #d1b17e;
+    font-weight: 700;
+}
+
+/* Animación para que se mueva siempre hacia la derecha */
+@keyframes moverDerecha {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* Pausar el movimiento si el usuario pasa el ratón por encima (muy útil para leerlo con calma) */
+.barra-aviso-movimiento:hover .marquesina-contenido {
+    animation-play-state: paused;
+}
 }
