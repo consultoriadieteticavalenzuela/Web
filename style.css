@@ -159,7 +159,7 @@ nav a:hover, nav a.active {
     text-decoration: underline;
 }
 
-/* SECCIÓN SOBRE MÍ (ESTILOS GENERALES) */
+/* SECCIÓN SOBRE MÍ */
 .sobre-mi {
     width: 100%;
     padding: 90px 8%;
@@ -169,7 +169,7 @@ nav a:hover, nav a.active {
 
 .sobre-mi-contenedor {
     display: flex;
-    align-items: center; /* Esto centra la foto a la altura de la mitad del texto */
+    align-items: center;
     justify-content: space-between;
     gap: 50px;
     max-width: 1100px;
@@ -188,8 +188,8 @@ nav a:hover, nav a.active {
 
 .sobre-mi-imagen img {
     width: 100%;
-    max-width: 330px; /* Antes estaba en 240px */
-    height: 330px; /* Debe medir lo mismo que el ancho para que siga siendo redonda */
+    max-width: 330px;
+    height: 330px;
     object-fit: cover;
     object-position: top center;
     border-radius: 50%;
@@ -270,90 +270,151 @@ nav a:hover, nav a.active {
     opacity: 0.9;
 }
 
-/* SECCIÓN EL MÉTODO */
-.seccion-metodo {
+/* ESTILOS SECCIÓN CÓMO TRABAJO */
+.seccion-como-trabajo {
     padding: 90px 8%;
     background-color: #faf9f6;
 }
 
-.metodo-contenedor {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.metodo-header {
+.trabajo-header {
     text-align: center;
-    margin-bottom: 50px;
+    max-width: 700px;
+    margin: 0 auto 60px auto;
 }
 
-.metodo-header h2 {
-    font-size: 38px;
+.subtitulo-pequeno {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #1b3b2b;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.trabajo-header h2 {
+    font-size: 42px;
     color: #1b3b2b;
     margin-bottom: 15px;
     font-weight: 700;
 }
 
-.subtitulo-metodo {
-    font-size: 18px;
-    color: #4a5568;
-}
-
-/* TARJETA ÚNICA DEL PLAN (ESTRUCTURA DE DOS COLUMNAS) */
-.tarjeta-plan {
-    background-color: #ffffff;
-    border-radius: 25px;
-    box-shadow: 0 15px 35px rgba(27, 59, 43, 0.06);
-    border: 1px solid rgba(209, 177, 126, 0.3);
-    display: flex;
-    overflow: hidden;
-}
-
-.plan-info {
-    flex: 1.4;
-    padding: 50px;
-}
-
-.plan-info h3 {
-    font-size: 26px;
-    color: #1b3b2b;
-    margin-bottom: 15px;
-    font-weight: 700;
-}
-
-.plan-descripcion {
-    font-size: 16px;
+.trabajo-header p {
+    font-size: 17px;
     color: #4a5568;
     line-height: 1.6;
-    margin-bottom: 30px;
 }
 
-.plan-lista {
-    list-style: none;
+/* PASOS PASO A PASO */
+.pasos-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 70px;
 }
 
-.plan-lista li {
-    font-size: 15px;
-    color: #2b2b2b;
-    margin-bottom: 15px;
+.paso-item {
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(27, 59, 43, 0.04);
+    border: 1px solid rgba(209, 177, 126, 0.2);
+}
+
+.paso-circulo {
+    width: 45px;
+    height: 45px;
+    background-color: #1b3b2b;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 50%;
     display: flex;
     align-items: center;
-    gap: 12px;
+    justify-content: center;
+    margin: 0 auto 20px auto;
 }
 
-.plan-lista span {
+.paso-item h3 {
+    font-size: 18px;
     color: #1b3b2b;
-    font-weight: bold;
+    margin-bottom: 10px;
+    font-weight: 700;
 }
 
-/* CAJA DE PRECIO LATERAL */
-.plan-precio-caja {
-    flex: 1;
+.paso-item p {
+    font-size: 14px;
+    color: #4a5568;
+    line-height: 1.5;
+}
+
+/* ¿QUÉ INCLUYE? */
+.incluye-caja-grande {
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 50px;
+    box-shadow: 0 15px 35px rgba(27, 59, 43, 0.05);
+    border: 1px solid rgba(209, 177, 126, 0.3);
+    margin-bottom: 70px;
+}
+
+.incluye-caja-grande > h3 {
+    text-align: center;
+    font-size: 26px;
+    color: #1b3b2b;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.incluye-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.incluye-card {
+    background: #faf9f6;
+    padding: 20px 25px;
+    border-radius: 15px;
+    border-left: 4px solid #1b3b2b;
+}
+
+.incluye-card strong {
+    font-size: 16px;
+    color: #1b3b2b;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.incluye-card p {
+    font-size: 14px;
+    color: #4a5568;
+    line-height: 1.5;
+}
+
+/* TARIFA SECCIÓN */
+.tarifa-seccion {
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tarifa-seccion > h3 {
+    font-size: 24px;
+    color: #1b3b2b;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.tarjeta-plan-individual {
     background: linear-gradient(135deg, #1b3b2b, #2c5942);
     color: white;
-    padding: 50px 40px;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(27, 59, 43, 0.1);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
 }
@@ -514,18 +575,16 @@ nav a:hover, nav a.active {
         text-align: left;
     }
 
-    /* Adaptación de la tarjeta del método en móviles */
-    .tarjeta-plan {
-        flex-direction: column;
-    }
-    .plan-info {
-        padding: 30px 20px;
-    }
-    .plan-precio-caja {
-        padding: 40px 20px;
-    }
-    .seccion-metodo {
+    .seccion-como-trabajo {
         padding: 50px 4%;
+    }
+    
+    .trabajo-header h2 {
+        font-size: 32px;
+    }
+    
+    .incluye-caja-grande {
+        padding: 30px 20px;
     }
 }
 
@@ -549,4 +608,3 @@ nav a:hover, nav a.active {
         font-size: 15px;
     }
 }
-
