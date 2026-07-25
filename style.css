@@ -636,67 +636,49 @@ nav a:hover, nav a.active {
     text-align: center;
 }
 
-.contacto-contenedor {
-    max-width: 700px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    padding: 50px;
-    border-radius: 25px;
-    box-shadow: 0 15px 35px rgba(27, 59, 43, 0.05);
-    border: 1px solid rgba(209, 177, 126, 0.3);
-    box-sizing: border-box;
+.contacto-info-contenedor {
+    margin-top: 30px;
+    text-align: center;
 }
 
-.seccion-contacto h2 {
-    font-size: 38px;
-    color: #1b3b2b;
-    margin-bottom: 15px;
-    font-weight: 700;
-}
-
-.contacto-subtitulo {
-    font-size: 16px;
-    color: #4a5568;
-    margin-bottom: 35px;
-    line-height: 1.6;
-}
-
-.contacto-enlaces {
+.contacto-redes {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     gap: 20px;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
-.contacto-item {
-    display: flex;
+.instagram-link {
+    display: inline-flex;
     align-items: center;
-    gap: 12px;
-    background-color: #faf9f6;
-    padding: 16px 25px;
-    border-radius: 15px;
-    text-decoration: none;
+    gap: 10px;
+    background-color: #ffffff;
     color: #1b3b2b;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
     font-weight: 600;
     font-size: 16px;
-    transition: 0.3s;
-    border: 1px solid rgba(209, 177, 126, 0.2);
-    width: 100%;
-    max-width: 450px;
-    justify-content: center;
-    box-sizing: border-box;
-    word-break: break-word;
+    box-shadow: 0 5px 15px rgba(27, 59, 43, 0.05);
+    border: 1px solid rgba(209, 177, 126, 0.3);
+    transition: all 0.3s ease;
 }
 
-.contacto-item:hover {
+.instagram-link i {
+    font-size: 20px;
+    color: #1b3b2b;
+}
+
+.instagram-link:hover {
     background-color: #1b3b2b;
     color: #ffffff;
     transform: translateY(-2px);
 }
 
-.contacto-icono {
-    font-size: 20px;
+.instagram-link:hover i {
+    color: #ffffff;
 }
+
 
 /* PIE DE PÁGINA (FOOTER) */
 footer {
