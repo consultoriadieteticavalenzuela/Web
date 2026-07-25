@@ -813,11 +813,12 @@ nav a:hover, nav a.active {
     color: #4a5568;
     line-height: 1.5;
 }
-    /* ESTILOS PARA LA BARRA EN MOVIMIENTO */
+/* ESTILOS CORREGIDOS PARA LA BARRA EN MOVIMIENTO */
 .barra-aviso-movimiento {
     background-color: #1b3b2b;
     color: #ffffff;
     padding: 12px 0;
+    width: 100%;
     overflow: hidden;
     white-space: nowrap;
     position: relative;
@@ -827,13 +828,17 @@ nav a:hover, nav a.active {
 
 .marquesina-contenido {
     display: inline-block;
+    white-space: nowrap;
     animation: moverDerecha 25s linear infinite;
+    /* Forzamos que ocupe espacio para que la animación no se atasque */
+    padding-left: 100%; 
 }
 
 .marquesina-contenido span {
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.5px;
+    color: #ffffff;
 }
 
 .marquesina-contenido strong {
@@ -841,17 +846,16 @@ nav a:hover, nav a.active {
     font-weight: 700;
 }
 
-/* Animación para que se mueva siempre hacia la derecha */
+/* Animación fluida de izquierda a derecha */
 @keyframes moverDerecha {
     0% {
-        transform: translateX(-50%);
+        transform: translateX(0%);
     }
     100% {
-        transform: translateX(0%);
+        transform: translateX(-100%);
     }
 }
 
-/* Pausar el movimiento si el usuario pasa el ratón por encima (muy útil para leerlo con calma) */
 .barra-aviso-movimiento:hover .marquesina-contenido {
     animation-play-state: paused;
 }
