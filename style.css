@@ -328,20 +328,20 @@ nav a:hover, nav a.active {
 }
 
 .subtitulo-pequeno {
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    color: #d1b17e;
+    font-size: 20px;
+    text-transform: none; /* Quitamos las mayúsculas forzadas para que quede más cercano */
+    letter-spacing: 0px;
+    color: #d1b17e; 
     font-weight: 700;
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .trabajo-header h2 {
-    font-size: 40px;
+    font-size: 32px;
     color: #1b3b2b;
     margin-bottom: 18px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.2;
 }
 
