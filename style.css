@@ -124,6 +124,7 @@ nav a:hover, nav a.active {
 }
 
 /* SECCIÓN HERO (AJUSTES FINALES) */
+/* SECCIÓN HERO (AJUSTES DE TAMAÑO Y ESPACIADO) */
 .hero {
     position: relative;
     width: 100%;
@@ -143,62 +144,63 @@ nav a:hover, nav a.active {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.85) 40%, rgba(255, 255, 255, 0.4) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.88) 42%, rgba(255, 255, 255, 0.4) 100%);
     z-index: 1;
 }
 
 .texto {
     position: relative;
     z-index: 2;
-    max-width: 650px;
+    max-width: 720px;
 }
 
-/* Título principal */
+/* Título principal más grande y con más espacio inferior */
 .texto h1 {
-    font-size: 46px;
+    font-size: 54px;
     color: #1b3b2b;
-    margin-bottom: 15px;
-    line-height: 1.2;
+    margin-bottom: 25px;
+    line-height: 1.15;
     font-weight: 700;
 }
 
-/* Subtítulo "Consultoría Dietética Valenzuela" en dorado y negrita */
+/* Subtítulo "Consultoría Dietética Valenzuela" más grande, dorado, en negrita y con separación */
 .subtitulo-hero-dorado {
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 700;
     color: #d1b17e;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     letter-spacing: 0.5px;
 }
 
-/* Descripción más pequeña y en cursiva */
+/* Descripción más grande, en cursiva y con buen margen inferior */
 .descripcion-hero-cursiva {
-    font-size: 15px;
-    line-height: 1.5;
-    margin-bottom: 30px;
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 35px;
     color: #4a5568;
     font-style: italic;
     font-weight: 400;
 }
 
-/* Contenedor del enlace secundario limpio */
+/* Contenedor del enlace secundario con separación adecuada */
 .botones-hero {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .enlace-secundario {
     text-decoration: none;
     color: #1b3b2b;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 18px;
     transition: .3s;
 }
 
 .enlace-secundario:hover {
     text-decoration: underline;
 }
+
 
 /* SECCIÓN SOBRE MÍ */
 .sobre-mi {
