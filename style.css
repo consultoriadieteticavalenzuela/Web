@@ -123,35 +123,59 @@ nav a:hover, nav a.active {
     animation-play-state: paused;
 }
 
-/* SECCIÃN HERO (AJUSTES FINALES) */
-/* SECCIÃN HERO (AJUSTES DE TAMAÃO Y ESPACIADO) */
+/* ==========================================================
+   ESTRUCTURA DEL HERO Y TAMAÑO DE IMAGEN
+   ========================================================== */
 .hero {
-    position: relative;
     width: 100%;
-    min-height: 85vh;
-    background-image: url('images/inicio.png');
-    background-size: cover;
-    background-position: center;
+    padding-top: 100px; /* Margen para no pisar la cabecera fija */
+    background-color: #f9f8f6; /* Fondo suave opcional */
+}
+
+.hero-container {
     display: flex;
     align-items: center;
-    padding: 0 8%;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 5%;
 }
 
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+.hero-texto {
+    flex: 1;
+}
+
+.hero-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* AQUÍ CONTROLAS EL TAMAÑO DE LA IMAGEN */
+.hero-imagen img {
     width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.88) 42%, rgba(255, 255, 255, 0.4) 100%);
-    z-index: 1;
+    max-width: 380px; /* <--- Cambia este valor (ej: 300px o 350px) para ajustar el tamaño */
+    height: auto;
+    border-radius: 15px; /* Bordes redondeados elegantes */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); /* Sombra suave opcional */
 }
 
-.texto {
-    position: relative;
-    z-index: 2;
-    max-width: 720px;
+/* Adaptación para pantallas de móvil */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column-reverse; /* Muestra el texto y luego la imagen en móvil */
+        text-align: center;
+        gap: 25px;
+    }
+
+    .hero-imagen img {
+        max-width: 260px; /* Tamaño reducido para pantalla de móvil */
+    }
+
+    .botones-hero {
+        justify-content: center;
+    }
 }
 
 /* TÃ­tulo principal mÃ¡s grande y con mÃ¡s espacio inferior */
