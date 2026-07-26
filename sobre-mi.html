@@ -19,21 +19,33 @@
 
     <!-- CABECERA -->
     <header>
+    <!-- Contenedor izquierdo: Logo + Menú Hamburguesa -->
+    <div class="header-izquierda">
         <div class="logo-container">
-            <img src="images/logosinfondo.png" alt="Consultoría Dietética Valenzuela" class="logo-img">
+            <a href="index.html#inicio">
+                <img src="images/logosinfondo.png" alt="Consultoría Dietética Valenzuela" class="logo-img">
+            </a>
         </div>
+        
+        <button class="menu-hamburguesa" aria-label="Abrir menú">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+    
+    <!-- Menú de navegación principal con rutas absolutas hacia index.html -->
+    <nav class="nav-menu">
+        <a href="index.html#inicio">Inicio</a>
+        <a href="sobre-mi.html" class="active">Sobre mí</a>
+        <a href="index.html#como-trabajo">Cómo trabajo</a>
+        <a href="index.html#contacto">Contacto</a>
+    </nav>
 
-        <nav>
-            <a href="#inicio" class="active">Inicio</a>
-            <a href="#sobre-mi">Sobre mí</a>
-            <a href="#como-trabajo">Cómo trabajo</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
+    <!-- Botón de contratación -->
+    <div class="header-derecha">
+        <a href="index.html#contacto" class="btn-contratame">CONTRÁTAME</a>
+    </div>
+</header>
 
-        <div class="cta-container">
-            <a href="#contacto" class="btn-reservar">Únete a la lista de espera</a>
-        </div>
-    </header>
 
     <!-- BARRA DE ANUNCIO EN MOVIMIENTO (MARQUESINA) -->
     <div class="barra-aviso-movimiento">
@@ -42,30 +54,6 @@
             <span>🔥 ¡OFERTA DE LANZAMIENTO! <strong>20% de descuento</strong> exclusivo para los 25 primeros inscritos (descuento no acumulable con otras tarifas). ¡Reserva tu plaza! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
         </div>
     </div>
-
-    <!-- SECCIÓN HERO -->
-<section class="hero" id="inicio">
-    <div class="texto">
-        <h1>Nutrición sencilla, resultados duraderos.</h1>
-        
-        <p class="subtitulo-hero-dorado">Consultoría Dietética Valenzuela</p>
-        
-        <p class="descripcion-hero-cursiva">Construye hábitos reales y sostenibles con un acompañamiento adaptado a ti.</p>
-        
-        <div class="botones-hero">
-            <a href="#como-trabajo" class="btn-acompañamiento">MI ACOMPAÑAMIENTO</a>
-            <a href="#sobre-mi.html" class="btn-sobre-mi">SOBRE MÍ</a>
-        </div>
-    </div>
-</section>
-
-    <!-- SEPARADOR VISUAL ESTÉTICO -->
-    <section class="separador-estetico">
-        <div class="separador-contenido">
-            <h3>Tu salud, tu camino, tu mejor versión</h3>
-            <p>Empieza hoy el cambio que te mereces.</p>
-        </div>
-    </section>
 
     <!-- SECCIÓN SOBRE MÍ -->
     <section id="sobre-mi" class="sobre-mi">
