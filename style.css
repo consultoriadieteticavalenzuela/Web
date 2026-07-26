@@ -12,56 +12,138 @@ body {
 }
 
 /* HEADER / CABECERA */
+/* ==========================================================
+   ESTILOS GENERALES DE LA CABECERA (PC)
+   ========================================================== */
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.95);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
-    background: white;
-    position: sticky;
-    top: 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,.05);
-    z-index: 1000;
+    padding: 15px 5%;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-.logo-container {
+.header-izquierda {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    flex: 1;
+    gap: 20px;
 }
 
 .logo-img {
-    height: 75px;
+    height: 50px;
     width: auto;
     display: block;
 }
 
-nav {
+.nav-menu {
     display: flex;
     gap: 30px;
-    justify-content: center;
-    flex: 2;
+    align-items: center;
 }
 
-nav a {
+.nav-menu a {
     text-decoration: none;
-    color: #4a5568;
-    font-weight: 500;
-    font-size: 16px;
-    transition: .3s;
-}
-
-nav a:hover, nav a.active {
     color: #1b3b2b;
     font-weight: 600;
+    font-size: 15px;
+    transition: color 0.3s;
 }
 
-.cta-container {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #d1b17e;
 }
+
+.menu-hamburguesa {
+    display: none; /* Oculto en PC */
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #1b3b2b;
+    cursor: pointer;
+}
+
+/* Botón CONTRÁTAME */
+.btn-contratame {
+    display: inline-block;
+    background-color: #1b3b2b;
+    color: #ffffff;
+    padding: 10px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(27, 59, 43, 0.25);
+    white-space: nowrap;
+}
+
+.btn-contratame:hover {
+    background-color: #2c5942;
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================================
+   ESTILOS RESPONSIVOS (MÓVILES Y TABLETS < 900px)
+   ========================================================== */
+@media (max-width: 900px) {
+    header {
+        padding: 12px 4%;
+    }
+
+    /* Mostrar botón hamburguesa */
+    .menu-hamburguesa {
+        display: block;
+    }
+
+    /* Ocultar enlaces de texto por defecto y convertirlos en menú desplegable */
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 0;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+        border-top: 1px solid #eee;
+        
+        /* Efecto de apertura y cierre suave */
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease-in-out, padding 0.35s ease-in-out;
+    }
+
+    /* Clase activa que añade JavaScript para desplegar */
+    .nav-menu.activo {
+        max-height: 300px;
+        padding: 20px 0;
+    }
+
+    .nav-menu a {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    /* Aseguramos que el botón contratame mantenga su sitio a la derecha de forma limpia */
+    .header-derecha {
+        display: flex;
+        align-items: center;
+    }
+}
+
 
 /* ==========================================================
    BOTÓN CONTRÁTAME (DESTACADO Y LLAMATIVO)
