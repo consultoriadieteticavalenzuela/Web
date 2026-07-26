@@ -63,19 +63,25 @@ nav a:hover, nav a.active {
     flex: 1;
 }
 
-.btn-reservar {
-    background-color: #1b3b2b;
+/* ESTILOS PARA EL BOTÓN DE LA CABECERA */
+.btn-contratame {
+    display: inline-block;
+    background: #1b3b2b;
     color: white;
-    padding: 12px 24px;
-    border-radius: 25px;
+    padding: 10px 22px;
+    border-radius: 20px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
     transition: .3s;
+    box-shadow: 0 3px 10px rgba(27, 59, 43, 0.15);
 }
 
-.btn-reservar:hover {
-    background-color: #2c5942;
+.btn-contratame:hover {
+    background: #d1b17e;
+    color: #1b3b2b;
+    transform: translateY(-2px);
 }
 
 /* BARRA DE AVISO EN MOVIMIENTO (MARQUESINA) */
