@@ -17,34 +17,23 @@
 </head>
 <body>
 
-<!-- CÓDIGO HTML DE LA CABECERA (EJEMPLO ACTUALIZADO) -->
-<header>
-    <!-- Contenedor izquierdo: Logo + Menú Hamburguesa -->
-    <div class="header-izquierda">
+    <!-- CABECERA -->
+    <header>
         <div class="logo-container">
-            <a href="#inicio">
-                <img src="images/logosinfondo.png" alt="Consultoría Dietética Valenzuela" class="logo-img">
-            </a>
+            <img src="images/logosinfondo.png" alt="Consultoría Dietética Valenzuela" class="logo-img">
         </div>
-        
-        <button class="menu-hamburguesa" aria-label="Abrir menú">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-    </div>
-    
-    <!-- Menú de navegación principal (Enlaces de texto) -->
-    <nav class="nav-menu">
-        <a href="#inicio">Inicio</a>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#como-trabajo">Cómo trabajo</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
 
-    <!-- Botón de contratación a la derecha -->
-    <div class="header-derecha">
-        <a href="#contacto" class="btn-contratame">CONTRÁTAME</a>
-    </div>
-</header>
+        <nav>
+            <a href="#inicio" class="active">Inicio</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#como-trabajo">Cómo trabajo</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <div class="cta-container">
+            <a href="#contacto" class="btn-reservar">Únete a la lista de espera</a>
+        </div>
+    </header>
 
     <!-- BARRA DE ANUNCIO EN MOVIMIENTO (MARQUESINA) -->
     <div class="barra-aviso-movimiento">
@@ -87,7 +76,7 @@
                 <h2>Sobre mí</h2>
                 <p class="subtitulo-sobremi">Mi objetivo no es que dependas de mí durante años, sino enseñarte a comer para que algún día ya no me necesites.</p>
                 <p>
-                    ¡Hola! Soy Andrés Valenzuela, Técnico en Dietética. Apasionado por ayudar a las personas a mejorar su salud y su calidad de vida a través de la alimentación. Creo firmemente que una buena nutrición no consiste en seguir dietas estrictas o pasar hambre, sino en aprender a comer de forma equilibrada, adaptando cada plan a las necesidades, objetivos y estilo de vida de cada persona.
+                    ¡Hola! Soy Andrés Valenzuela, Técnico Superior en Dietética. Apasionado por ayudar a las personas a mejorar su salud y su calidad de vida a través de la alimentación. Creo firmemente que una buena nutrición no consiste en seguir dietas estrictas o pasar hambre, sino en aprender a comer de forma equilibrada, adaptando cada plan a las necesidades, objetivos y estilo de vida de cada persona.
                 </p>
                 <p>
                     Mi formación, junto con mis estudios como <strong>Técnico Superior en Laboratorio Clínico y Biomédico</strong> y <strong>Técnico Superior en Anatomía Patológica y Citodiagnóstico</strong>, me proporciona una visión amplia del funcionamiento del cuerpo humano y de la importancia que tiene la alimentación en la salud.
@@ -110,6 +99,7 @@
     <!-- SECCIÓN CÓMO TRABAJO -->
     <section id="como-trabajo" class="seccion-como-trabajo">
         <div class="trabajo-header">
+            <span class="subtitulo-pequeno">Cómo trabajo</span>
             <h2>Así es mi acompañamiento</h2>
             <p>No se trata de hacer dieta, se trata de construir un <strong>cambio real y sostenible</strong>.<br>Este es el proceso que seguimos juntos para que alcances tu mejor versión.</p>
         </div>
