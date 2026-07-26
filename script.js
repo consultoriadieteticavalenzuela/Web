@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 2. Resaltar el enlace activo del menú según la sección visible al hacer scroll
-    const secciones = document.querySelectorAll('section[id], header + div + section[id]');
+    const secciones = document.querySelectorAll('section[id]"');
     const navLinks = document.querySelectorAll('nav a');
 
     window.addEventListener('scroll', () => {
