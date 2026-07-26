@@ -48,4 +48,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+   // 3. Ocultar / Mostrar cabecera al hacer scroll
+let ultimoScroll = 0;
+const header = document.querySelector('header'); // Asegúrate de que tu etiqueta de cabecera sea <header>
+
+if (header) {
+    window.addEventListener('scroll', () => {
+        const scrollActual = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollActual > ultimoScroll && scrollActual > 100) {
+            // Bajando: Ocultamos la cabecera desplazándola hacia arriba
+            header.style.transform = 'translateY(-100%)';
+        } else {
+            // Subiendo: Mostramos la cabecera
+            header.style.transform = 'translateY(0)';
+        }
+        ultimoScroll = scrollActual <= 0 ? 0 : scrollActual;
+    });
+}
 });
