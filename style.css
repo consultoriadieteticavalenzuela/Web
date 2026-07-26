@@ -63,26 +63,32 @@ nav a:hover, nav a.active {
     flex: 1;
 }
 
-/* ESTILOS PARA EL BOTÓN DE LA CABECERA */
+/* ==========================================================
+   BOTÓN CONTRÁTAME (DESTACADO Y LLAMATIVO)
+   ========================================================== */
 .btn-contratame {
     display: inline-block;
-    background: #1b3b2b;
-    color: white;
-    padding: 10px 22px;
-    border-radius: 20px;
+    background-color: #1b3b2b; /* Fondo verde corporativo */
+    color: #ffffff; /* Texto blanco para máximo contraste */
+    padding: 10px 24px;
+    border-radius: 25px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 14px;
-    letter-spacing: 0.5px;
-    transition: .3s;
-    box-shadow: 0 3px 10px rgba(27, 59, 43, 0.15);
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(27, 59, 43, 0.25); /* Sombra elegante que aporta relieve */
 }
 
+/* Efecto al pasar el ratón (hover) */
 .btn-contratame:hover {
-    background: #d1b17e;
-    color: #1b3b2b;
+    background-color: #2c5942; /* Un verde un punto más vivo al pasar el cursor */
+    color: #ffffff;
     transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(27, 59, 43, 0.35);
 }
+
 
 /* BARRA DE AVISO EN MOVIMIENTO (MARQUESINA) */
 .barra-aviso-movimiento {
