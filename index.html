@@ -19,24 +19,31 @@
 
 <!-- CÓDIGO HTML DE LA CABECERA (EJEMPLO ACTUALIZADO) -->
 <header>
-    <div class="logo-container">
-        <a href="#inicio">
-            <img src="images/logosinfondo.png" alt="Consultoría Dietética Valenzuela" class="logo-img">
-        </a>
+    <!-- Contenedor izquierdo: Logo + Menú Hamburguesa -->
+    <div class="header-izquierda">
+        <div class="logo-container">
+            <a href="#inicio">
+                <img src="images/logosinfondo.png" alt="Consultoría Dietética Valenzuela" class="logo-img">
+            </a>
+        </div>
+        
+        <button class="menu-hamburguesa" aria-label="Abrir menú">
+            <i class="fa-solid fa-bars"></i>
+        </button>
     </div>
     
-    <!-- Botón hamburguesa para móvil -->
-    <button class="menu-hamburguesa" aria-label="Abrir menú">
-        <i class="fa-solid fa-bars"></i>
-    </button>
-
+    <!-- Menú de navegación principal (Enlaces de texto) -->
     <nav class="nav-menu">
         <a href="#inicio">Inicio</a>
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#como-trabajo">Cómo trabajo</a>
         <a href="#contacto">Contacto</a>
-        <a href="#contacto" class="btn-contratame">CONTRÁTAME</a>
     </nav>
+
+    <!-- Botón de contratación a la derecha -->
+    <div class="header-derecha">
+        <a href="#contacto" class="btn-contratame">CONTRÁTAME</a>
+    </div>
 </header>
 
     <!-- BARRA DE ANUNCIO EN MOVIMIENTO (MARQUESINA) -->
