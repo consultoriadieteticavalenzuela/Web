@@ -1,4 +1,4 @@
-Console.log("Consultoría Dietética Valenzuela");
+console.log("Consultoría Dietética Valenzuela");
 /* ==========================================================
    SCRIPT PRINCIPAL - CONSULTORÍA DIETÉTICA VALENZUELA
    ========================================================== */
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 2. Resaltar el enlace activo del menú según la sección visible al hacer scroll
-    const secciones = document.querySelectorAll('section[id]');
+    const secciones = document.querySelectorAll('section[id], header + div + section[id]');
     const navLinks = document.querySelectorAll('nav a');
 
     window.addEventListener('scroll', () => {
@@ -47,24 +47,5 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-
-    // 3. Ocultar / Mostrar cabecera al hacer scroll
-    let ultimoScroll = 0;
-    const header = document.querySelector('header');
-
-    if (header) {
-        window.addEventListener('scroll', () => {
-            const scrollActual = window.pageYOffset || document.documentElement.scrollTop;
-
-            if (scrollActual > ultimoScroll && scrollActual > 100) {
-                // Bajando: Ocultamos la cabecera desplazándola hacia arriba
-                header.style.transform = 'translateY(-100%)';
-            } else {
-                // Subiendo: Mostramos la cabecera
-                header.style.transform = 'translateY(0)';
-            }
-            ultimoScroll = scrollActual <= 0 ? 0 : scrollActual;
-        });
-    }
 
 });
