@@ -196,12 +196,12 @@ nav a:hover, nav a.active {
 
 
 /* TÃ­tulo principal mÃ¡s grande y con mÃ¡s espacio inferior */
-.texto h1 {
-    font-size: 70px;
-    color: #1b3b2b;
-    margin-bottom: 40px;
-    line-height: 2;
-    font-weight: 1000;
+.texto h1,
+.hero-texto h1{
+    font-size: clamp(52px, 7vw, 76px);
+    line-height: 1.05;
+    font-weight: 800;
+    letter-spacing: -2px;
 }
 
 /* SubtÃ­tulo "ConsultorÃ­a DietÃ©tica Valenzuela" mÃ¡s grande, dorado, en negrita y con separaciÃ³n */
@@ -240,7 +240,7 @@ nav a:hover, nav a.active {
     background-color: #1b3b2b;
     color: #ffffff;
     padding: 12px 24px;
-    border-radius: 25px;
+    border-radius: 14px;
     text-decoration: none;
     font-weight: 700;
     font-size: 14px;
@@ -261,7 +261,7 @@ nav a:hover, nav a.active {
     color: #1b3b2b;
     border: 2px solid #1b3b2b;
     padding: 10px 24px;
-    border-radius: 25px;
+    border-radius: 14px;
     text-decoration: none;
     font-weight: 700;
     font-size: 14px;
@@ -280,7 +280,7 @@ nav a:hover, nav a.active {
 /* SECCIÃN SOBRE MÃ */
 .sobre-mi {
     width: 100%;
-    padding: 90px 8%;
+    padding: 120px 8%;
     background-color: #f7f4ee;
     box-sizing: border-box;
 }
@@ -294,7 +294,7 @@ nav a:hover, nav a.active {
     margin: 0 auto;
     background-color: #ffffff;
     padding: 50px;
-    border-radius: 25px;
+    border-radius: 14px;
     box-shadow: 0 15px 35px rgba(27, 59, 43, 0.06);
     border: 1px solid rgba(209, 177, 126, 0.2);
 }
@@ -391,7 +391,7 @@ nav a:hover, nav a.active {
 
 /* SECCIÃN CÃMO TRABAJO */
 .seccion-como-trabajo {
-    padding: 90px 8%;
+    padding: 140px 8%;
     background-color: #faf9f6;
 }
 
@@ -567,7 +567,7 @@ nav a:hover, nav a.active {
     background: #ffffff;
     border-radius: 25px;
     padding: 40px 25px;
-    box-shadow: 0 10px 30px rgba(27, 59, 43, 0.05);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .05);
     border: 1px solid rgba(209, 177, 126, 0.3);
     display: flex;
     flex-direction: column;
@@ -584,7 +584,7 @@ nav a:hover, nav a.active {
 
 .plan-destacado {
     border: 2px solid #d1b17e;
-    box-shadow: 0 15px 40px rgba(27, 59, 43, 0.1);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .05);
     z-index: 2;
 }
 
@@ -716,7 +716,7 @@ nav a:hover, nav a.active {
 
 /* SECCIÃN CONTACTO */
 .seccion-contacto {
-    padding: 90px 8%;
+    padding: 120px 8%;
     background-color: #f7f4ee;
     text-align: center;
 }
@@ -1010,5 +1010,22 @@ footer {
     font-style: italic;
     font-weight: 400;
 }
+nav a{
+position:relative;
+}
 
+nav a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-6px;
+width:0;
+height:2px;
+background:#1b3b2b;
+transition:.3s;
+}
+
+nav a:hover::after{
+width:100%;
+}
 }
