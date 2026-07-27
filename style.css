@@ -123,6 +123,7 @@ nav a:hover, nav a.active {
     animation-play-state: paused;
 }
 
+
 /* ==========================================================
    ESTRUCTURA DEL HERO Y TAMAÑO DE IMAGEN
    ========================================================== */
@@ -161,15 +162,14 @@ nav a:hover, nav a.active {
     height: auto;
     
     /* Efecto de transparencia y fundido suave */
-    opacity: 0.85; /* Ajusta este valor entre 0.7 y 0.9 según el nivel de transparencia que busques */
-    mix-blend-mode: multiply; /* Mezcla sutilmente la imagen con el color de fondo de la página */
+    opacity: 0.85; 
+    mix-blend-mode: multiply; /* Mezcla sutilmente la imagen con el fondo de la página */
     
-    /* Eliminamos cualquier sombra o borde anterior que hiciese efecto "cuadro" */
+    /* Sin bordes ni cuadros */
     border: none;
     box-shadow: none;
     background: transparent;
 }
-
 
 /* Adaptación para pantallas de móvil */
 @media (max-width: 768px) {
@@ -187,6 +187,7 @@ nav a:hover, nav a.active {
         justify-content: center;
     }
 }
+
 
 /* TÃ­tulo principal mÃ¡s grande y con mÃ¡s espacio inferior */
 .texto h1 {
