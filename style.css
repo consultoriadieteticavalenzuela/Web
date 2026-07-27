@@ -964,4 +964,45 @@ footer {
         font-size: 18px;
         flex-shrink: 0;
     }
+
+    /* ==========================================================
+   AJUSTES FINALES DEL HERO (TÍTULO GRANDE Y TEXTO DORADO PEQUEÑO)
+   ========================================================== */
+.hero {
+    width: 100%;
+    padding-top: 25px; /* Sube la sección para que quede más cerca de la cabecera */
+    background-color: #faf9f6; 
+}
+
+.hero-container {
+    padding: 10px 5% 40px 5%; /* Reduce el espacio superior interno */
+}
+
+/* Título principal más grande y llamativo */
+.texto h1, .hero-texto h1 {
+    font-size: 52px; /* Aumentado de tamaño */
+    color: #1b3b2b;
+    margin-bottom: 12px;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+/* Letras doradas más pequeñas y sutiles */
+.subtitulo-hero-dorado {
+    font-size: 15px; /* Reducido para que sea más pequeño */
+    font-weight: 600;
+    color: #d1b17e;
+    margin-bottom: 18px;
+    letter-spacing: 0.5px;
+}
+
+.descripcion-hero-cursiva {
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    color: #4a5568;
+    font-style: italic;
+    font-weight: 400;
+}
+
 }
