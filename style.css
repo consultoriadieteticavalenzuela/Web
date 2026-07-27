@@ -14,7 +14,6 @@ body {
 /* HEADER / CABECERA */
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
     background: white;
@@ -32,13 +31,12 @@ header {
 .logo-img {
     height: 75px;
     width: auto;
-    display: block;
 }
 
 .nav-izquierda {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 50px;
 }
 
 .nav a {
@@ -56,7 +54,7 @@ header {
 
 .enlaces-menu {
     display: flex;
-    gap: 25px;
+    gap: 35px;
 }
 
 .enlaces-menu a {
@@ -65,8 +63,7 @@ header {
     }
 
 .cta-container {
-    display: flex;
-    justify-content: flex-end;
+    margin-left: auto;
 }
 
 .btn-reservar {
