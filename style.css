@@ -152,14 +152,24 @@ nav a:hover, nav a.active {
     justify-content: center;
 }
 
-/* AQUÍ CONTROLAS EL TAMAÑO DE LA IMAGEN */
+/* ==========================================================
+   INTEGRACIÓN Y TRANSPARENCIA DE LA IMAGEN DEL HERO
+   ========================================================== */
 .hero-imagen img {
     width: 100%;
-    max-width: 380px; /* <--- Cambia este valor (ej: 300px o 350px) para ajustar el tamaño */
+    max-width: 380px; /* Ajusta el tamaño a tu gusto */
     height: auto;
-    border-radius: 15px; /* Bordes redondeados elegantes */
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); /* Sombra suave opcional */
+    
+    /* Efecto de transparencia y fundido suave */
+    opacity: 0.85; /* Ajusta este valor entre 0.7 y 0.9 según el nivel de transparencia que busques */
+    mix-blend-mode: multiply; /* Mezcla sutilmente la imagen con el color de fondo de la página */
+    
+    /* Eliminamos cualquier sombra o borde anterior que hiciese efecto "cuadro" */
+    border: none;
+    box-shadow: none;
+    background: transparent;
 }
+
 
 /* Adaptación para pantallas de móvil */
 @media (max-width: 768px) {
