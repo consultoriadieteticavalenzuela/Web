@@ -37,11 +37,10 @@ header {
     display: block;
 }
 
-nav {
+nav-izquierda {
     display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex: 2;
+    align-items: center;
+    gap: 40px;
 }
 
 nav a {
@@ -56,6 +55,16 @@ nav a:hover, nav a.active {
     color: #1b3b2b;
     font-weight: 600;
 }
+
+.enlaces-menu {
+    display: flex;
+    gap: 25px;
+}
+
+.enlaces-menu a {
+    text-decoration: none;
+    color: #333;
+    }
 
 .cta-container {
     display: flex;
