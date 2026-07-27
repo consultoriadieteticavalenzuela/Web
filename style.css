@@ -191,17 +191,17 @@ nav a:hover, nav a.active {
 
 /* TÃ­tulo principal mÃ¡s grande y con mÃ¡s espacio inferior */
 .texto h1 {
-    font-size: 54px;
+    font-size: 70px;
     color: #1b3b2b;
-    margin-bottom: 25px;
-    line-height: 1.15;
-    font-weight: 700;
+    margin-bottom: 40px;
+    line-height: 2;
+    font-weight: 1000;
 }
 
 /* SubtÃ­tulo "ConsultorÃ­a DietÃ©tica Valenzuela" mÃ¡s grande, dorado, en negrita y con separaciÃ³n */
 .subtitulo-hero-dorado {
     font-size: 26px;
-    font-weight: 700;
+    font-weight: 400;
     color: #d1b17e;
     margin-bottom: 20px;
     letter-spacing: 0.5px;
@@ -210,11 +210,11 @@ nav a:hover, nav a.active {
 /* DescripciÃ³n mÃ¡s grande, en cursiva y con buen margen inferior */
 .descripcion-hero-cursiva {
     font-size: 19px;
-    line-height: 1.6;
+    line-height: 2;
     margin-bottom: 35px;
     color: #4a5568;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 /* ==========================================================
