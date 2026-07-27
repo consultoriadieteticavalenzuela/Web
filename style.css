@@ -158,11 +158,11 @@ nav a:hover, nav a.active {
    ========================================================== */
 .hero-imagen img {
     width: 100%;
-    max-width: 380px; /* Ajusta el tamaño a tu gusto */
+    max-width: 100px; /* Ajusta el tamaño a tu gusto */
     height: auto;
     
     /* Efecto de transparencia y fundido suave */
-    opacity: 0.85; 
+    opacity: 0.10; 
     mix-blend-mode: multiply; /* Mezcla sutilmente la imagen con el fondo de la página */
     
     /* Sin bordes ni cuadros */
