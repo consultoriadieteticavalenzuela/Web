@@ -201,7 +201,8 @@ nav a:hover, nav a.active {
     font-size: clamp(52px, 7vw, 76px);
     line-height: 1.05;
     font-weight: 800;
-    letter-spacing: -2px;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
 }
 
 /* SubtÃ­tulo "ConsultorÃ­a DietÃ©tica Valenzuela" mÃ¡s grande, dorado, en negrita y con separaciÃ³n */
