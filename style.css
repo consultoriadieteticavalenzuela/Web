@@ -127,10 +127,16 @@ nav a:hover, nav a.active {
 /* ==========================================================
    ESTRUCTURA DEL HERO Y TAMAÑO DE IMAGEN
    ========================================================== */
-.hero {
+.hero{
+    position: relative;
     width: 100%;
-    padding-top: 100px; /* Margen para no pisar la cabecera fija */
-    background-color: #f9f8f6; /* Fondo suave opcional */
+    min-height: 85vh;
+    background-image: url('images/inicio.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
 }
 
 .hero-container {
