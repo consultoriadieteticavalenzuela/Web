@@ -148,26 +148,46 @@
         placeholder="Cuéntame qué objetivo quieres conseguir, qué dificultades tienes actualmente o cualquier información importante">
         </textarea>
 
-<div class="opciones-contacto">
+<div class="situacion-formulario">
 
-    <label>
+    <label class="titulo-opciones">
+        ¿Cuándo te gustaría empezar? <span>*</span>
+    </label>
+
+
+    <label class="opcion-radio">
+
         <input type="radio" name="situacion" value="lista-espera" required>
-        Quiero estar en la lista de prioridad para el inicio de la consulta
+
+        <div>
+            <strong>
+                Quiero estar en la lista de prioridad para el inicio de la consulta
+            </strong>
+
+            <p>
+                Recibiré información cuando el servicio esté disponible y tendré prioridad para comenzar mi acompañamiento.
+            </p>
+        </div>
+
     </label>
 
-    <p>
-        Recibiré información cuando el servicio esté disponible y tendré prioridad para comenzar mi acompañamiento.
-    </p>
 
 
-    <label>
-        <input type="radio" name="situacion" value="contactar-mas-adelante">
-        Quiero contactar más adelante cuando esté preparado/a
+    <label class="opcion-radio">
+
+        <input type="radio" name="situacion" value="mas-adelante">
+
+        <div>
+            <strong>
+                Prefiero contactar más adelante cuando quiera iniciar mi proceso
+            </strong>
+
+            <p>
+                Me pondré en contacto cuando esté preparado/a para comenzar.
+            </p>
+        </div>
+
     </label>
-
-    <p>
-        Me pondré en contacto cuando quiera iniciar mi proceso de acompañamiento.
-    </p>
 
 </div>
 
