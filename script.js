@@ -8,7 +8,9 @@ if (window.location.hash) {
 }
 
 window.addEventListener('load', () => {
-    window.scrollTo(0, 0);
+    if (!window.location.hash) {
+        window.scrollTo(0, 0);
+    }
 });
 
 console.log("Consultoría Dietética Valenzuela");
