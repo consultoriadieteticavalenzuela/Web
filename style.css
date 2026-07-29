@@ -1379,7 +1379,55 @@ width:100%;
     .politica li {
 
         font-size: 15px;
-
     }
+
+    /* ==========================================================
+   CONSENTIMIENTOS FORMULARIO
+   ========================================================== */
+
+.consentimiento-info,
+.privacidad {
+
+    margin-top: 20px;
+
+}
+
+
+.privacidad {
+
+    display: flex !important;
+    align-items: flex-start;
+    gap: 10px;
+    color: #555;
+    font-size: 14px !important;
+    line-height: 1.5;
+
+}
+
+
+.privacidad input {
+
+    width: 16px !important;
+    height: 16px;
+    margin-top: 3px;
+    accent-color: #c5a059;
+
+}
+
+
+.privacidad a {
+
+    color: #c5a059;
+    text-decoration: none;
+    font-weight: 500;
+
+}
+
+
+.privacidad a:hover {
+
+    text-decoration: underline;
+
+}
 }
 
