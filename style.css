@@ -148,7 +148,7 @@ header {
     position: relative;
     width: 100%;
     min-height: 85vh;
-    background-image: url('images/inicio.png');
+    background-image: url('images/inicio.PNG');
     background-size: cover;
     background-position: center;
     display: flex;
