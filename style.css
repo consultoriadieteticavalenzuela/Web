@@ -1764,5 +1764,23 @@ width:100%;
     transform:translateY(-2px);
 
 }
+    /* ==========================================================
+   FOOTER - ENLACES LEGALES
+   ========================================================== */
+
+footer a {
+
+    color: #555;
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+
+
+footer a:hover {
+
+    color: #c5a059;
+
+}
 }
 
