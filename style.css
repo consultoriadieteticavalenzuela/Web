@@ -189,6 +189,18 @@ header {
     font-weight: 400;
 }
 
+.subtitulo-hero-dorado {
+    color: #c5a059; /* Puedes ajustar este tono de dorado según tu paleta */
+    letter-spacing: -0.5px;
+}
+
+.descripcion-hero-cursiva {
+    font-style: italic;
+    font-size: 0.9rem; /* Reduce el tamaño (puedes probar con 0.85rem o 14px) */
+    letter-spacing: -0.3px;
+}
+
+
 /* ==========================================================
    ESTILOS DE LOS BOTONES DEL HERO
    ========================================================== */
