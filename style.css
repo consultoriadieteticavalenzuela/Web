@@ -1265,4 +1265,121 @@ width:100%;
 
     }
 
+     /* ==========================================================
+   PÁGINA POLÍTICA DE PRIVACIDAD
+   ========================================================== */
+
+
+.politica {
+
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 120px 8% 80px;
+    background: #faf9f6;
+
 }
+
+
+.politica h1 {
+
+    text-align: center;
+    font-size: 42px;
+    font-weight: 600;
+    color: #2b2b2b;
+    margin-bottom: 50px;
+
+}
+
+
+.politica h2 {
+
+    color: #c5a059;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 35px;
+    margin-bottom: 15px;
+
+}
+
+
+.politica p {
+
+    color: #555;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+
+}
+
+
+.politica ul {
+
+    margin: 15px 0 25px 25px;
+    color: #555;
+    line-height: 1.8;
+
+}
+
+
+.politica li {
+
+    margin-bottom: 8px;
+
+}
+
+
+/* Enlaces dentro del texto */
+
+.politica a {
+
+    color: #c5a059;
+    text-decoration: none;
+
+}
+
+
+.politica a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+
+/* ==========================================================
+   MÓVIL
+   ========================================================== */
+
+
+@media (max-width: 768px) {
+
+
+    .politica {
+
+        padding: 90px 5% 60px;
+
+    }
+
+
+    .politica h1 {
+
+        font-size: 32px;
+
+    }
+
+
+    .politica h2 {
+
+        font-size: 19px;
+
+    }
+
+
+    .politica p,
+    .politica li {
+
+        font-size: 15px;
+
+    }
+}
+
