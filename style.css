@@ -1035,3 +1035,229 @@ nav a:hover::after{
 width:100%;
 }
 }
+
+/* ==========================================================
+   PÁGINA SOLICITUD DE ACOMPAÑAMIENTO
+   ========================================================== */
+
+.solicitud {
+    min-height: 100vh;
+    padding: 120px 8%;
+    background: #faf9f6;
+}
+
+
+.solicitud-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+
+.solicitud-header h1 {
+    font-size: 42px;
+    color: #2b2b2b;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+
+.solicitud-header p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #555;
+}
+
+
+/* FORMULARIO */
+
+.formulario-solicitud {
+
+    max-width: 650px;
+    margin: auto;
+    background: white;
+
+    padding: 45px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+}
+
+
+.formulario-solicitud label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    margin-top: 20px;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    color: #2b2b2b;
+
+}
+
+
+
+.formulario-solicitud input,
+.formulario-solicitud select,
+.formulario-solicitud textarea {
+
+    width: 100%;
+
+    padding: 14px 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 15px;
+
+    background: #faf9f6;
+
+    outline: none;
+
+    transition: 0.3s;
+
+}
+
+
+
+.formulario-solicitud input:focus,
+.formulario-solicitud select:focus,
+.formulario-solicitud textarea:focus {
+
+    border-color: #c5a059;
+
+}
+
+
+
+.formulario-solicitud textarea {
+
+    resize: vertical;
+
+}
+
+
+
+/* PLAN SELECCIONADO */
+
+#plan {
+
+    color: #c5a059;
+
+    font-weight: 600;
+
+}
+
+
+
+/* PRIVACIDAD */
+
+.privacidad {
+
+    display: flex !important;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 25px !important;
+
+    font-size: 14px !important;
+
+}
+
+
+.privacidad input {
+
+    width: auto;
+
+}
+
+
+
+/* BOTÓN */
+
+.formulario-solicitud button {
+
+    width: 100%;
+
+    margin-top: 35px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #c5a059;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+
+.formulario-solicitud button:hover {
+
+    transform: translateY(-2px);
+
+    opacity: 0.9;
+
+}
+
+
+
+/* ==========================================================
+   MÓVIL
+   ========================================================== */
+
+
+@media (max-width: 768px) {
+
+
+    .solicitud {
+
+        padding: 80px 5%;
+
+    }
+
+
+    .solicitud-header h1 {
+
+        font-size: 32px;
+
+    }
+
+
+    .solicitud-header p {
+
+        font-size: 15px;
+
+    }
+
+
+    .formulario-solicitud {
+
+        padding: 30px 20px;
+
+    }
+
+}
