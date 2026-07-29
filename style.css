@@ -190,14 +190,17 @@ header {
 }
 
 .subtitulo-hero-dorado {
-    color: #c5a059; /* Puedes ajustar este tono de dorado según tu paleta */
-    letter-spacing: -0.5px;
+    color: #c5a059;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    font-weight: 500;
 }
 
 .descripcion-hero-cursiva {
     font-style: italic;
-    font-size: 0.9rem; /* Reduce el tamaño (puedes probar con 0.85rem o 14px) */
+    font-size: 0.85rem;
     letter-spacing: -0.3px;
+    line-height: 1.5;
 }
 
 
@@ -375,7 +378,7 @@ header {
 
 .trabajo-header {
     text-align: center;
-    max-width: 750px;
+    max-width: 400px;
     margin: 0 auto 60px auto;
 }
 
