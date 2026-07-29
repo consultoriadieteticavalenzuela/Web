@@ -50,7 +50,11 @@
         <h1>
             Empieza tu cambio hoy
         </h1>
-
+        
+<p class="aviso-apertura">
+    Actualmente estoy preparando la apertura de la consulta online.
+    Déjame tus datos y te avisaré cuando el servicio esté disponible para que puedas tener prioridad en el inicio del acompañamiento.
+</p>
 
         <p>
             Solicita tu acompañamiento personalizado y da el primer paso 
@@ -112,23 +116,6 @@
         <input type="number" name="edad">
 
 
-
-        <label>
-            Altura (cm)
-        </label>
-
-        <input type="number" name="altura">
-
-
-
-        <label>
-            Peso actual (kg)
-        </label>
-
-        <input type="number" name="peso">
-
-
-
         <label>
             ¿Cuál es tu objetivo?
         </label>
@@ -145,7 +132,6 @@
         </select>
 
 
-
         <label>
             Cuéntame un poco sobre ti
         </label>
@@ -157,15 +143,39 @@
         placeholder="Cuéntame qué objetivo quieres conseguir, qué dificultades tienes actualmente o cualquier información importante">
         </textarea>
 
+<div class="opciones-contacto">
+
+    <label>
+        <input type="radio" name="situacion" value="lista-espera" required>
+        Quiero estar en la lista de prioridad para el inicio de la consulta
+    </label>
+
+    <p>
+        Recibiré información cuando el servicio esté disponible y tendré prioridad para comenzar mi acompañamiento.
+    </p>
 
 
-        <label class="privacidad">
+    <label>
+        <input type="radio" name="situacion" value="contactar-mas-adelante">
+        Quiero contactar más adelante cuando esté preparado/a
+    </label>
 
-            <input type="checkbox" required>
+    <p>
+        Me pondré en contacto cuando quiera iniciar mi proceso de acompañamiento.
+    </p>
 
-            Acepto la política de privacidad.
+</div>
 
-        </label>
+     <label class="privacidad">
+
+    <input type="checkbox" required>
+
+    He leído y acepto la 
+    <a href="politica-privacidad.html" target="_blank">
+        Política de Privacidad
+    </a>.
+
+</label>
 
 
 
