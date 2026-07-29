@@ -47,11 +47,41 @@ header {
 }
 
 @media (max-width: 768px) {
-    .nav-izquierda {
-    gap: 15px;
-}
-}
+    /* Convertimos el header en una columna centrada */
+    Header {
+        flex-direction: column;
+        padding: 15px 20px;
+        text-align: center;
+    }
 
+    /* Quitamos los márgenes laterales que empujan los elementos a los lados */
+    .logo-container {
+        margin-right: 0;
+        margin-bottom: 15px; /* Espacio entre el logo y el menú */
+    }
+
+    .nav-izquierda {
+        margin-left: 0;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 15px; /* Espacio entre este menú y el botón */
+    }
+
+    .enlaces-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* Anulamos el margin-left: auto para que el botón no se desplace a la derecha */
+    .cta-container {
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
 
 .nav a {
     text-decoration: none;
