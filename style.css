@@ -1313,20 +1313,29 @@ width:100%;
 
     }
 
-    /* OPCIONES DE INICIO */
+    /* ==========================================================
+   OPCIONES LISTA DE ESPERA
+   ========================================================== */
 
 .situacion-formulario {
 
     margin-top: 30px;
+    margin-bottom: 25px;
 
 }
 
 
 .titulo-opciones {
 
-    font-weight: 600;
-    font-size: 15px;
-    margin-bottom: 15px;
+    display: block;
+
+    font-size: 15px !important;
+
+    font-weight: 600 !important;
+
+    color: #2b2b2b;
+
+    margin-bottom: 15px !important;
 
 }
 
@@ -1341,19 +1350,21 @@ width:100%;
 
 .opcion-radio {
 
-    display: flex;
-    align-items: flex-start;
+    display: flex !important;
+
+    align-items: flex-start !important;
+
     gap: 12px;
 
     padding: 18px;
 
-    margin-bottom: 15px;
+    margin-bottom: 15px !important;
 
     background: #faf9f6;
 
     border: 1px solid #e5e0d8;
 
-    border-radius: 10px;
+    border-radius: 12px;
 
     cursor: pointer;
 
@@ -1363,8 +1374,19 @@ width:100%;
 
 .opcion-radio input {
 
-    width: auto !important;
-    margin-top: 5px;
+    appearance: auto;
+
+    width: 16px !important;
+
+    height: 16px !important;
+
+    min-width: 16px;
+
+    margin-top: 4px;
+
+    padding: 0 !important;
+
+    flex-shrink: 0;
 
 }
 
@@ -1372,8 +1394,15 @@ width:100%;
 
 .opcion-radio strong {
 
-    font-size: 15px;
+    display: block;
+
+    font-size: 15px !important;
+
+    font-weight: 600;
+
     color: #2b2b2b;
+
+    line-height: 1.4;
 
 }
 
@@ -1381,17 +1410,16 @@ width:100%;
 
 .opcion-radio p {
 
-    margin-top: 8px;
+    margin: 7px 0 0 !important;
 
-    margin-bottom: 0;
+    font-size: 13px !important;
 
-    font-size: 13px;
+    font-weight: 400;
 
     line-height: 1.5;
 
     color: #666;
 
-}
 }
 
      /* ==========================================================
@@ -1559,12 +1587,14 @@ width:100%;
 
 }
 /* ==========================================================
-   CONSENTIMIENTOS
+   CONSENTIMIENTOS FORMULARIO
    ========================================================== */
 
 .consentimientos {
 
     margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
 
 }
 
@@ -1572,33 +1602,45 @@ width:100%;
 .checkbox-linea {
 
     display: flex !important;
+    align-items: flex-start !important;
+    gap: 12px;
 
-    align-items: flex-start;
-
-    gap: 10px;
+    margin: 15px 0 !important;
 
     font-size: 14px !important;
+
+    font-weight: 400 !important;
 
     line-height: 1.6;
 
     color: #555;
 
-    margin-top: 15px !important;
+    cursor: pointer;
 
 }
 
 
 .checkbox-linea input {
 
-    width: 16px !important;
+    appearance: auto;
 
-    height: 16px;
+    width: 16px !important;
+    height: 16px !important;
+
+    min-width: 16px;
 
     margin-top: 4px;
 
-    accent-color: #c5a059;
+    padding: 0 !important;
 
     flex-shrink: 0;
+
+}
+
+
+.checkbox-linea span {
+
+    display: block;
 
 }
 
@@ -1607,9 +1649,9 @@ width:100%;
 
     color: #c5a059;
 
-    text-decoration: none;
-
     font-weight: 500;
+
+    text-decoration: none;
 
 }
 
