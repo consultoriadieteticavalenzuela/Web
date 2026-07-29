@@ -144,104 +144,49 @@ header {
 /* ==========================================================
    ESTRUCTURA DEL HERO Y TAMAÑO DE IMAGEN
    ========================================================== */
-.hero {
-    min-height: 100vh;
-
-    background:
-        linear-gradient(
-            rgba(250, 249, 246, 0.75),
-            rgba(250, 249, 246, 0.75)
-        ),
-        url("images/inicio.PNG");
-
+.hero{
+    position: relative;
+    width: 100%;
+    min-height: 85vh;
+    background-image: url('images/inicio.png');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-}
-
-.hero-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 5%;
+    padding: 0 8%;
 }
 
-.hero-texto {
-    flex: 1;
-}
-
-.hero-imagen {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-/* ==========================================================
-   INTEGRACIÓN Y TRANSPARENCIA DE LA IMAGEN DEL HERO
-   ========================================================== */
-.hero-imagen img {
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 100px; /* Ajusta el tamaño a tu gusto */
-    height: auto;
-    
-    /* Efecto de transparencia y fundido suave */
-    opacity: 0.55; 
-    mix-blend-mode: multiply; /* Mezcla sutilmente la imagen con el fondo de la página */
-    
-    /* Sin bordes ni cuadros */
-    border: none;
-    box-shadow: none;
-    background: transparent;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.45); 
+    z-index: 1;
 }
 
-/* Adaptación para pantallas de móvil */
-@media (max-width: 768px) {
-    .hero-container {
-        flex-direction: column-reverse; /* Muestra el texto y luego la imagen en móvil */
-        text-align: center;
-        gap: 25px;
-    }
-
-    .hero-imagen img {
-        max-width: 260px; /* Tamaño reducido para pantalla de móvil */
-    }
-
-    .botones-hero {
-        justify-content: center;
-    }
+.texto{
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
 }
 
-
-/* TÃ­tulo principal mÃ¡s grande y con mÃ¡s espacio inferior */
-.texto h1,
-.hero-texto h1{
-    font-size: clamp(52px, 7vw, 76px);
-    line-height: 1.5;
-    font-weight: 600;
+.texto h1{
+    font-size: 54px;
+    color: #1b3b2b;
     margin-bottom: 20px;
-    letter-spacing: 5px;
+    line-height: 1.15;
+    font-weight: 700;
 }
 
-/* SubtÃ­tulo "ConsultorÃ­a DietÃ©tica Valenzuela" mÃ¡s grande, dorado, en negrita y con separaciÃ³n */
-.subtitulo-hero-dorado {
-    font-size: 26px;
-    font-weight: 400;
-    color: #d1b17e;
-    margin-bottom: 20px;
-    letter-spacing: 0.5px;
-}
-
-/* DescripciÃ³n mÃ¡s grande, en cursiva y con buen margen inferior */
-.descripcion-hero-cursiva {
-    font-size: 19px;
-    line-height: 2;
+.texto p{
+    font-size: 20px;
+    line-height: 1.6;
     margin-bottom: 35px;
-    color: #4a5568;
-    font-style: italic;
-    font-weight: 300;
+    color: #2b2b2b;
+    font-weight: 400;
 }
 
 /* ==========================================================
