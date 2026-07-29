@@ -1,4 +1,18 @@
+// Evitar que el navegador recuerde la posición anterior al recargar
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+
+if (window.location.hash) {
+    history.replaceState(null, null, window.location.pathname);
+}
+
+window.addEventListener('load', () => {
+    window.scrollTo(0, 0);
+});
+
 console.log("Consultoría Dietética Valenzuela");
+
 /* ==========================================================
    SCRIPT PRINCIPAL - CONSULTORÍA DIETÉTICA VALENZUELA
    ========================================================== */
