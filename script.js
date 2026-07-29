@@ -75,5 +75,20 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+    
+    // 3. Ocultar cabecera al bajar y mostrar al subir
 
+    let ultimoScroll = 0;
+    const header = document.querySelector("header");
+    window.addEventListener("scroll", () => {
+        let scrollActual = window.scrollY;
+        if (scrollActual > ultimoScroll && scrollActual > 100) {
+            // Bajando
+            header.classList.add("oculto");
+        } else {
+            // Subiendo
+            header.classList.remove("oculto");
+        }
+        ultimoScroll = scrollActual;
+    });
 });
