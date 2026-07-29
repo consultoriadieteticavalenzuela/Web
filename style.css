@@ -145,12 +145,18 @@ header {
    ESTRUCTURA DEL HERO Y TAMAÑO DE IMAGEN
    ========================================================== */
 .hero {
+    min-height: 100vh;
+
     background:
         linear-gradient(
             rgba(250, 249, 246, 0.75),
             rgba(250, 249, 246, 0.75)
         ),
         url("images/inicio.PNG");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero-container {
