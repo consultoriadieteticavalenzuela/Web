@@ -3,17 +3,29 @@ if ('scrollRestoration' in history) {
     history.scrollRestoration = 'manual';
 }
 
-if (window.location.hash) {
-    history.replaceState(null, null, window.location.pathname);
-}
-
+// Comprobamos si hay un hash al cargar la página
 window.addEventListener('load', () => {
-    if (!window.location.hash) {
+    if (window.location.hash) {
+        const destinoId = window.location.hash;
+        const seccionDestino = document.querySelector(destinoId);
+        
+        if (seccionDestino) {
+            // Pequeño retardo para asegurar que el DOM y estilos estén listos
+            setTimeout(() => {
+                seccionDestino.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }, 100);
+        }
+    } else {
+        // Si no hay hash, mandamos arriba
         window.scrollTo(0, 0);
     }
 });
 
 console.log("Consultoría Dietética Valenzuela");
+
 
 /* ==========================================================
    SCRIPT PRINCIPAL - CONSULTORÍA DIETÉTICA VALENZUELA
