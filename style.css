@@ -1053,24 +1053,26 @@ width:100%;
 
 
 .solicitud-header {
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto 50px;
+    max-width: 650px;
+    margin: 0 auto 40px;
 }
 
 
 .solicitud-header h1 {
+    text-align: left;
     font-size: 42px;
     color: #2b2b2b;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-weight: 600;
 }
 
 
 .solicitud-header p {
+    text-align: left;
     font-size: 17px;
-    line-height: 1.7;
+    line-height: 1.8;
     color: #555;
+    margin-bottom: 20px;
 }
 
 
@@ -1231,23 +1233,31 @@ width:100%;
 
 
 /* ==========================================================
-   MÓVIL
+   AJUSTES MÓVIL - PÁGINA SOLICITUD
    ========================================================== */
-
 
 @media (max-width: 768px) {
 
 
     .solicitud {
 
-        padding: 80px 5%;
+        padding: 70px 5% 60px;
+
+    }
+
+
+    .solicitud-header {
+
+        margin-bottom: 35px;
 
     }
 
 
     .solicitud-header h1 {
 
-        font-size: 32px;
+        font-size: 30px;
+        line-height: 1.2;
+        margin-bottom: 18px;
 
     }
 
@@ -1255,15 +1265,55 @@ width:100%;
     .solicitud-header p {
 
         font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 15px;
 
     }
 
 
     .formulario-solicitud {
 
-        padding: 30px 20px;
+        padding: 25px 18px;
+        border-radius: 12px;
 
     }
+
+
+    .formulario-solicitud label {
+
+        font-size: 14px;
+        margin-top: 18px;
+        margin-bottom: 7px;
+
+    }
+
+
+    .formulario-solicitud input,
+    .formulario-solicitud select,
+    .formulario-solicitud textarea {
+
+        padding: 13px;
+        font-size: 16px; /* evita zoom automático en iPhone */
+
+    }
+
+
+    .formulario-solicitud button {
+
+        margin-top: 25px;
+        padding: 14px;
+        font-size: 15px;
+
+    }
+
+
+    .privacidad {
+
+        font-size: 13px !important;
+
+    }
+
+}
 
      /* ==========================================================
    PÁGINA POLÍTICA DE PRIVACIDAD
