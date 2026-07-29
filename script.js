@@ -91,4 +91,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         ultimoScroll = scrollActual;
     });
+
+    /* ==========================================================
+   COOKIES
+   ========================================================== */
+
+const cookieBanner = document.getElementById("cookie-banner");
+
+if (!localStorage.getItem("cookiesAceptadas")) {
+
+    cookieBanner.style.display = "block";
+
+}
+
+document.getElementById("aceptarCookies").addEventListener("click", () => {
+
+    localStorage.setItem("cookiesAceptadas", "si");
+
+    cookieBanner.style.display = "none";
+
+});
+
+document.getElementById("rechazarCookies").addEventListener("click", () => {
+
+    localStorage.setItem("cookiesAceptadas", "no");
+
+    cookieBanner.style.display = "none";
+
+});
 });
