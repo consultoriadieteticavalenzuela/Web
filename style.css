@@ -1688,134 +1688,146 @@ input[type="checkbox"]{
 }
 
     /* ==========================================================
-   BANNER DE COOKIES
+   8. FOOTER (Definitivo y adaptado a pantalla grande)
    ========================================================== */
+footer {
+    background-color: #1b3b2b !important;
+    color: #ffffff !important;
+    padding: 40px 8%;
+    text-align: center;
+    border-top: 3px solid #d1b17e;
+}
 
-.cookie-banner{
+.footer-contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
 
-    position:fixed;
+@media(min-width: 768px) {
+    .footer-contenedor {
+        flex-direction: row;
+    }
+}
 
-    bottom:20px;
+.footer-contenedor p {
+    font-size: 13px;
+    color: #fdfcf7;
+    opacity: 0.8;
+}
 
-    left:50%;
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
 
-    transform:translateX(-50%);
+.footer-links a {
+    color: #d1b17e;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
 
-    width:min(92%,850px);
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
 
-    background:#ffffff;
+.enlaces-legales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
 
-    padding:22px;
+.enlaces-legales a {
+    color: #d1b17e !important;
+    opacity: 0.9;
+    text-decoration: none;
+    font-size: 14px;
+    transition: .3s;
+}
 
-    border-radius:16px;
-
-    box-shadow:0 10px 35px rgba(0,0,0,.15);
-
-    display:none;
-
-    z-index:9999;
-
+.enlaces-legales a:hover {
+    color: #ffffff !important;
+    text-decoration: underline;
+    opacity: 1;
 }
 
 
-.cookie-banner p{
-
-    color:#555;
-
-    line-height:1.7;
-
-    margin-bottom:18px;
-
+/* ==========================================================
+   BANNER DE COOKIES (Diseño flotante limpio y ordenado)
+   ========================================================== */
+.cookie-banner {
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(92%, 850px);
+    background: #ffffff;
+    padding: 24px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 35px rgba(27, 59, 43, 0.2);
+    border: 1px solid rgba(209, 177, 126, 0.4);
+    display: none; /* Se activa mediante JS */
+    z-index: 9999;
+    text-align: left;
 }
 
-
-.cookie-banner a{
-
-    color:#c5a059;
-
-    text-decoration:none;
-
+.cookie-banner p {
+    color: #4a5568;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 18px;
 }
 
-
-.cookie-botones{
-
-    display:flex;
-
-    gap:12px;
-
-    justify-content:flex-end;
-
+.cookie-banner a {
+    color: #1b3b2b;
+    font-weight: 600;
+    text-decoration: underline;
 }
 
-
-.btn-cookie{
-
-    padding:12px 22px;
-
-    border:none;
-
-    border-radius:30px;
-
-    cursor:pointer;
-
-    font-weight:600;
-
-    transition:.3s;
-
+.cookie-botones {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-
-.aceptar{
-
-    background:#c5a059;
-
-    color:white;
-
+.btn-cookie {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: .3s;
 }
 
-
-.rechazar{
-
-    background:#efefef;
-
-    color:#2b2b2b;
-
+.aceptar {
+    background: #1b3b2b;
+    color: white;
 }
 
-
-.btn-cookie:hover{
-
-    transform:translateY(-2px);
-
-}
-}
-    
-/* ================= FOOTER ================= */
-
-footer{
-    background:#faf9f6;
-    padding:40px 5%;
-    border-top:1px solid #e8e4dc;
+.aceptar:hover {
+    background: #2c5942;
 }
 
-.enlaces-legales{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:30px;
-    flex-wrap:wrap;
+.rechazar {
+    background: #faf9f6;
+    color: #4a5568;
+    border: 1px solid #d5d0c7;
 }
 
-.enlaces-legales a{
-    color:#666;
-    text-decoration:none;
-    font-size:14px;
-    transition:.3s;
-}
-
-.enlaces-legales a:hover{
-    color:#c5a059;
+.rechazar:hover {
+    background: #f0ebe1;
 }
 
     
