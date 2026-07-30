@@ -349,7 +349,7 @@ nav a:hover::after {
     width: 55px;
     height: 2px;
     background: #d1b17e;
-    margin-top: 15px auto 0;
+    margin-top: 15px;
 }
 
 .sobre-mi-texto p {
@@ -1278,10 +1278,10 @@ footer {
         width: 280px;
         height: 350px;
         top: 15px;
-        left: 15px;
+        margin-left: auto;
+        margin-right: auto;
     }
-
-
+   
     .sobre-mi-imagen img {
         width: 280px;
         height: 350px;
