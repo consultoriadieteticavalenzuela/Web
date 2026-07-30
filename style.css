@@ -1296,9 +1296,14 @@ footer {
         font-size: 18px;
     }
 
+    .subtitulo-sobremi {
+        width: 100%;
+        text-align: left;
+    }
+
     .subtitulo-sobremi::after {
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .sobre-mi-texto p {
@@ -1499,18 +1504,4 @@ footer {
     .politica li {
         font-size: 15px;
     }
-}
-
-@media (max-width: 768px) {
-
-    .subtitulo-sobremi {
-        width: 100%;
-        text-align: center;
-    }
-
-    .subtitulo-sobremi::after {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
 }
