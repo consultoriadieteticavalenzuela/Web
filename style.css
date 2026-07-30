@@ -359,6 +359,59 @@ nav a:hover::after {
     margin-bottom: 18px;
 }
 
+/* ================================
+   SEPARADOR VERDE HERO - SOBRE MÍ
+================================ */
+
+.separador-verde {
+    background: linear-gradient(
+        135deg,
+        #1b3b2b 0%,
+        #254936 50%,
+        #1b3b2b 100%
+    );
+    padding: 35px 5%;
+    text-align: center;
+    color: #ffffff;
+    border-top: 3px solid #d1b17e;
+    border-bottom: 3px solid #d1b17e;
+    position: relative;
+    overflow: hidden;
+}
+
+.separador-verde::before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: rgba(209,177,126,0.08);
+    border-radius: 50%;
+    top: -120px;
+    right: -80px;
+}
+
+.separador-verde-contenido {
+    position: relative;
+    z-index: 1;
+}
+
+
+.separador-verde-contenido h3 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+
+.separador-verde-contenido p {
+    font-size: 16px;
+    color: #fdfcf7;
+    opacity: 0.9;
+    margin: 0;
+}
+
 .separador-verde {
     background-color: #1b3b2b;
     padding: 25px 5%;
