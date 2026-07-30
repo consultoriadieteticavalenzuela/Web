@@ -347,7 +347,7 @@ nav a:hover::after {
     content: "";
     display: block;
     width: 55px;
-    height: 7px;
+    height: 2px;
     background: #d1b17e;
     margin-top: 15px;
 }
@@ -1286,21 +1286,20 @@ footer {
         height: 350px;
     }
 
-
     .sobre-mi-texto h2 {
         font-size: 36px;
         text-align: center;
     }
-
 
     .subtitulo-sobremi {
         text-align: center;
         font-size: 18px;
     }
 
-   .subtitulo-sobremi::after {
-    margin: center;
-}
+    .subtitulo-sobremi::after {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
     .sobre-mi-texto p {
         font-size: 16px;
