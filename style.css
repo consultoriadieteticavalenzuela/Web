@@ -1505,3 +1505,40 @@ footer {
         font-size: 15px;
     }
 }
+
+.contacto-cta {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contacto-cta h3 {
+    color: #1b3b2b;
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.contacto-cta p {
+    color: #4a5568;
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+.boton-principal {
+    display: inline-block;
+    background: #1b3b2b;
+    color: #ffffff;
+    padding: 15px 34px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(27, 59, 43, 0.15);
+}
+
+.boton-principal:hover {
+    background: #d1b17e;
+    color: #1b3b2b;
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(27, 59, 43, 0.2);
+}
