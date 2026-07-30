@@ -347,7 +347,7 @@ nav a:hover::after {
     content: "";
     display: block;
     width: 55px;
-    height: 2px;
+    height: 7px;
     background: #d1b17e;
     margin-top: 15px;
 }
@@ -1278,8 +1278,7 @@ footer {
         width: 280px;
         height: 350px;
         top: 15px;
-        margin-left: auto;
-        margin-right: auto;
+        left: 15px;
     }
    
     .sobre-mi-imagen img {
@@ -1298,6 +1297,10 @@ footer {
         text-align: center;
         font-size: 18px;
     }
+
+   .subtitulo-sobremi::after {
+    margin: center;
+}
 
     .sobre-mi-texto p {
         font-size: 16px;
