@@ -1230,38 +1230,6 @@ footer {
 }
 
 @media (max-width: 900px) {
-    .sobre-mi {
-        padding: 40px 4%;
-    }
-    
-    .sobre-mi-contenedor {
-        flex-direction: column;
-        text-align: left;
-        padding: 25px 20px;
-        gap: 30px;
-        border-radius: 15px;
-    }
-
-    .sobre-mi-imagen img {
-        max-width: 260px;
-        margin: 0 auto;
-        display: block;
-    }
-
-    .sobre-mi-texto h2 {
-        font-size: 28px;
-        text-align: center;
-    }
-
-    .subtitulo-sobremi {
-        font-size: 16px;
-        text-align: center;
-    }
-
-    .sobre-mi-texto p {
-        font-size: 15px;
-        text-align: left;
-    }
 
     .seccion-como-trabajo {
         padding: 50px 4%;
@@ -1294,6 +1262,47 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
         margin-bottom: 15px;
+    }
+
+    .sobre-mi {
+        padding: 70px 6%;
+    }
+
+    .sobre-mi-contenedor {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+
+    .sobre-mi-imagen::before {
+        width: 280px;
+        height: 350px;
+        top: 15px;
+        left: 15px;
+    }
+
+
+    .sobre-mi-imagen img {
+        width: 280px;
+        height: 350px;
+    }
+
+
+    .sobre-mi-texto h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+
+    .subtitulo-sobremi {
+        text-align: center;
+        font-size: 18px;
+    }
+
+
+    .sobre-mi-texto p {
+        font-size: 16px;
+        line-height: 1.7;
     }
 
     .enlaces-menu {
