@@ -1266,6 +1266,107 @@ footer {
 
 }
 
+/* ==========================
+   OPINIONES
+========================== */
+
+
+.opiniones-section {
+
+    padding: 80px 8%;
+    background: white;
+
+}
+
+
+
+.opiniones-container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+
+
+.opinion-card {
+
+    background: #faf9f6;
+    padding: 35px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    border-top: 4px solid #d1b17e;
+    transition: transform .3s ease;
+
+}
+
+
+
+.opinion-card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+
+
+.estrellas {
+
+    color: #d1b17e;
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+
+}
+
+
+
+.opinion-card p {
+
+    color: #555;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    font-style: italic;
+    margin-bottom: 25px;
+
+}
+
+
+
+.opinion-card h3 {
+
+    color: #1b3b2b;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+
+}
+
+
+
+.opinion-card span {
+
+    color: #777;
+    font-size: 0.9rem;
+
+}
+
+
+
+@media(max-width:900px){
+
+
+    .opiniones-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+}
 
 /* ==========================================================
    9. RESPONSIVE MÓVIL / TABLET (Medias Queries unificadas)
