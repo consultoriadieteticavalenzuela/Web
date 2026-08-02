@@ -256,7 +256,7 @@
     <section class="opiniones-section" id="opiniones">
 
     <div class="opiniones-header">
-        <h2>Opiniones</h2>
+        <h2>EXPERIENCIAS DE PERSONAS QUE HAN CONFIADO EN EL PROCESO.</h2>
         <p>
             Tu experiencia es importante. Ayúdame a seguir mejorando y a que otras personas
             conozcan cómo es el acompañamiento.
@@ -268,25 +268,46 @@
 
         <h3>Comparte tu experiencia</h3>
 
-        <form>
+        <form action="https://formspree.io/f/xykrrzkg" method="POST">
 
-            <input type="text" placeholder="Tu nombre" required>
-
-            <select required>
-                <option value="">Valoración</option>
-                <option>★★★★★</option>
-                <option>★★★★</option>
-                <option>★★★</option>
-            </select>
+            <input 
+type="text" 
+name="nombre"
+placeholder="Tu nombre"
+required>
 
 
-            <textarea placeholder="Escribe tu opinión..." required></textarea>
+<select name="valoracion" required>
+
+<option value="">Valoración</option>
+<option value="5 estrellas">★★★★★</option>
+<option value="4 estrellas">★★★★</option>
+<option value="3 estrellas">★★★</option>
+
+</select>
 
 
-            <button type="submit">
-                Enviar opinión
-            </button>
+<textarea 
+name="opinion"
+placeholder="Escribe tu opinión..."
+required></textarea>
 
+<label class="check-opinion">
+
+    <input type="checkbox" name="consentimiento" required>
+
+    Acepto que mi opinión pueda aparecer publicada en la página web 
+    y he leído la 
+    <a href="politica-privacidad.html" target="_blank">
+        Política de Privacidad
+    </a>.
+
+</label>
+
+
+<button type="submit">
+Enviar opinión
+</button>
         </form>
 
     </div>
