@@ -27,6 +27,7 @@ body {
 header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 20px 5%;
     background: white;
     position: sticky;
