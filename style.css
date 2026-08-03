@@ -1169,8 +1169,7 @@ footer {
 ========================== */
 
 .FAQ {
-   margin-top:80px;
-    padding: 80px 8%;
+    padding: 40px 8%;
     background: #faf9f6;
 }
 
@@ -1246,7 +1245,7 @@ footer {
 @media(max-width:768px){
 
     .FAQ {
-        padding: 60px 5%;
+        padding: 30px 5%;
     }
 
 
@@ -1274,8 +1273,7 @@ footer {
 
 
 .opiniones-section {
-margin-top: 80px;
-    padding: 80px 8%;
+    padding: 40px 8%;
     background: #faf9f6;
 
 }
@@ -1423,7 +1421,7 @@ margin-top: 80px;
 
     background: white;
 
-    padding: 45px;
+    padding: 30px;
 
     border-radius: 25px;
 
@@ -1617,7 +1615,7 @@ margin-top: 80px;
 
     .opiniones-section {
 
-        padding: 60px 5%;
+        padding: 30px 5%;
 
     }
 
