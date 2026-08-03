@@ -595,6 +595,7 @@ nav a:hover::after {
     max-width: 1100px;
     margin: 0 auto;
     text-align: center;
+   margin-top: 80px;
 }
 
 .tarifa-seccion-tres > h3 {
