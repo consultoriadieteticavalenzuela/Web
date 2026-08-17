@@ -275,40 +275,22 @@ document.getElementById("plan").value = plan;
 
 </script>
 
-  <script>
+<script>
 const formulario = document.querySelector(".formulario-solicitud");
 
-formulario.addEventListener("submit", async function(e) {
-
-    e.preventDefault();
+formulario.addEventListener("submit", function () {
 
     const datos = new FormData(formulario);
 
-    try {
-
-        await fetch(
-            "https://script.google.com/macros/s/AKfycbymtLnOTmLxJFJkTEzZULucz-Q6iDRUiYT9JrU5dQp8kV0D5q0So7Q8zf5WfOzsdOvVIA/exec",
-            {
-                method: "POST",
-                body: datos,
-                mode: "no-cors"
-            }
-        );
-
-        console.log("Google Apps Script: solicitud enviada");
-
-    } catch (error) {
-
-        console.error("Google Apps Script:", error);
-
-    }
-
-    // Enviar también a Formspree
-    formulario.submit();
+    fetch("https://script.google.com/macros/s/AKfycbymtLnOTmLxJFJkTEzZULucz-Q6iDRUiYT9JrU5dQp8kV0D5q0So7Q8zf5WfOzsdOvVIA/exec", {
+        method: "POST",
+        body: datos,
+        mode: "no-cors",
+        keepalive: true
+    });
 
 });
 </script>
-
 </body>
 
 </html>
