@@ -2116,3 +2116,44 @@ footer {
     transform: translateY(-2px);
     box-shadow: 0 15px 30px rgba(27, 59, 43, 0.2);
 }
+
+PRECIOS PROMOCIONALES â 25% DE DESCUENTO
+   ========================================================== */
+.precio-original {
+    font-size: 15px;
+    color: #6b7280;
+    text-decoration: line-through;
+    text-decoration-thickness: 1.5px;
+    margin-bottom: 2px;
+}
+
+.precio-promocional {
+    margin-top: 0;
+}
+
+.precio-descuento {
+    display: inline-block;
+    margin: 8px auto 10px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    background: #d1b17e;
+    color: #1b3b2b;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.plan-destacado .precio-descuento {
+    background: #1b3b2b;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .precio-original {
+        font-size: 14px;
+    }
+
+    .precio-descuento {
+        font-size: 10px;
+    }
+}
