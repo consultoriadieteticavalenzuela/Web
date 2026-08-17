@@ -275,18 +275,31 @@ document.getElementById("plan").value = plan;
 
 </script>
 
-    <script>
+  <script>
 const formulario = document.querySelector(".formulario-solicitud");
 
-formulario.addEventListener("submit", function () {
+formulario.addEventListener("submit", function (e) {
+
+    e.preventDefault();
 
     const datos = new FormData(formulario);
 
     fetch("https://script.google.com/macros/s/AKfycbymtLnOTmLxJFJkTEzZULucz-Q6iDRUiYT9JrU5dQp8kV0D5q0So7Q8zf5WfOzsdOvVIA/exec", {
         method: "POST",
         body: datos,
-        mode: "no-cors",
-        keepalive: true
+        mode: "no-cors"
+    })
+    .then(() => {
+
+        formulario.submit();
+
+    })
+    .catch((error) => {
+
+        console.error("Error al enviar a Google Apps Script:", error);
+
+        formulario.submit();
+
     });
 
 });
