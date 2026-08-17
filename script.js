@@ -33,25 +33,32 @@ console.log("Consultoría Dietética Valenzuela");
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // 1. Desplazamiento suave (Smooth Scroll) para los enlaces del menú y botones
-    const enlacesInternos = document.querySelectorAll('a[href^="#"]');
+    // 1. Desplazamiento suave para enlaces internos
+const enlacesInternos = document.querySelectorAll('a[href^="#"]');
 
-    enlacesInternos.forEach(enlace => {
-        enlace.addEventListener('click', function(e) {
-            const destinoId = this.getAttribute('href');
-            
-            // Verificamos si el enlace apunta a una sección existente en la página
-            if (destinoId.length > 1 && document.querySelector(destinoId)) {
-                e.preventDefault();
-                const seccionDestino = document.querySelector(destinoId);
-                
-                seccionDestino.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
+enlacesInternos.forEach(enlace => {
+    enlace.addEventListener('click', function(e) {
+        const destinoId = this.getAttribute('href');
+
+        if (!destinoId || destinoId === '#') return;
+
+        const seccionDestino = document.getElementById(
+            destinoId.substring(1)
+        );
+
+        if (seccionDestino) {
+            e.preventDefault();
+
+            seccionDestino.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+
+            // Actualiza la URL sin provocar una navegación
+            history.pushState(null, '', destinoId);
+        }
     });
+});
 
     // 2. Resaltar el enlace activo del menú según la sección visible al hacer scroll
     const secciones = document.querySelectorAll('section[id], header + div + section[id]');
