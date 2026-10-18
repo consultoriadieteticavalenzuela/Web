@@ -606,12 +606,23 @@ nav a:hover::after {
     font-weight: 700;
 }
 
+
 .planes-grid-tres {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, minmax(280px, 320px));
+    justify-content: center;
     gap: 30px;
     align-items: stretch;
     margin-bottom: 30px;
+}
+
+
+@media (max-width: 700px) {
+    .planes-grid-tres {
+        grid-template-columns: minmax(0, 320px);
+        justify-content: center;
+        gap: 20px;
+    }
 }
 
 .tarjeta-plan-opcion {
