@@ -1,5 +1,4 @@
 /* ==========================================================
-/* ==========================================================
    1. VARIABLES Y CONFIGURACIÓN GENERAL
    ========================================================== */
 * {
@@ -8,19 +7,15 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 body {
     background: #faf9f6;
     color: #2b2b2b;
     overflow-x: hidden;
 }
-
-
 /* ==========================================================
    2. BODY Y TIPOGRAFÍA (Estilos base y utilidades generales)
    ========================================================== */
 /* La tipografía global Poppins se aplica desde el selector universal (*) */
-
 
 /* ==========================================================
    3. HEADER / NAVEGACIÓN
@@ -37,34 +32,28 @@ header {
     z-index: 1000;
     transition: transform 0.3s ease;
 }
-
 header.oculto {
     transform: translateY(-100%);
 }
-
 .logo-container {
     display: flex;
     align-items: center;
     margin-right: 25px;
 }
-
 .logo-img {
     height: 75px;
     width: auto;
 }
-
 .nav-izquierda {
     display: flex;
     align-items: center;
     gap: 50px;
     margin-left: 30px;
 }
-
 .nav-izquierda a {
     white-space: nowrap;
     font-size: 15px;
 }
-
 .nav a {
     text-decoration: none;
     color: #4a5568;
@@ -73,13 +62,11 @@ header.oculto {
     transition: .3s;
     position: relative;
 }
-
 .nav a:hover, 
 nav a.active {
     color: #1b3b2b;
     font-weight: 600;
 }
-
 /* Efecto subrayado en enlaces de navegación */
 nav a::after {
     content: "";
@@ -91,25 +78,20 @@ nav a::after {
     background: #1b3b2b;
     transition: .3s;
 }
-
 nav a:hover::after {
     width: 100%;
 }
-
 .enlaces-menu {
     display: flex;
     gap: 35px;
 }
-
 .enlaces-menu a {
     text-decoration: none;
     color: #333;
 }
-
 .cta-container {
     margin-left: auto;
 }
-
 .btn-reservar {
     background-color: #1b3b2b;
     color: white;
@@ -120,7 +102,6 @@ nav a:hover::after {
     font-size: 15px;
     transition: .3s;
 }
-
 .btn-reservar:hover {
     background-color: #2c5942;
 }
@@ -137,35 +118,29 @@ nav a:hover::after {
     border-bottom: 2px solid #d1b17e;
     z-index: 999;
 }
-
 .marquesina-contenido {
     display: inline-block;
     white-space: nowrap;
     animation: moverDerecha 25s linear infinite;
     padding-left: 100%;
 }
-
 .marquesina-contenido span {
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.5px;
     color: #ffffff;
 }
-
 .marquesina-contenido strong {
     color: #d1b17e;
     font-weight: 700;
 }
-
 @keyframes moverDerecha {
     0% { transform: translateX(0%); }
     100% { transform: translateX(-100%); }
 }
-
 .barra-aviso-movimiento:hover .marquesina-contenido {
     animation-play-state: paused;
 }
-
 
 /* ==========================================================
    4. HERO
@@ -181,7 +156,6 @@ nav a:hover::after {
     align-items: center;
     padding: 0 8%;
 }
-
 .hero::before {
     content: '';
     position: absolute;
@@ -192,13 +166,11 @@ nav a:hover::after {
     background: rgba(255, 255, 255, 0.45);
     z-index: 1;
 }
-
 .texto {
     position: relative;
     z-index: 2;
     max-width: 650px;
 }
-
 .texto h1 {
     font-size: 54px;
     color: #1b3b2b;
@@ -206,7 +178,6 @@ nav a:hover::after {
     line-height: 1.15;
     font-weight: 700;
 }
-
 .subtitulo-hero-dorado {
     color: #c5a059;
     font-size: 0.85rem;
@@ -215,7 +186,6 @@ nav a:hover::after {
     margin-bottom: 15px;
     text-transform: uppercase;
 }
-
 .descripcion-hero-cursiva {
     font-style: italic;
     font-size: 0.85rem;
@@ -224,7 +194,6 @@ nav a:hover::after {
     margin-bottom: 30px;
     color: #4a5568;
 }
-
 /* Botones del Hero */
 .botones-hero {
     display: flex;
@@ -233,7 +202,6 @@ nav a:hover::after {
     margin-top: 15px;
     flex-wrap: wrap;
 }
-
 .btn-acompañamiento {
     display: inline-block;
     background-color: #1b3b2b;
@@ -247,12 +215,10 @@ nav a:hover::after {
     transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(27, 59, 43, 0.2);
 }
-
 .btn-acompañamiento:hover {
     background-color: #2c5942;
     transform: translateY(-2px);
 }
-
 .btn-sobre-mi {
     display: inline-block;
     background-color: transparent;
@@ -266,26 +232,22 @@ nav a:hover::after {
     letter-spacing: 0.5px;
     transition: all 0.3s ease;
 }
-
 .btn-sobre-mi:hover {
     background-color: #1b3b2b;
     color: #ffffff;
     transform: translateY(-2px);
 }
 
-
 /* ==========================================================
    5. SECCIONES PRINCIPALES (Sobre mí, Cómo trabajo, Separadores)
    ========================================================== */
 /* Sección Sobre Mí */
-
 .sobre-mi {
     width: 100%;
     padding: 120px 8%;
     background: #f7f4ee;
     box-sizing: border-box;
 }
-
 .sobre-mi-contenedor {
     max-width: 1150px;
     margin: 0 auto;
@@ -293,14 +255,12 @@ nav a:hover::after {
     align-items: center;
     gap: 90px;
 }
-
 .sobre-mi-imagen {
     flex: 1;
     position: relative;
     display: flex;
     justify-content: center;
 }
-
 .sobre-mi-imagen::before {
     content: "";
     position: absolute;
@@ -313,7 +273,6 @@ nav a:hover::after {
     z-index: 0;
     opacity: 0.35;
 }
-
 .sobre-mi-imagen img {
     position: relative;
     z-index: 1;
@@ -324,11 +283,9 @@ nav a:hover::after {
     border-radius: 25px;
     box-shadow: 0 20px 45px rgba(27,59,43,0.15);
 }
-
 .sobre-mi-texto {
     flex: 1;
 }
-
 .sobre-mi-texto h2 {
     font-size: 46px;
     line-height: 1.2;
@@ -336,7 +293,6 @@ nav a:hover::after {
     margin-bottom: 15px;
     font-weight: 700;
 }
-
 .subtitulo-sobremi {
     font-size: 20px;
     color: #d1b17e;
@@ -344,7 +300,6 @@ nav a:hover::after {
     margin-bottom: 25px;
     position: relative;
 }
-
 .subtitulo-sobremi::after {
     content: "";
     display: block;
@@ -353,7 +308,6 @@ nav a:hover::after {
     background: #d1b17e;
     margin-top: 15px;
 }
-
 .sobre-mi-texto p {
     font-size: 17px;
     line-height: 1.8;
@@ -361,10 +315,7 @@ nav a:hover::after {
     margin-bottom: 18px;
 }
 
-/* ================================
-   SEPARADOR VERDE HERO - SOBRE MÍ
-================================ */
-
+/* SEPARADOR VERDE HERO - SOBRE MÍ */
 .separador-verde {
     background: linear-gradient(
         135deg,
@@ -380,7 +331,6 @@ nav a:hover::after {
     position: relative;
     overflow: hidden;
 }
-
 .separador-verde::before {
     content: "";
     position: absolute;
@@ -391,13 +341,10 @@ nav a:hover::after {
     top: -120px;
     right: -80px;
 }
-
 .separador-verde-contenido {
     position: relative;
     z-index: 1;
 }
-
-
 .separador-verde-contenido h3 {
     font-size: 24px;
     font-weight: 700;
@@ -405,33 +352,8 @@ nav a:hover::after {
     margin-bottom: 8px;
     line-height: 1.3;
 }
-
-
 .separador-verde-contenido p {
     font-size: 16px;
-    color: #fdfcf7;
-    opacity: 0.9;
-    margin: 0;
-}
-
-.separador-verde {
-    background-color: #1b3b2b;
-    padding: 25px 5%;
-    text-align: center;
-    color: #ffffff;
-    border-top: 3px solid #d1b17e;
-    border-bottom: 3px solid #d1b17e;
-}
-
-.separador-verde-contenido h3 {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 6px;
-    line-height: 1.2;
-}
-
-.separador-verde-contenido p {
-    font-size: 15px;
     color: #fdfcf7;
     opacity: 0.9;
     margin: 0;
@@ -442,13 +364,11 @@ nav a:hover::after {
     padding: 80px 8%;
     background-color: #faf9f6;
 }
-
 .trabajo-header {
     text-align: center;
     max-width: 800px;
     margin: 0 auto 60px auto;
 }
-
 .trabajo-header h2 {
     font-size: 32px;
     color: #1b3b2b;
@@ -456,13 +376,11 @@ nav a:hover::after {
     font-weight: 600;
     line-height: 1.2;
 }
-
 .trabajo-header p {
     font-size: 17px;
     color: #4a5568;
     line-height: 1.6;
 }
-
 .pasos-contenedor-horizontal {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -474,7 +392,6 @@ nav a:hover::after {
     margin-left: auto;
     margin-right: auto;
 }
-
 .pasos-contenedor-horizontal::before {
     content: '';
     position: absolute;
@@ -485,7 +402,6 @@ nav a:hover::after {
     border-top: 2px dashed rgba(209, 177, 126, 0.6);
     z-index: 1;
 }
-
 .paso-item-h {
     background: transparent;
     padding: 0 5px;
@@ -495,7 +411,6 @@ nav a:hover::after {
     position: relative;
     z-index: 2;
 }
-
 .paso-icono-circulo {
     width: 85px;
     height: 85px;
@@ -508,12 +423,10 @@ nav a:hover::after {
     border: 1px solid rgba(209, 177, 126, 0.4);
     box-shadow: 0 4px 10px rgba(27, 59, 43, 0.04);
 }
-
 .paso-icono-circulo i {
     font-size: 28px;
     color: #1b3b2b;
 }
-
 .paso-numero-badge {
     width: 24px;
     height: 24px;
@@ -527,20 +440,17 @@ nav a:hover::after {
     justify-content: center;
     margin-bottom: 12px;
 }
-
 .paso-item-h h3 {
     font-size: 16px;
     color: #1b3b2b;
     margin-bottom: 8px;
     font-weight: 700;
 }
-
 .paso-item-h p {
     font-size: 13px;
     color: #4a5568;
     line-height: 1.4;
 }
-
 
 /* ==========================================================
    6. SERVICIOS / TARJETAS (Planes, Qué incluye, Descuentos)
@@ -557,7 +467,6 @@ nav a:hover::after {
     margin-left: auto;
     margin-right: auto;
 }
-
 .incluye-caja-grande > h3 {
     text-align: center;
     font-size: 26px;
@@ -565,27 +474,23 @@ nav a:hover::after {
     margin-bottom: 40px;
     font-weight: 700;
 }
-
 .incluye-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
-
 .incluye-card {
     background: #faf9f6;
     padding: 20px 25px;
     border-radius: 15px;
     border-left: 4px solid #1b3b2b;
 }
-
 .incluye-card strong {
     font-size: 16px;
     color: #1b3b2b;
     display: block;
     margin-bottom: 8px;
 }
-
 .incluye-card p {
     font-size: 14px;
     color: #4a5568;
@@ -597,17 +502,14 @@ nav a:hover::after {
     max-width: 1100px;
     margin: 0 auto;
     text-align: center;
-   margin-top: 80px;
+    margin-top: 80px;
 }
-
 .tarifa-seccion-tres > h3 {
     font-size: 32px;
     color: #1b3b2b;
     margin-bottom: 40px;
     font-weight: 700;
 }
-
-
 .planes-grid-tres {
     display: grid;
     grid-template-columns: repeat(2, minmax(280px, 320px));
@@ -616,8 +518,6 @@ nav a:hover::after {
     align-items: stretch;
     margin-bottom: 30px;
 }
-
-
 @media (max-width: 700px) {
     .planes-grid-tres {
         grid-template-columns: minmax(0, 320px);
@@ -625,7 +525,6 @@ nav a:hover::after {
         gap: 20px;
     }
 }
-
 .tarjeta-plan-opcion {
     background: #ffffff;
     border-radius: 25px;
@@ -640,17 +539,14 @@ nav a:hover::after {
     width: 100%;
     box-sizing: border-box;
 }
-
 .tarjeta-plan-opcion:hover {
     transform: translateY(-5px);
 }
-
 .plan-destacado {
     border: 2px solid #d1b17e;
     box-shadow: 0 15px 40px rgba(27, 59, 43, 0.1);
     z-index: 2;
 }
-
 .etiqueta-mas-elegido {
     position: absolute;
     top: -15px;
@@ -664,7 +560,6 @@ nav a:hover::after {
     border-radius: 20px;
     border: 1px solid #d1b17e;
 }
-
 .tarjeta-plan-opcion .precio-etiqueta {
     font-size: 13px;
     text-transform: uppercase;
@@ -673,7 +568,6 @@ nav a:hover::after {
     font-weight: 700;
     margin-bottom: 15px;
 }
-
 .tarjeta-plan-opcion .precio-numero {
     font-size: 40px;
     font-weight: 700;
@@ -684,13 +578,11 @@ nav a:hover::after {
     justify-content: center;
     gap: 5px;
 }
-
 .tarjeta-plan-opcion .precio-numero span {
     font-size: 16px;
     font-weight: 400;
     color: #4a5568;
 }
-
 .precio-ahorro {
     font-size: 13px;
     color: #1b3b2b;
@@ -701,13 +593,11 @@ nav a:hover::after {
     border-radius: 8px;
     border: 1px dashed rgba(209, 177, 126, 0.5);
 }
-
 .tarjeta-plan-opcion .precio-detalle {
     font-size: 13px;
     color: #4a5568;
     opacity: 0.8;
 }
-
 .btn-plan-opcion {
     display: inline-block;
     background-color: #ffffff;
@@ -723,17 +613,14 @@ nav a:hover::after {
     margin-top: auto;
     box-sizing: border-box;
 }
-
 .btn-plan-opcion:hover {
     background-color: #1b3b2b;
     color: #ffffff;
 }
-
 .btn-plan-destacado-btn {
     background-color: #1b3b2b;
     color: #ffffff;
 }
-
 .btn-plan-destacado-btn:hover {
     background-color: #2c5942;
 }
@@ -748,14 +635,12 @@ nav a:hover::after {
     box-shadow: 0 10px 30px rgba(27, 59, 43, 0.04);
     text-align: left;
 }
-
 .descuentos-grid-cuatro {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin-top: 25px;
 }
-
 .descuento-card {
     background: #faf9f6;
     padding: 22px;
@@ -763,20 +648,17 @@ nav a:hover::after {
     border: 1px solid rgba(209, 177, 126, 0.4);
     box-shadow: 0 5px 15px rgba(27, 59, 43, 0.03);
 }
-
 .descuento-card strong {
     font-size: 15px;
     color: #1b3b2b;
     display: block;
     margin-bottom: 6px;
 }
-
 .descuento-card p {
     font-size: 13px;
     color: #4a5568;
     line-height: 1.5;
 }
-
 
 /* ==========================================================
    7. FORMULARIOS (Solicitud y Contacto)
@@ -786,7 +668,6 @@ nav a:hover::after {
     background-color: #f7f4ee;
     text-align: center;
 }
-
 .contacto-caja-principal {
     max-width: 800px;
     margin: 0 auto;
@@ -796,28 +677,24 @@ nav a:hover::after {
     box-shadow: 0 15px 35px rgba(27, 59, 43, 0.06);
     border: 1px solid rgba(209, 177, 126, 0.3);
 }
-
 .contacto-caja-principal h2 {
     font-size: 36px;
     color: #1b3b2b;
     margin-bottom: 15px;
     font-weight: 700;
 }
-
 .contacto-caja-principal p {
     font-size: 17px;
     color: #4a5568;
     margin-bottom: 35px;
     line-height: 1.6;
 }
-
 .contacto-info-contenedor {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
-
 .contacto-enlace-oficial {
     display: inline-flex;
     align-items: center;
@@ -832,18 +709,15 @@ nav a:hover::after {
     border: 1px solid rgba(209, 177, 126, 0.5);
     transition: all 0.3s ease;
 }
-
 .contacto-enlace-oficial:hover {
     background-color: #1b3b2b;
     color: #ffffff;
     transform: translateY(-2px);
 }
-
 .contacto-enlace-oficial i {
     font-size: 20px;
     color: #d1b17e;
 }
-
 .contacto-enlace-oficial:hover i {
     color: #d1b17e;
 }
@@ -854,12 +728,10 @@ nav a:hover::after {
     padding: 120px 8%;
     background: #faf9f6;
 }
-
 .solicitud-header {
     max-width: 650px;
     margin: 0 auto 40px;
 }
-
 .solicitud-header h1 {
     text-align: left;
     font-size: 42px;
@@ -867,7 +739,6 @@ nav a:hover::after {
     margin-bottom: 25px;
     font-weight: 600;
 }
-
 .solicitud-header p {
     text-align: left;
     font-size: 17px;
@@ -875,7 +746,6 @@ nav a:hover::after {
     color: #555;
     margin-bottom: 20px;
 }
-
 .formulario-solicitud {
     max-width: 650px;
     margin: auto;
@@ -884,7 +754,6 @@ nav a:hover::after {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
-
 .formulario-solicitud label {
     display: block;
     margin-bottom: 8px;
@@ -893,7 +762,6 @@ nav a:hover::after {
     font-weight: 500;
     color: #2b2b2b;
 }
-
 .formulario-solicitud input:not([type="radio"]):not([type="checkbox"]),
 .formulario-solicitud textarea,
 .formulario-solicitud select {
@@ -902,7 +770,6 @@ nav a:hover::after {
     border: 1px solid #ddd;
     border-radius: 10px;
 }
-
 input[type="radio"],
 input[type="checkbox"] {
     width: 18px !important;
@@ -911,17 +778,14 @@ input[type="checkbox"] {
     padding: 0 !important;
     margin: 3px 0 0 0;
 }
-
 .formulario-solicitud input:focus,
 .formulario-solicitud select:focus,
 .formulario-solicitud textarea:focus {
     border-color: #c5a059;
 }
-
 .formulario-solicitud textarea {
     resize: vertical;
 }
-
 .opcion-radio {
     display: flex;
     align-items: flex-start;
@@ -932,17 +796,14 @@ input[type="checkbox"] {
     background: white;
     transition: .3s;
 }
-
 .opcion-radio:hover {
     border-color: #c5a059;
     box-shadow: 0 8px 20px rgba(0, 0, 0, .05);
 }
-
 #plan {
     color: #c5a059;
     font-weight: 600;
 }
-
 .privacidad {
     display: flex !important;
     align-items: center;
@@ -950,11 +811,9 @@ input[type="checkbox"] {
     margin-top: 25px !important;
     font-size: 14px !important;
 }
-
 .privacidad input {
     width: auto;
 }
-
 .formulario-solicitud button {
     width: 100%;
     margin-top: 35px;
@@ -968,17 +827,14 @@ input[type="checkbox"] {
     cursor: pointer;
     transition: 0.3s;
 }
-
 .formulario-solicitud button:hover {
     transform: translateY(-2px);
     opacity: 0.9;
 }
-
 .situacion-formulario {
     margin-top: 30px;
     margin-bottom: 25px;
 }
-
 .titulo-opciones {
     display: block;
     font-size: 15px !important;
@@ -986,17 +842,14 @@ input[type="checkbox"] {
     color: #2b2b2b;
     margin-bottom: 15px !important;
 }
-
 .titulo-opciones span {
     color: #c5a059;
 }
-
 .consentimientos {
     margin-top: 30px;
     padding-top: 20px;
     border-top: 1px solid #eee;
 }
-
 .checkbox-linea {
     display: flex !important;
     align-items: flex-start !important;
@@ -1008,7 +861,6 @@ input[type="checkbox"] {
     color: #555;
     cursor: pointer;
 }
-
 .checkbox-linea input {
     appearance: auto;
     width: 16px !important;
@@ -1018,21 +870,17 @@ input[type="checkbox"] {
     padding: 0 !important;
     flex-shrink: 0;
 }
-
 .checkbox-linea span {
     display: block;
 }
-
 .checkbox-linea a {
     color: #c5a059;
     font-weight: 500;
     text-decoration: none;
 }
-
 .checkbox-linea a:hover {
     text-decoration: underline;
 }
-
 
 /* ==========================================================
    8. FOOTER (Definitivo y adaptado a pantalla grande)
@@ -1044,7 +892,6 @@ footer {
     text-align: center;
     border-top: 3px solid #d1b17e;
 }
-
 .footer-contenedor {
     max-width: 1100px;
     margin: 0 auto;
@@ -1054,36 +901,30 @@ footer {
     align-items: center;
     justify-content: space-between;
 }
-
 @media(min-width: 768px) {
     .footer-contenedor {
         flex-direction: row;
     }
 }
-
 .footer-contenedor p {
     font-size: 13px;
     color: #fdfcf7;
     opacity: 0.8;
 }
-
 .footer-links {
     display: flex;
     gap: 20px;
 }
-
 .footer-links a {
     color: #d1b17e;
     text-decoration: none;
     font-size: 13px;
     transition: 0.3s;
 }
-
 .footer-links a:hover {
     text-decoration: underline;
     color: #ffffff;
 }
-
 .enlaces-legales {
     display: flex;
     justify-content: center;
@@ -1092,7 +933,6 @@ footer {
     flex-wrap: wrap;
     margin-top: 15px;
 }
-
 .enlaces-legales a {
     color: #d1b17e !important;
     opacity: 0.9;
@@ -1100,13 +940,11 @@ footer {
     font-size: 14px;
     transition: .3s;
 }
-
 .enlaces-legales a:hover {
     color: #ffffff !important;
     text-decoration: underline;
     opacity: 1;
 }
-
 
 /* ==========================================================
    BANNER DE COOKIES (Diseño flotante limpio y ordenado)
@@ -1126,20 +964,17 @@ footer {
     z-index: 9999;
     text-align: left;
 }
-
 .cookie-banner p {
     color: #4a5568;
     font-size: 14px;
     line-height: 1.6;
     margin-bottom: 18px;
 }
-
 .cookie-banner a {
     color: #1b3b2b;
     font-weight: 600;
     text-decoration: underline;
 }
-
 .cookie-botones {
     display: flex;
     gap: 12px;
@@ -1147,7 +982,6 @@ footer {
     align-items: center;
     flex-wrap: wrap;
 }
-
 .btn-cookie {
     padding: 10px 20px;
     border: none;
@@ -1157,22 +991,18 @@ footer {
     font-size: 14px;
     transition: .3s;
 }
-
 .aceptar {
     background: #1b3b2b;
     color: white;
 }
-
 .aceptar:hover {
     background: #2c5942;
 }
-
 .rechazar {
     background: #faf9f6;
     color: #4a5568;
     border: 1px solid #d5d0c7;
 }
-
 .rechazar:hover {
     background: #f0ebe1;
 }
@@ -1180,38 +1010,27 @@ footer {
 /* ==========================
    PREGUNTAS FRECUENTES
 ========================== */
-
 .FAQ {
     padding: 40px 8%;
     background: #faf9f6;
 }
-
-
 .section-title {
     text-align: center;
     margin-bottom: 45px;
 }
-
-
 .section-title h2 {
     font-size: 2.3rem;
     color: #1b3b2b;
     margin-bottom: 15px;
 }
-
-
 .section-title p {
     color: #555;
     font-size: 1.05rem;
 }
-
-
 .faq-container {
     max-width: 900px;
     margin: auto;
 }
-
-
 .faq-item {
     background: white;
     margin-bottom: 15px;
@@ -1221,8 +1040,6 @@ footer {
     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
     border-left: 4px solid #d1b17e;
 }
-
-
 .faq-item summary {
     cursor: pointer;
     padding: 22px 25px;
@@ -1232,8 +1049,6 @@ footer {
     list-style: none;
     position: relative;
 }
-
-
 .faq-item summary::after {
     content: "+";
     position: absolute;
@@ -1241,513 +1056,188 @@ footer {
     font-size: 1.5rem;
     color: #d1b17e;
 }
-
-
 .faq-item[open] summary::after {
     content: "-";
 }
-
-
 .faq-item p {
     padding: 0 25px 25px;
     color: #555;
     line-height: 1.7;
 }
-
-
 @media(max-width:768px){
-
     .FAQ {
         padding: 30px 5%;
     }
-
-
     .section-title h2 {
         font-size: 1.8rem;
     }
-
-
     .faq-item summary {
         font-size: 0.95rem;
         padding: 18px;
     }
-
-
     .faq-item p {
         padding: 0 18px 20px;
         font-size: 0.95rem;
     }
-
 }
 
 /* =====================================================
    SECCIÓN OPINIONES
 ===================================================== */
-
-
 .opiniones-section {
     padding: 40px 8%;
     background: #faf9f6;
-
 }
-
-
-
-/* CABECERA */
-
 .opiniones-header {
-
     max-width: 850px;
     margin: 0 auto 50px;
     text-align: center;
-
 }
-
-
 .opiniones-header h2 {
-
     color: #1b3b2b;
     font-size: 2.4rem;
     margin-bottom: 15px;
-
 }
-
-
 .opiniones-header p {
-
     color: #555;
     font-size: 1.05rem;
     line-height: 1.7;
-
 }
-
-
-
-/* TARJETAS DE OPINIONES */
-
 .opiniones-grid {
-
     max-width: 1200px;
     margin: auto;
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
     gap: 30px;
-
 }
-
-
-
 .opinion-card {
-
     background: white;
-
     padding: 35px 30px;
-
     border-radius: 20px;
-
     text-align: center;
-
     box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-
     border-top: 4px solid #d1b17e;
-
     transition: transform .3s ease;
-
 }
-
-
-
 .opinion-card:hover {
-
     transform: translateY(-8px);
-
 }
-
-
-
 .estrellas {
-
     color: #d1b17e;
-
     font-size: 1.4rem;
-
     letter-spacing: 3px;
-
     margin-bottom: 20px;
-
 }
-
-
-
 .opinion-card p {
-
     color: #555;
-
     line-height: 1.7;
-
     font-size: 0.95rem;
-
     font-style: italic;
-
     margin-bottom: 25px;
-
 }
-
-
-
 .opinion-card h3 {
-
     color: #1b3b2b;
-
     font-size: 1.1rem;
-
     margin-bottom: 5px;
-
 }
-
-
-
 .opinion-card span {
-
     color: #777;
-
     font-size: 0.9rem;
-
 }
 
-
-
-
-
-/* =====================================================
-   FORMULARIO DE OPINIONES
-===================================================== */
-
-
+/* FORMULARIO DE OPINIONES */
 .form-opinion {
-
     max-width: 750px;
-
     margin: 70px auto 0;
-
     background: white;
-
     padding: 30px;
-
     border-radius: 25px;
-
     box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-
 }
-
-
-
 .form-opinion h3 {
-
     text-align: center;
-
     color: #1b3b2b;
-
     font-size: 1.6rem;
-
     margin-bottom: 30px;
-
 }
-
-
-
 .form-opinion form {
-
     display: flex;
-
     flex-direction: column;
-
     gap: 18px;
-
 }
-
-
-
 .form-opinion input,
 .form-opinion select,
 .form-opinion textarea {
-
-
     width: 100%;
-
     padding: 15px 18px;
-
     border: 1px solid #ddd;
-
     border-radius: 12px;
-
     font-family: 'Poppins', sans-serif;
-
     font-size: 0.95rem;
-
     outline: none;
-
 }
-
-
-
 .form-opinion input:focus,
 .form-opinion select:focus,
 .form-opinion textarea:focus {
-
     border-color: #d1b17e;
-
 }
-
-
-
 .form-opinion textarea {
-
     min-height: 150px;
-
     resize: vertical;
-
 }
-
-
-
-
-
-/* CONSENTIMIENTO */
-
 .check-opinion {
-
     display: flex;
-
     align-items: flex-start;
-
     gap: 10px;
-
     color: #555;
-
     font-size: 0.85rem;
-
     line-height: 1.5;
-
 }
-
-
-
 .check-opinion input {
-
     width: auto;
-
     margin-top: 5px;
-
 }
-
-
-
 .check-opinion a {
-
     color: #1b3b2b;
-
     text-decoration: underline;
-
     font-weight: 500;
-
 }
-
-
-
 .check-opinion a:hover {
-
     color: #d1b17e;
-
 }
-
-
-
-
-
-/* BOTÓN */
-
 .form-opinion button {
-
-
     background: #1b3b2b;
-
     color: white;
-
     border: none;
-
     padding: 15px 35px;
-
     border-radius: 30px;
-
     font-family: 'Poppins', sans-serif;
-
     font-size: 1rem;
-
     cursor: pointer;
-
     transition: .3s;
-
 }
-
-
-
 .form-opinion button:hover {
-
     background: #d1b17e;
-
 }
-
-
-
-
-
-/* =====================================================
-   RESPONSIVE
-===================================================== */
-
 
 @media(max-width: 1000px) {
-
-
     .opiniones-grid {
-
         grid-template-columns: 1fr 1fr;
-
     }
-
-
 }
-
-
-
 @media(max-width: 700px) {
-
-
     .opiniones-section {
-
         padding: 30px 5%;
-
     }
-
-
     .opiniones-header h2 {
-
         font-size: 2rem;
-
     }
-
-
     .opiniones-grid {
-
         grid-template-columns: 1fr;
-
     }
-
-
     .form-opinion {
-
         padding: 25px;
-
     }
-
-
-}
-
-
-
-/* FORMULARIO */
-
-.form-opinion {
-
-    max-width:700px;
-    margin:70px auto 0;
-    background:white;
-    padding:40px;
-    border-radius:20px;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-
-}
-
-
-.form-opinion h3 {
-
-    text-align:center;
-    color:#1b3b2b;
-    margin-bottom:30px;
-
-}
-
-
-.form-opinion form {
-
-    display:flex;
-    flex-direction:column;
-    gap:15px;
-
-}
-
-
-.form-opinion input,
-.form-opinion select,
-.form-opinion textarea {
-
-    width:100%;
-    padding:15px;
-    border:1px solid #ddd;
-    border-radius:10px;
-    font-family:'Poppins',sans-serif;
-
-}
-
-
-.form-opinion textarea {
-
-    min-height:150px;
-    resize:none;
-
-}
-
-
-
-.form-opinion button {
-
-    background:#1b3b2b;
-    color:white;
-    border:none;
-    padding:15px;
-    border-radius:30px;
-    cursor:pointer;
-    font-size:1rem;
-
-}
-
-
-.form-opinion button:hover {
-
-    background:#d1b17e;
-
-}
-
-
-
-@media(max-width:900px){
-
-    .opiniones-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-
-    .form-opinion{
-
-        padding:25px;
-
-    }
-
 }
 
 /* ==========================================================
@@ -1759,7 +1249,6 @@ footer {
         gap: 15px;
         padding: 15px;
     }
-    
     .logo-container, 
     nav, 
     .cta-container {
@@ -1767,46 +1256,37 @@ footer {
         justify-content: center;
         text-align: center;
     }
-
     nav {
         gap: 20px;
         flex-wrap: wrap;
     }
-
     nav a {
         font-size: 15px;
     }
-
     .hero {
         padding: 40px 5%;
         text-align: left;
     }
-
     .texto {
         max-width: 100%;
     }
-
     .botones-hero {
         justify-content: flex-start;
         flex-direction: row;
         flex-wrap: wrap;
     }
-
     .texto h1 {
         font-size: 38px;
     }
 }
-
 @media (max-width: 950px) {
     .pasos-contenedor-horizontal {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    
     .pasos-contenedor-horizontal::before {
         display: none;
     }
-
     .planes-grid-tres {
         grid-template-columns: 1fr;
         max-width: 450px;
@@ -1814,34 +1294,27 @@ footer {
         margin-right: auto;
     }
 }
-
 @media (max-width: 900px) {
-
     .seccion-como-trabajo {
         padding: 50px 4%;
     }
-    
     .trabajo-header h2 {
         font-size: 32px;
     }
-    
     .incluye-caja-grande {
         padding: 30px 20px;
     }
 }
-
 @media (max-width: 768px) {
     header {
         flex-direction: column;
         padding: 15px 20px;
         text-align: center;
     }
-
     .logo-container {
         margin-right: 0;
         margin-bottom: 15px;
     }
-
     .nav-izquierda {
         margin-left: 0;
         gap: 20px;
@@ -1849,83 +1322,63 @@ footer {
         justify-content: center;
         margin-bottom: 15px;
     }
-
     .sobre-mi {
         padding: 70px 6%;
     }
-
     .sobre-mi-contenedor {
         flex-direction: column;
         gap: 50px;
     }
-
-
     .sobre-mi-imagen::before {
         width: 280px;
         height: 350px;
         top: 15px;
         left: 15px;
     }
-   
     .sobre-mi-imagen img {
         width: 280px;
         height: 350px;
     }
-
     .sobre-mi-texto h2 {
         font-size: 36px;
         text-align: center;
     }
-
     .subtitulo-sobremi {
         text-align: center;
         font-size: 18px;
-    }
-
-    .subtitulo-sobremi {
         width: 100%;
-        text-align: left;
     }
-
     .subtitulo-sobremi::after {
         margin-left: auto;
         margin-right: auto;
     }
-
     .sobre-mi-texto p {
         font-size: 16px;
         line-height: 1.7;
     }
-
     .enlaces-menu {
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
     }
-
     .cta-container {
         margin-left: 0;
         width: 100%;
         display: flex;
         justify-content: center;
     }
-
     .descuentos-grid-cuatro {
         grid-template-columns: 1fr;
     }
-
     .contacto-caja-principal {
         padding: 30px 20px;
     }
-
     .contacto-caja-principal h2 {
         font-size: 28px;
     }
-
     .contacto-caja-principal p {
         font-size: 15px;
     }
-
     .contacto-enlace-oficial {
         font-size: 14px;
         padding: 12px 20px;
@@ -1933,19 +1386,15 @@ footer {
         max-width: 100%;
         word-break: break-word;
     }
-
     .contacto-enlace-oficial i {
         font-size: 18px;
         flex-shrink: 0;
     }
-
-    /* Hero Responsive Movil */
     .hero {
         width: 100%;
         padding-top: 25px;
         background-color: #faf9f6;
     }
-
     .texto h1, 
     .hero-texto h1 {
         font-size: 42px;
@@ -1953,7 +1402,6 @@ footer {
         line-height: 1.1;
         font-weight: 700;
     }
-
     .subtitulo-hero-dorado {
         font-size: 14px;
         font-weight: 600;
@@ -1961,76 +1409,62 @@ footer {
         margin-bottom: 18px;
         letter-spacing: 0.5px;
     }
-
     .descripcion-hero-cursiva {
         font-size: 16px;
         line-height: 1.5;
         margin-bottom: 25px;
         color: #4a5568;
     }
-
-    /* Solicitud & Formularios Responsive */
     .solicitud {
         padding: 70px 5% 60px;
     }
-
     .solicitud-header {
         margin-bottom: 35px;
     }
-
     .solicitud-header h1 {
         font-size: 30px;
         line-height: 1.2;
         margin-bottom: 18px;
     }
-
     .solicitud-header p {
         font-size: 15px;
         line-height: 1.7;
         margin-bottom: 15px;
     }
-
     .formulario-solicitud {
         padding: 25px 18px;
         border-radius: 12px;
     }
-
     .formulario-solicitud label {
         font-size: 14px;
         margin-top: 18px;
         margin-bottom: 7px;
     }
-
     .formulario-solicitud input,
     .formulario-solicitud select,
     .formulario-solicitud textarea {
         padding: 13px;
-        font-size: 16px; /* Evita zoom automático en iPhone */
+        font-size: 16px;
     }
-
     .formulario-solicitud button {
         margin-top: 25px;
         padding: 14px;
         font-size: 15px;
     }
-
     .privacidad {
         font-size: 13px !important;
     }
 }
 
-
 /* ==========================================================
    10. AJUSTES FINALES (Páginas de política, cookies y elementos flotantes)
    ========================================================== */
-/* Página de Política de Privacidad */
 .politica {
     max-width: 900px;
     margin: 0 auto;
     padding: 120px 8% 80px;
     background: #faf9f6;
 }
-
 .politica h1 {
     text-align: center;
     font-size: 42px;
@@ -2038,7 +1472,6 @@ footer {
     color: #2b2b2b;
     margin-bottom: 50px;
 }
-
 .politica h2 {
     color: #c5a059;
     font-size: 22px;
@@ -2046,69 +1479,56 @@ footer {
     margin-top: 35px;
     margin-bottom: 15px;
 }
-
 .politica p {
     color: #555;
     font-size: 16px;
     line-height: 1.8;
     margin-bottom: 20px;
 }
-
 .politica ul {
     margin: 15px 0 25px 25px;
     color: #555;
     line-height: 1.8;
 }
-
 .politica li {
     margin-bottom: 8px;
 }
-
 .politica a {
     color: #c5a059;
     text-decoration: none;
 }
-
 .politica a:hover {
     text-decoration: underline;
 }
-
 @media (max-width: 768px) {
     .politica {
         padding: 90px 5% 60px;
     }
-
     .politica h1 {
         font-size: 32px;
     }
-
     .politica h2 {
         font-size: 19px;
     }
-
     .politica p,
     .politica li {
         font-size: 15px;
     }
 }
-
 .contacto-cta {
     margin-top: 40px;
     text-align: center;
 }
-
 .contacto-cta h3 {
     color: #1b3b2b;
     font-size: 26px;
     margin-bottom: 12px;
 }
-
 .contacto-cta p {
     color: #4a5568;
     margin-bottom: 25px;
     line-height: 1.7;
 }
-
 .boton-principal {
     display: inline-block;
     background: #1b3b2b;
@@ -2121,7 +1541,6 @@ footer {
     transition: all 0.3s ease;
     box-shadow: 0 10px 25px rgba(27, 59, 43, 0.15);
 }
-
 .boton-principal:hover {
     background: #d1b17e;
     color: #1b3b2b;
@@ -2129,8 +1548,7 @@ footer {
     box-shadow: 0 15px 30px rgba(27, 59, 43, 0.2);
 }
 
-PRECIOS PROMOCIONALES â 25% DE DESCUENTO
-   ========================================================== */
+/* PRECIOS PROMOCIONALES */
 .precio-original {
     font-size: 15px;
     color: #6b7280;
@@ -2138,11 +1556,9 @@ PRECIOS PROMOCIONALES â 25% DE DESCUENTO
     text-decoration-thickness: 1.5px;
     margin-bottom: 2px;
 }
-
 .precio-promocional {
     margin-top: 0;
 }
-
 .precio-descuento {
     display: inline-block;
     margin: 8px auto 10px;
@@ -2154,65 +1570,24 @@ PRECIOS PROMOCIONALES â 25% DE DESCUENTO
     font-weight: 800;
     letter-spacing: 0.5px;
 }
-
 .plan-destacado .precio-descuento {
     background: #1b3b2b;
     color: #ffffff;
 }
-
-
-/* =========================================
-   PRECIOS PROMOCIONALES
-========================================= */
-
-.precio-original {
-    font-size: 15px;
-    color: #6b7280;
-    text-decoration: line-through;
-    text-decoration-thickness: 1.5px;
-    margin-bottom: 2px;
-}
-
-.precio-promocional {
-    margin-top: 0;
-}
-
-.precio-descuento {
-    display: inline-block;
-    margin: 8px auto 10px;
-    padding: 5px 10px;
-    border-radius: 999px;
-    background: #d1b17e;
-    color: #1b3b2b;
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 0.5px;
-}
-
-.plan-destacado .precio-descuento {
-    background: #1b3b2b;
-    color: #ffffff;
-}
-
 @media (max-width: 768px) {
     .precio-original {
         font-size: 14px;
     }
-
     .precio-descuento {
         font-size: 10px;
     }
 }
 
-/* =========================================
-   DESCUENTO DEPORTISTAS
-========================================= */
-
+/* DESCUENTO DEPORTISTAS */
 .av-deporte,
 .av-deporte * {
     box-sizing: border-box;
 }
-
 .av-deporte {
     display: block;
     width: 100%;
@@ -2222,19 +1597,16 @@ PRECIOS PROMOCIONALES â 25% DE DESCUENTO
     color: #1b3b2b;
     overflow-wrap: break-word;
 }
-
 .av-deporte-contenedor {
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
 }
-
 .av-deporte-intro {
     max-width: 780px;
     margin: 0 auto 35px;
     text-align: center;
 }
-
 .av-deporte-etiqueta {
     display: inline-block;
     margin-bottom: 15px;
@@ -2243,33 +1615,28 @@ PRECIOS PROMOCIONALES â 25% DE DESCUENTO
     font-weight: 600;
     letter-spacing: 2px;
 }
-
 .av-deporte-intro h2 {
     margin: 0 0 18px;
     color: #1b3b2b;
     font-size: clamp(26px, 3vw, 38px);
     line-height: 1.3;
 }
-
 .av-deporte-intro h2 span {
     display: block;
     color: #8b7044;
 }
-
 .av-deporte-intro p {
     margin: 0;
     color: #555555;
     font-size: 16px;
     line-height: 1.8;
 }
-
 .av-deporte-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
     margin-bottom: 30px;
 }
-
 .av-deporte-tarjeta {
     min-width: 0;
     padding: 28px 22px;
@@ -2277,27 +1644,22 @@ PRECIOS PROMOCIONALES â 25% DE DESCUENTO
     border: 1px solid #e7e0d5;
     border-radius: 18px;
     text-align: center;
-    transition: transform 0.25s ease,
-                box-shadow 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-
 .av-deporte-tarjeta:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 25px rgba(27, 59, 43, 0.08);
 }
-
 .av-deporte-icono {
     margin-bottom: 15px;
     font-size: 32px;
 }
-
 .av-deporte-tarjeta h3 {
     margin: 0 0 12px;
     color: #1b3b2b;
     font-size: 18px;
     line-height: 1.4;
 }
-
 .av-deporte-tarjeta p {
     margin: 0;
     color: #666666;
@@ -2305,93 +1667,69 @@ PRECIOS PROMOCIONALES â 25% DE DESCUENTO
     line-height: 1.7;
 }
 
-/* =========================================
-   TABLET: 769–1024 px
-========================================= */
-
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .av-deporte {
         padding: 40px 24px;
     }
-
     .av-deporte-intro {
         max-width: 700px;
     }
-
     .av-deporte-intro h2 {
         font-size: 30px;
     }
-
     .av-deporte-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 16px;
     }
-
     .av-deporte-tarjeta {
         padding: 24px 18px;
     }
 }
-
-/* =========================================
-   MÓVIL: hasta 768 px
-========================================= */
-
 @media screen and (max-width: 768px) {
     .av-deporte {
         padding: 35px 15px;
     }
-
     .av-deporte-grid {
         grid-template-columns: minmax(0, 1fr);
         gap: 15px;
     }
-
     .av-deporte-tarjeta {
         padding: 25px 20px;
     }
-
     .av-deporte-intro h2 {
         font-size: 26px;
     }
 }
-
-/* =========================================
-   PANTALLAS GRANDES: más de 1024 px
-========================================= */
-
 @media screen and (min-width: 1025px) {
     .av-deporte-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
-
+}
 
 /* CONTINUIDAD DEL SEGUIMIENTO */
-
 .continuidad {
   --verde: #1b3b2b;
   --dorado: #d1b17e;
   --fondo: #faf9f6;
   --texto: #343a35;
-
   font-family: 'Poppins', sans-serif;
   color: var(--texto);
   background: var(--fondo);
   padding: 60px 20px;
   box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
 }
-
 .continuidad * {
   box-sizing: border-box;
 }
-
-/* CABECERA */
-
 .continuidad-header {
+  width: 100%;
   max-width: 720px;
   margin: 0 auto 38px;
   text-align: center;
 }
-
 .continuidad-etiqueta {
   display: inline-block;
   color: var(--verde);
@@ -2400,24 +1738,21 @@ PRECIOS PROMOCIONALES â 25% DE DESCUENTO
   letter-spacing: 2px;
   margin-bottom: 12px;
 }
-
 .continuidad-header h2 {
   color: var(--verde);
   font-size: clamp(28px, 4vw, 40px);
-  line-height: 1.2;
+  line-height: 1.25;
   margin: 0 0 16px;
   font-weight: 700;
+  overflow-wrap: anywhere;
 }
-
 .continuidad-header p {
   font-size: 15px;
   line-height: 1.8;
-  margin: 0;
+  margin: 0 auto;
   color: #626860;
+  max-width: 100%;
 }
-
-/* TARJETAS */
-
 .continuidad-planes {
   max-width: 1000px;
   margin: 0 auto;
@@ -2425,8 +1760,8 @@ PRECIOS PROMOCIONALES â 25% DE DESCUENTO
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
   align-items: stretch;
+  width: 100%;
 }
-
 .plan-continuidad {
   position: relative;
   background: #ffffff;
@@ -2436,13 +1771,13 @@ PRECIOS PROMOCIONALES â 25% DE DESCUENTO
   display: flex;
   flex-direction: column;
   min-width: 0;
+  max-width: 100%;
   box-shadow: 0 8px 28px rgba(27, 59, 43, 0.05);
+  overflow-wrap: anywhere;
 }
-
 .plan-premium {
   border: 2px solid var(--verde);
 }
-
 .plan-etiqueta {
   align-self: flex-start;
   background: var(--verde);
@@ -2454,24 +1789,21 @@ PRECIOS PROMOCIONALES â 25% DE DESCUENTO
   border-radius: 4px;
   margin-bottom: 18px;
 }
-
-/* TÍTULOS Y PRECIOS */
-
 .plan-continuidad h3 {
   color: var(--verde);
   font-size: 22px;
-  line-height: 1.4;
+  line-height: 1.35;
   margin: 0 0 18px;
   font-weight: 700;
+  overflow-wrap: anywhere;
 }
-
 .plan-precio {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   gap: 6px;
   margin-bottom: 18px;
 }
-
 .plan-precio .precio {
   font-size: 42px;
   line-height: 1;
@@ -2479,37 +1811,29 @@ PRECIOS PROMOCIONALES â 25% DE DESCUENTO
   font-weight: 700;
   letter-spacing: -1px;
 }
-
 .plan-precio .periodo {
   font-size: 14px;
   color: #777d75;
 }
-
-/* DESCRIPCIONES */
-
 .plan-descripcion {
   color: #626860;
   font-size: 14px;
   line-height: 1.8;
   margin: 0 0 22px;
 }
-
-/* LISTAS */
-
 .plan-continuidad ul {
   list-style: none;
-  padding: 0;
+  padding: 0 0 0 20px;
   margin: 0 0 24px;
 }
-
 .plan-continuidad li {
   position: relative;
   padding-left: 27px;
   margin-bottom: 14px;
   font-size: 14px;
   line-height: 1.65;
+  overflow-wrap: anywhere;
 }
-
 .plan-continuidad li::before {
   content: "✓";
   position: absolute;
@@ -2519,9 +1843,6 @@ PRECIOS PROMOCIONALES â 25% DE DESCUENTO
   font-weight: 700;
   font-size: 16px;
 }
-
-/* AVISO DEL DESCUENTO */
-
 .plan-aviso {
   background: #f7f4ee;
   border-left: 3px solid var(--dorado);
@@ -2531,14 +1852,12 @@ PRECIOS PROMOCIONALES â 25% DE DESCUENTO
   font-size: 12px;
   line-height: 1.8;
   color: #4d514a;
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
-
 .plan-aviso strong {
   color: var(--verde);
 }
-
-/* TEXTO INFERIOR */
-
 .plan-nota {
   border-top: 1px solid #ece9e2;
   padding-top: 18px;
@@ -2548,9 +1867,8 @@ PRECIOS PROMOCIONALES â 25% DE DESCUENTO
   line-height: 1.8;
   font-style: italic;
 }
-
 .continuidad-pie {
-  max-width: 650px;
+  max-width: 700px;
   margin: 35px auto 0;
   text-align: center;
   color: var(--verde);
@@ -2559,156 +1877,37 @@ PRECIOS PROMOCIONALES â 25% DE DESCUENTO
   font-weight: 500;
 }
 
-/* TABLETS Y MÓVILES */
-
-@media (max-width: 700px) {
-  .continuidad {
-    padding: 42px 16px;
-  }
-
-  .continuidad-planes {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .plan-continuidad {
-    padding: 28px 22px;
-  }
-
-  .plan-continuidad h3 {
-    font-size: 20px;
-  }
-
-  .plan-precio .precio {
-    font-size: 38px;
-  }
-/* ==========================================
-   PLANES DE CONTINUIDAD - MÓVILES
-   ========================================== */
-
-.continuidad {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    padding: 60px 20px;
-    overflow-x: clip;
-}
-
-.continuidad * {
-    box-sizing: border-box;
-}
-
-.continuidad-header {
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto 35px;
-    text-align: center;
-}
-
-.continuidad-header h2 {
-    overflow-wrap: anywhere;
-    line-height: 1.25;
-}
-
-.continuidad-header p {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.continuidad-planes {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 24px;
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    align-items: stretch;
-}
-
-.plan-continuidad {
-    width: 100%;
-    min-width: 0;
-    max-width: 100%;
-    padding: 28px;
-    margin: 0;
-    overflow-wrap: anywhere;
-}
-
-.plan-continuidad h3 {
-    line-height: 1.35;
-    overflow-wrap: anywhere;
-}
-
-.plan-precio {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 5px;
-}
-
-.plan-continuidad ul {
-    padding-left: 20px;
-}
-
-.plan-continuidad li {
-    overflow-wrap: anywhere;
-    margin-bottom: 10px;
-}
-
-.plan-aviso {
-    max-width: 100%;
-    overflow-wrap: anywhere;
-}
-
-.continuidad-pie {
-    max-width: 700px;
-    margin: 30px auto 0;
-    text-align: center;
-}
-
-/* MÓVILES */
 @media screen and (max-width: 600px) {
-
     .continuidad {
         padding: 45px 16px;
     }
-
     .continuidad-header {
         margin-bottom: 28px;
     }
-
     .continuidad-header h2 {
         font-size: 27px;
     }
-
     .continuidad-header p {
         font-size: 15px;
         line-height: 1.7;
     }
-
     .continuidad-planes {
         grid-template-columns: minmax(0, 1fr);
         gap: 20px;
     }
-
     .plan-continuidad {
         padding: 24px 20px;
         border-radius: 16px;
     }
-
     .plan-continuidad h3 {
         font-size: 21px;
     }
-
     .plan-precio .precio {
         font-size: 34px;
     }
-
     .plan-precio .periodo {
         font-size: 15px;
     }
-
     .plan-descripcion,
     .plan-continuidad li,
     .plan-nota,
@@ -2716,31 +1915,525 @@ PRECIOS PROMOCIONALES â 25% DE DESCUENTO
         font-size: 14px;
         line-height: 1.65;
     }
-
     .continuidad-pie {
         font-size: 14px;
         line-height: 1.7;
     }
 }
-
-/* MÓVILES MUY ESTRECHOS */
 @media screen and (max-width: 360px) {
-
     .continuidad {
         padding-left: 12px;
         padding-right: 12px;
     }
-
     .plan-continuidad {
         padding: 20px 16px;
     }
-
     .continuidad-header h2 {
         font-size: 24px;
     }
-
     .plan-precio .precio {
         font-size: 30px;
     }
+}
 
+/* ==========================================================
+   AJUSTES RESPONSIVE FINALES
+   ========================================================== */
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+body {
+    width: 100%;
+    min-width: 0;
+    overflow-x: clip;
+}
+img,
+video,
+iframe {
+    max-width: 100%;
+}
+button,
+input,
+select,
+textarea {
+    max-width: 100%;
+    font: inherit;
+}
+h1, h2, h3, h4, p, li, a, span {
+    overflow-wrap: break-word;
+}
+
+/* Escritorio amplio */
+@media screen and (min-width: 1200px) {
+    .hero {
+        min-height: 680px;
+    }
+    .texto h1 {
+        font-size: clamp(46px, 4vw, 60px);
+    }
+    .sobre-mi,
+    .seccion-como-trabajo,
+    .seccion-contacto,
+    .opiniones-section {
+        padding-left: max(5%, calc((100% - 1200px) / 2));
+        padding-right: max(5%, calc((100% - 1200px) / 2));
+    }
+}
+
+/* Tablets y portátiles pequeños */
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+    header {
+        padding: 16px 4%;
+        gap: 14px;
+    }
+    .logo-img {
+        height: 62px;
+        max-width: 220px;
+        object-fit: contain;
+    }
+    .nav-izquierda,
+    .enlaces-menu {
+        gap: 18px;
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+    .nav a,
+    .nav-izquierda a,
+    .enlaces-menu a {
+        font-size: 14px;
+    }
+    .cta-container {
+        margin-left: 0;
+    }
+    .hero {
+        min-height: 560px;
+        padding: 55px 6%;
+        background-position: center;
+    }
+    .texto {
+        max-width: 620px;
+    }
+    .texto h1 {
+        font-size: clamp(36px, 4.5vw, 48px);
+    }
+    .sobre-mi {
+        padding: 75px 5%;
+    }
+    .sobre-mi-contenedor {
+        gap: 38px;
+    }
+    .sobre-mi-imagen img {
+        width: min(300px, 100%);
+        height: 380px;
+    }
+    .sobre-mi-imagen::before {
+        width: min(300px, 100%);
+        height: 380px;
+        left: 15px;
+    }
+    .sobre-mi-texto h2 {
+        font-size: clamp(30px, 3.5vw, 40px);
+    }
+    .incluye-caja-grande {
+        padding: 32px 24px;
+    }
+    .incluye-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+    .planes-grid-tres {
+        grid-template-columns: repeat(2, minmax(0, 320px));
+        max-width: 680px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tarjeta-plan-opcion {
+        padding: 34px 22px;
+    }
+    .descuentos-grid-cuatro {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .opiniones-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .continuidad-planes {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Móvil y tablet vertical */
+@media screen and (max-width: 700px) {
+    header {
+        position: relative;
+        padding: 14px 5%;
+        gap: 12px;
+    }
+    .logo-container,
+    .nav-izquierda,
+    .enlaces-menu,
+    nav,
+    .cta-container {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: center;
+    }
+    .logo-img {
+        height: 58px;
+        max-width: min(80vw, 240px);
+        object-fit: contain;
+    }
+    .nav-izquierda,
+    .enlaces-menu,
+    nav,
+    .footer-links,
+    .enlaces-legales {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px 18px;
+    }
+    .nav a,
+    .nav-izquierda a,
+    .enlaces-menu a {
+        font-size: 14px;
+    }
+    .btn-reservar {
+        display: inline-block;
+        max-width: 100%;
+        padding: 11px 20px;
+    }
+    .barra-aviso-movimiento {
+        padding: 10px 0;
+    }
+    .marquesina-contenido span {
+        font-size: 12px;
+    }
+    .hero {
+        min-height: auto;
+        padding: 65px 6% 55px;
+        background-position: center;
+    }
+    .hero::before {
+        background: rgba(255, 255, 255, 0.62);
+    }
+    .texto,
+    .hero-texto {
+        width: 100%;
+        max-width: 100%;
+    }
+    .texto h1,
+    .hero-texto h1 {
+        font-size: clamp(32px, 8vw, 42px);
+        line-height: 1.15;
+    }
+    .subtitulo-hero-dorado {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    .descripcion-hero-cursiva {
+        font-size: 15px;
+        letter-spacing: 0;
+    }
+    .botones-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+    .botones-hero a {
+        width: 100%;
+        text-align: center;
+    }
+    .sobre-mi {
+        padding: 58px 6%;
+    }
+    .sobre-mi-contenedor {
+        display: flex;
+        flex-direction: column;
+        gap: 38px;
+    }
+    .sobre-mi-imagen {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    .sobre-mi-imagen img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+    }
+    .sobre-mi-imagen::before {
+        width: 92%;
+        height: 92%;
+        top: 12px;
+        left: 12px;
+    }
+    .sobre-mi-texto {
+        width: 100%;
+    }
+    .sobre-mi-texto h2 {
+        font-size: clamp(29px, 7vw, 36px);
+        text-align: center;
+    }
+    .subtitulo-sobremi {
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+    .subtitulo-sobremi::after {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sobre-mi-texto p {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+    .separador-verde {
+        padding: 26px 5%;
+    }
+    .separador-verde-contenido h3 {
+        font-size: clamp(19px, 5vw, 23px);
+    }
+    .separador-verde-contenido p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    .seccion-como-trabajo,
+    .seccion-contacto,
+    .opiniones-section,
+    .FAQ {
+        padding: 48px 5%;
+    }
+    .trabajo-header {
+        margin-bottom: 38px;
+    }
+    .trabajo-header h2,
+    .section-title h2,
+    .opiniones-header h2 {
+        font-size: clamp(25px, 6.5vw, 32px);
+        line-height: 1.25;
+    }
+    .trabajo-header p,
+    .opiniones-header p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+    .pasos-contenedor-horizontal {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+        margin-bottom: 45px;
+    }
+    .pasos-contenedor-horizontal::before {
+        display: none;
+    }
+    .paso-item-h p {
+        max-width: 320px;
+        font-size: 14px;
+    }
+    .incluye-caja-grande {
+        padding: 26px 18px;
+        margin-bottom: 45px;
+        border-radius: 18px;
+    }
+    .incluye-caja-grande > h3 {
+        font-size: 23px;
+        margin-bottom: 25px;
+    }
+    .incluye-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 15px;
+    }
+    .incluye-card {
+        padding: 18px;
+        min-width: 0;
+    }
+    .tarifa-seccion-tres {
+        margin-top: 48px;
+    }
+    .tarifa-seccion-tres > h3 {
+        font-size: clamp(26px, 7vw, 32px);
+        margin-bottom: 30px;
+    }
+    .planes-grid-tres {
+        grid-template-columns: minmax(0, 1fr);
+        width: 100%;
+        max-width: 420px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 24px;
+    }
+    .tarjeta-plan-opcion {
+        padding: 34px 22px 26px;
+        min-width: 0;
+    }
+    .tarjeta-plan-opcion .precio-numero {
+        font-size: clamp(32px, 9vw, 40px);
+        flex-wrap: wrap;
+    }
+    .seccion-descuentos-solidarios {
+        padding: 25px 18px;
+    }
+    .descuentos-grid-cuatro {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 15px;
+    }
+    .descuento-card {
+        padding: 19px;
+        min-width: 0;
+    }
+    .contacto-caja-principal {
+        padding: 28px 18px;
+    }
+    .contacto-caja-principal h2 {
+        font-size: clamp(25px, 7vw, 32px);
+    }
+    .contacto-info-contenedor {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .contacto-enlace-oficial,
+    .contacto-enlace-oficial a {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+    .opiniones-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+    }
+    .opinion-card {
+        padding: 27px 21px;
+    }
+    .form-opinion,
+    .formulario-solicitud {
+        width: 100%;
+        padding: 24px 18px;
+    }
+    .form-opinion form {
+        gap: 14px;
+    }
+    .form-opinion input,
+    .form-opinion select,
+    .form-opinion textarea,
+    .formulario-solicitud input:not([type="radio"]):not([type="checkbox"]),
+    .formulario-solicitud select,
+    .formulario-solicitud textarea {
+        width: 100%;
+        min-width: 0;
+        font-size: 16px;
+    }
+    .opcion-radio {
+        padding: 17px;
+        gap: 11px;
+    }
+    .checkbox-linea {
+        align-items: flex-start;
+    }
+    .politica {
+        padding: 70px 6% 48px;
+    }
+    .politica h1 {
+        font-size: clamp(28px, 7vw, 36px);
+        line-height: 1.2;
+    }
+    .politica h2 {
+        font-size: 20px;
+    }
+    footer {
+        padding: 32px 5%;
+    }
+    .footer-contenedor {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+    .footer-links,
+    .enlaces-legales {
+        justify-content: center;
+    }
+    .cookie-banner {
+        bottom: max(12px, env(safe-area-inset-bottom));
+        width: calc(100% - 24px);
+        max-width: 520px;
+        padding: 20px 17px;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+    .cookie-botones {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .btn-cookie {
+        width: 100%;
+    }
+    .av-deporte-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .continuidad {
+        padding: 42px 16px;
+    }
+    .continuidad-planes {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+    .plan-continuidad {
+        padding: 25px 20px;
+        min-width: 0;
+    }
+    .plan-precio {
+        flex-wrap: wrap;
+    }
+}
+
+/* Móviles estrechos */
+@media screen and (max-width: 380px) {
+    .texto h1,
+    .hero-texto h1 {
+        font-size: 30px;
+    }
+    .btn-acompañamiento,
+    .btn-sobre-mi,
+    .btn-plan-opcion,
+    .boton-principal {
+        padding-left: 16px;
+        padding-right: 16px;
+        font-size: 13px;
+    }
+    .tarjeta-plan-opcion {
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+    .contacto-caja-principal,
+    .form-opinion,
+    .formulario-solicitud {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .continuidad {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .plan-continuidad {
+        padding: 20px 16px;
+    }
+}
+
+/* Reduce accesibilidad / preferencia de movimiento */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
 }
