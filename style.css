@@ -2582,5 +2582,165 @@ PRECIOS PROMOCIONALES â 25% DE DESCUENTO
   .plan-precio .precio {
     font-size: 38px;
   }
+/* ==========================================
+   PLANES DE CONTINUIDAD - MÓVILES
+   ========================================== */
+
+.continuidad {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 60px 20px;
+    overflow-x: clip;
+}
+
+.continuidad * {
+    box-sizing: border-box;
+}
+
+.continuidad-header {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.continuidad-header h2 {
+    overflow-wrap: anywhere;
+    line-height: 1.25;
+}
+
+.continuidad-header p {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.continuidad-planes {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+.plan-continuidad {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    padding: 28px;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.plan-continuidad h3 {
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+}
+
+.plan-precio {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.plan-continuidad ul {
+    padding-left: 20px;
+}
+
+.plan-continuidad li {
+    overflow-wrap: anywhere;
+    margin-bottom: 10px;
+}
+
+.plan-aviso {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+
+.continuidad-pie {
+    max-width: 700px;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+/* MÓVILES */
+@media screen and (max-width: 600px) {
+
+    .continuidad {
+        padding: 45px 16px;
+    }
+
+    .continuidad-header {
+        margin-bottom: 28px;
+    }
+
+    .continuidad-header h2 {
+        font-size: 27px;
+    }
+
+    .continuidad-header p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .continuidad-planes {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .plan-continuidad {
+        padding: 24px 20px;
+        border-radius: 16px;
+    }
+
+    .plan-continuidad h3 {
+        font-size: 21px;
+    }
+
+    .plan-precio .precio {
+        font-size: 34px;
+    }
+
+    .plan-precio .periodo {
+        font-size: 15px;
+    }
+
+    .plan-descripcion,
+    .plan-continuidad li,
+    .plan-nota,
+    .plan-aviso {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .continuidad-pie {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
+
+/* MÓVILES MUY ESTRECHOS */
+@media screen and (max-width: 360px) {
+
+    .continuidad {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .plan-continuidad {
+        padding: 20px 16px;
+    }
+
+    .continuidad-header h2 {
+        font-size: 24px;
+    }
+
+    .plan-precio .precio {
+        font-size: 30px;
+    }
 
 }
